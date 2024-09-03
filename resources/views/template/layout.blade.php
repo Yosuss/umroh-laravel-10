@@ -7,7 +7,7 @@
     <title>umroh</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
-<body>
+<body class=" bg-gray-100">
     {{-- @include('komponen.pesan') --}}
     @yield('konten')
 </body>
