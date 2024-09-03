@@ -29,8 +29,10 @@
                     umroh dan haji anda</h1>
                 <div class="button font-medium text-white mt-5">
                     <button class="bg-blue-600 capitalize text-lg px-6 py-3 mr-4 rounded-3xl">daftar sekarang</button>
-                    <button class="border-2 border-black capitalize text-lg px-6 py-3 text-black rounded-3xl">masu
-                        ></button>
+                    <button class="border-2 inline-flex items-center gap-4 border-black capitalize text-lg px-6 py-3 text-black rounded-3xl">masuk <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 10.6172L10 1.38281M10 1.38281H1M10 1.38281V10.3828" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </button>
                 </div>
             </div>
             <div class="flex justify-center items-center w-5/12 relative">
@@ -105,17 +107,17 @@
                 <h1 class="text-3xl font-semibold">Kami dalam nabung umrah</h1>
                 <h1 class="text-2xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
                 <div class="requirement grid grid-rows-3 gap-2">
-                    <div class="require flex items-center gap-2">
-                        <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
+                    <div class="require flex items-center gap-4 mt-6">
+                        <i class="bi bi-check2 text-xl p-1 px-2 rounded-full bg-blue-200 text-blue-600"></i>
                         <h1 class="text-xl">Menyiapkan KTP</h1>
                     </div>
-                    <div class="require flex items-center gap-2">
-                        <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
+                    <div class="require flex items-center gap-4">
+                        <i class="bi bi-check2 text-xl p-1 px-2 rounded-full bg-blue-200 text-blue-600"></i>
                         <h1 class="text-xl">Mengisi formulir pendaftaran umroh</h1>
                     </div>
-                    <div class="require flex items-center gap-2">
-                        <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
-                        <h1 class="text-xl">Mengisi formulir pembukaan rekening bank syarah ( BSI,BRI,Nagari syariah )</h1>
+                    <div class="require flex items-center gap-4">
+                        <i class="bi bi-check2 text-xl p-1 px-2 rounded-full bg-blue-200 text-blue-600"></i>
+                        <h1 class="text-xl w-8/12">Mengisi formulir pembukaan rekening bank syarah ( BSI,BRI,Nagari syariah )</h1>
                     </div>
                 </div>
                 <div class="grid grid-cols-2 justify-between">
@@ -125,8 +127,8 @@
                         <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
                     </div>
                     <div class="slide mt-10 flex gap-4 justify-end">
-                        <i class="bi bi-arrow-left-circle text-3xl text-blue-600"></i>
-                        <i class="bi bi-arrow-right-circle-fill text-3xl text-blue-600"></i>
+                        <i class="bi bi-arrow-left-circle text-4xl text-blue-600"></i>
+                        <i class="bi bi-arrow-right-circle-fill text-4xl text-blue-600"></i>
                     </div>
                 </div>
 
@@ -204,9 +206,18 @@
 
         {{-- testimoni --}}
         <div class="testimonial mx-20">
-            <h1 class="text-xl text-medium text-blue-600 capitalize ">testimoni</h1>
-            <h1 class="text-3xl font-semibold mt-4">Gimana perasaan mereka</h1>
-            <h1 class="text-3xl font-semibold mt-2 mb-6">dengan sinai Umroh?</h1>
+            <div class="grid grid-cols-2 justify-between">
+                <div class="">
+                    <h1 class="text-xl text-medium text-blue-600 capitalize">testimoni</h1>
+                    <h1 class="text-4xl font-semibold mt-4">Gimana perasaan mereka</h1>
+                    <h1 class="text-4xl font-semibold mt-2 mb-6">dengan sinai Umroh?</h1>
+                </div>
+                <div class="flex gap-4 items-end justify-end mb-6">
+                    <i class="bi bi-arrow-left-circle text-4xl text-blue-600"></i>
+                    <i class="bi bi-arrow-right-circle-fill text-4xl text-blue-600"></i>
+                </div>
+            </div>
+
             <div class="testimoni-detail grid grid-cols-3 gap-4">
                 <div class="values bg-white rounded-xl">
                     <div class="value flex px-5 pt-5 pb-2 gap-2 items-center">
@@ -268,7 +279,7 @@
             <div class=" mt-20 grid grid-cols-2 bg-black text-white px-20 py-10">
                 <div class="katalog grid">
                     <h1 class="text-sm font-light uppercase">katalog</h1>
-                    <div class="grid grid-cols-6 mt-4 w-4/6">
+                    <div class="grid grid-cols-6 mt-4 w-4/6 justify-center">
                         <h1 class="capitalize text-lg">beranda</h1>
                         <h1>/</h1>
                         <h1 class="capitalize text-lg">layanan</h1>
@@ -279,11 +290,11 @@
                         <h1>/</h1>
                         <h1 class="capitalize text-lg">hubungi kami</h1>
                     </div>
-                    <div class="mt-8 w-4/6">
+                    <div class="mt-8 w-8/12">
                         <h1 class="text-3xl font-bold">Book your trip in minute,get full Control for much longer.</h1>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 justify-between w-full">
+                <div class="flex flex-2 justify-between w-full">
                     <div class="contact">
                         <h1 class="text-sm font-light uppercase">kontak</h1>
                         <h1 class="capitalize text-lg mt-4 text-yellow-400">+62 892 161 572</h1>
@@ -298,10 +309,10 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright grid grid-cols-3 w-full text-center py-10 text-white">
-                <h1 class="text-sm font-light uppercase">@2024</h1>
-                <h1 class="text-sm font-light uppercase">@2024</h1>
-                <h1 class="text-sm font-light uppercase">@2024</h1>
+            <div class="copyright grid grid-cols-3 w-full py-10 text-white">
+                <h1 class="text-sm font-light uppercase px-20">@2024</h1>
+                <h1 class="text-sm font-light uppercase px-[15rem]">@2024</h1>
+                <h1 class="text-sm font-light uppercase pl-[21rem]">@2024</h1>
             </div>
         </div>
         {{-- footer end --}}
