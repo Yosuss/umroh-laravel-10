@@ -42,6 +42,7 @@
                     Dignissimos, qui reprehenderit. Tenetur provident recusandae, aut laboriosam qui veniam necessitatibus
                     nihil.</h1>
             </div>
+
             <div class="items grid grid-cols-3 justify-center gap-8 mt-10">
                 <div class="flex flex-col items-center bg-white p-4 rounded-lg text-center">
                     <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
@@ -61,6 +62,9 @@
                     <h1 class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ex consequuntur autem
                         soluta ut pariatur! Repudiandae sapiente maxime velit? Impedit!</h1>
                 </div>
+            </div>
+
+            <div class="items grid grid-cols-2 justify-center gap-8 mt-5 px-60">
                 <div class="flex flex-col items-center bg-white p-4 rounded-lg text-center">
                     <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
                     <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
@@ -104,13 +108,13 @@
 
         <div class="packets h-screen mt-4 mx-80 text-center">
             <h1 class="text-xl text-medium text-blue-600 semi-bodl">paket perjalanan ibadah</h1>
-            <h1 class="text-3xl font-semibold mt-2">Yuk, umroh bareng Sinau Umrah Pilihlah paket yang nyaman, biar ibadah
+            <h1 class="text-3xl font-semibold mt-2">Yuk, umroh bareng sinai Umrah Pilihlah paket yang nyaman, biar ibadah
                 main berkesan</h1>
             <div class="packet grid grid-cols-3 gap-8">
 
                 <div
                     class="packet-1 rounded-xl text-left mt-4 p-4 bg-white grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
-                    <h1 class="text-2xl text-semibold">product sinau agustus</h1>
+                    <h1 class="text-2xl text-semibold">product sinai agustus</h1>
                     <h1 class="font-bold text-md uppercase">rp <span class="capitalize font-bold text-3xl">35,5 juta</span>
                     </h1>
                     <h1 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos
@@ -129,7 +133,7 @@
 
                 <div
                     class="packet-2 rounded-xl text-left mt-4 p-4 bg-white grid gap-4 hover:text-white hover:bg-blue-600 duration-200">
-                    <h1 class="text-2xl text-semibold">product sinau agustus</h1>
+                    <h1 class="text-2xl text-semibold">product sinai agustus</h1>
                     <h1 class="font-bold text-md uppercase">rp <span class="capitalize font-bold text-3xl">35,5 juta</span>
                     </h1>
                     <h1 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos
@@ -148,7 +152,7 @@
 
                 <div
                     class="packet-1 rounded-xl text-left mt-4 p-4 bg-white grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
-                    <h1 class="text-2xl text-semibold">product sinau agustus</h1>
+                    <h1 class="text-2xl text-semibold">product sinai agustus</h1>
                     <h1 class="font-bold text-md uppercase">rp <span class="capitalize font-bold text-3xl">35,5 juta</span>
                     </h1>
                     <h1 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos
@@ -168,21 +172,45 @@
             </div>
         </div>
 
-        <div class="testimonial mx-20 h-screen">
+        <div class="testimonial mx-20">
             <h1 class="text-xl text-medium text-blue-600 capitalize ">testimoni</h1>
             <h1 class="text-3xl font-semibold mt-4">Gimana perasaan mereka</h1>
-            <h1 class="text-3xl font-semibold mt-2 mb-6">dengan Sinau Umroh?</h1>
+            <h1 class="text-3xl font-semibold mt-2 mb-6">dengan sinai Umroh?</h1>
             <div class="testimoni-detail grid grid-cols-3 gap-4">
-                <div class="value h-60 bg-gray-300 rounded-xl"></div>
-                <div class="value h-60 bg-gray-300 rounded-xl"></div>
-                <div class="value h-60 bg-gray-300 rounded-xl"></div>
-                <div class="value h-60 bg-gray-300 rounded-xl"></div>
-                <div class="value h-60 bg-gray-300 rounded-xl"></div>
-                <div class="value h-60 bg-gray-300 rounded-xl"></div>
+                <div class="values bg-white rounded-xl">
+                    <div class="value flex px-5 pt-5 pb-2 gap-2 items-center">
+                        <div class="w-10 h-10 bg-black rounded-full"></div>
+                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                    </div>
+                    <div class="value px-5 pb-20 gap-2">
+                        <h1 class="pl-4 text-2xl">"</h1>
+                        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio commodi accusamus vel harum nesciunt inventore facilis repellendus modi et necessitatibus, totam quos iste officia consectetur.</h1>
+                    </div>
+                </div>
+                <div class="values bg-white rounded-xl">
+                    <div class="value flex px-5 pt-5 pb-2 gap-2 items-center">
+                        <div class="w-10 h-10 bg-black rounded-full"></div>
+                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                    </div>
+                    <div class="value px-5 pb-20 gap-2">
+                        <h1 class="pl-4 text-2xl">"</h1>
+                        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio commodi accusamus vel harum nesciunt inventore facilis repellendus modi et necessitatibus, totam quos iste officia consectetur.</h1>
+                    </div>
+                </div>
+                <div class="values bg-white rounded-xl">
+                    <div class="value flex px-5 pt-5 pb-2 gap-2 items-center">
+                        <div class="w-10 h-10 bg-black rounded-full"></div>
+                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                    </div>
+                    <div class="value px-5 pb-20 gap-2">
+                        <h1 class="pl-4 text-2xl">"</h1>
+                        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio commodi accusamus vel harum nesciunt inventore facilis repellendus modi et necessitatibus, totam quos iste officia consectetur.</h1>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="w-full flex items-center justify-center text-center">
+        <div class="w-full flex items-center justify-center text-center mt-20">
             <div class="ending-information p-8 bg-white w-fit rounded-xl">
                 <h1 class="text-xl font-medium text-blue-600 capitalize">Temukan informasi lebih</h1>
                 <h1 class="text-3xl font-semibold mt-4">Dapatkan informasi terkait promo, diskon atau</h1>
@@ -218,7 +246,7 @@
                     <div class="contact">
                         <h1 class="text-sm font-light uppercase">kontak</h1>
                         <h1 class="capitalize text-lg mt-4 text-yellow-400">+62 892 161 572</h1>
-                        <h1 class="capitalize text-lg font-light">hello@sinauumrah.com</h1>
+                        <h1 class="capitalize text-lg font-light">hello@sinaiumrah.com</h1>
                         <h1 class="capitalize text-lg font-light mt-32">alamat perusahaan</h1>
                     </div>
                     <div class="folow-me">
