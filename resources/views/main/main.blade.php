@@ -19,7 +19,7 @@
                 <h1 class="font-bold text-2xl mb-5">Ahian wa sahlan <span class="font-normal">di situs resmi</span></h1>
                 <h1 class="text-6xl font-bold text-blue-600	mb-4">Mulai Umrohmu bersama</h1>
                 <h1 class="text-6xl font-bold text-blue-600 mb-4">Sinai Umroh Cabang</h1>
-                <h1 class="text-6xl font-bold text-blue-600 mb-4">Indarung Padang.?</h1>
+                <h1 class="text-6xl font-bold text-blue-600 mb-4">Indarung Padang.</h1>
                 <h1 class="mt-8 text-2xl font-light">Halo calon jamaah umroh kami adalah mitra terpercaya untuk perjalanan
                     spiritual anda dengan pengalaman <span class="font-bold">8+ tahun</span> kami siap mendampingi ibdadah
                     umroh dan haji anda</h1>
@@ -28,7 +28,9 @@
                     <button class="border-2 border-black capitalize text-lg px-6 py-3 text-black rounded-3xl">masu ></button>
                 </div>
             </div>
-            <div class="testimonial text-center w-4/12 bg-gray-300 shadow-lg mx-10">
+            <div class="justify-center">
+                <div class="testimonial text-center w-4/12 h-80 bg-gray-300 shadow-lg mx-10">
+                </div>
             </div>
         </div>
 
@@ -40,7 +42,7 @@
                     Dignissimos, qui reprehenderit. Tenetur provident recusandae, aut laboriosam qui veniam necessitatibus
                     nihil.</h1>
             </div>
-            <div class="items grid grid-cols-5 gap-8 mt-10">
+            <div class="items grid grid-cols-3 justify-center gap-8 mt-10">
                 <div class="flex flex-col items-center bg-white p-4 rounded-lg text-center">
                     <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
                     <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
@@ -109,7 +111,7 @@
                 <div
                     class="packet-1 rounded-xl text-left mt-4 p-4 bg-white grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
                     <h1 class="text-2xl text-semibold">product sinau agustus</h1>
-                    <h1 class="font-bold text-md uppercase">rp <span class="capitalize text-lg font-bold text-3xl">35,5 juta</span>
+                    <h1 class="font-bold text-md uppercase">rp <span class="capitalize font-bold text-3xl">35,5 juta</span>
                     </h1>
                     <h1 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos
                         sequi esse.</h1>
@@ -128,7 +130,7 @@
                 <div
                     class="packet-2 rounded-xl text-left mt-4 p-4 bg-white grid gap-4 hover:text-white hover:bg-blue-600 duration-200">
                     <h1 class="text-2xl text-semibold">product sinau agustus</h1>
-                    <h1 class="font-bold text-md uppercase">rp <span class="capitalize text-lg font-bold text-3xl">35,5 juta</span>
+                    <h1 class="font-bold text-md uppercase">rp <span class="capitalize font-bold text-3xl">35,5 juta</span>
                     </h1>
                     <h1 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos
                         sequi esse.</h1>
@@ -147,7 +149,7 @@
                 <div
                     class="packet-1 rounded-xl text-left mt-4 p-4 bg-white grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
                     <h1 class="text-2xl text-semibold">product sinau agustus</h1>
-                    <h1 class="font-bold text-md uppercase">rp <span class="capitalize text-lg font-bold text-3xl">35,5 juta</span>
+                    <h1 class="font-bold text-md uppercase">rp <span class="capitalize font-bold text-3xl">35,5 juta</span>
                     </h1>
                     <h1 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos
                         sequi esse.</h1>
@@ -193,43 +195,45 @@
             </div>
         </div>
 
-        <div class="footer mt-20 grid grid-cols-2 bg-black text-white px-20 py-10">
-            <div class="katalog grid">
-                <h1 class="text-sm font-light uppercase">katalog</h1>
-                <div class="grid grid-cols-6 mt-4 w-4/6">
-                    <h1 class="capitalize text-lg">beranda</h1>
-                    <h1>/</h1>
-                    <h1 class="capitalize text-lg">layanan</h1>
-                    <h1>/</h1>
-                    <h1 class="capitalize text-lg">tentang kami</h1>
-                    <h1>/</h1>
-                    <h1 class="capitalize text-lg">testimonial</h1>
-                    <h1>/</h1>
-                    <h1 class="capitalize text-lg">hubungi kami</h1>
+        <div class="footer bg-black">
+            <div class=" mt-20 grid grid-cols-2 bg-black text-white px-20 py-10">
+                <div class="katalog grid">
+                    <h1 class="text-sm font-light uppercase">katalog</h1>
+                    <div class="grid grid-cols-6 mt-4 w-4/6">
+                        <h1 class="capitalize text-lg">beranda</h1>
+                        <h1>/</h1>
+                        <h1 class="capitalize text-lg">layanan</h1>
+                        <h1>/</h1>
+                        <h1 class="capitalize text-lg">tentang kami</h1>
+                        <h1>/</h1>
+                        <h1 class="capitalize text-lg">testimonial</h1>
+                        <h1>/</h1>
+                        <h1 class="capitalize text-lg">hubungi kami</h1>
+                    </div>
+                    <div class="mt-8 w-4/6">
+                        <h1 class="text-3xl font-bold">Book your trip in minute,get full Control for much longer.</h1>
+                    </div>
                 </div>
-                <div class="mt-8 w-4/6">
-                    <h1 class="text-3xl font-bold">Book your trip in minute,get full Control for much longer.</h1>
+                <div class="grid grid-cols-2 justify-between w-full">
+                    <div class="contact">
+                        <h1 class="text-sm font-light uppercase">kontak</h1>
+                        <h1 class="capitalize text-lg mt-4 text-yellow-400">+62 892 161 572</h1>
+                        <h1 class="capitalize text-lg font-light">hello@sinauumrah.com</h1>
+                        <h1 class="capitalize text-lg font-light mt-32">alamat perusahaan</h1>
+                    </div>
+                    <div class="folow-me">
+                        <h1 class="text-sm font-light uppercase">ikuti kami</h1>
+                        <h1 class="capitalize text-lg mt-4">whatsapp</h1>
+                        <h1 class="capitalize text-lg">instagram</h1>
+                        <h1 class="capitalize text-lg font-light mt-32">^</h1>
+                    </div>
                 </div>
             </div>
-            <div class="grid grid-cols-2 justify-between w-full">
-                <div class="contact">
-                    <h1 class="text-sm font-light uppercase">kontak</h1>
-                    <h1 class="capitalize text-lg mt-4 text-yellow-400">+62 892 161 572</h1>
-                    <h1 class="capitalize text-lg font-light">hello@sinauumrah.com</h1>
-                    <h1 class="capitalize text-lg font-light mt-32">alamat perusahaan</h1>
-                </div>
-                <div class="folow-me">
-                    <h1 class="text-sm font-light uppercase">ikuti kami</h1>
-                    <h1 class="capitalize text-lg mt-4">whatsapp</h1>
-                    <h1 class="capitalize text-lg">instagram</h1>
-                    <h1 class="capitalize text-lg font-light mt-32">^</h1>
-                </div>
-            </div>
-            <div class="copyright mt-8 grid grid-cols-3 w-full">
+            <div class="copyright grid grid-cols-3 w-full text-center py-10 text-white">
                 <h1 class="text-sm font-light uppercase">@2024</h1>
                 <h1 class="text-sm font-light uppercase">@2024</h1>
                 <h1 class="text-sm font-light uppercase">@2024</h1>
             </div>
-        </div>
+        </div>  
     </div>
 @endsection
