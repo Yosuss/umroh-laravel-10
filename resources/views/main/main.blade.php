@@ -18,9 +18,9 @@
             <div class="info w-8/12">
                 <h1 class="font-bold text-2xl mb-5">Ahian wa sahlan <span class="font-normal">di situs resmi</span></h1>
                 <h1 class="text-6xl font-bold text-blue-600	mb-4">Mulai Umrohmu bersama</h1>
-                <h1 class="text-6xl font-bold text-blue-600 mb-4">Sinai Umroh Cabang</h1>
+                <h1 class="text-6xl font-bold text-blue-600 mb-4">Sinai Umroh cabang</h1>
                 <h1 class="text-6xl font-bold text-blue-600 mb-4">Indarung Padang.</h1>
-                <h1 class="mt-8 text-2xl font-light">Halo calon jamaah umroh kami adalah mitra terpercaya untuk perjalanan
+                <h1 class="mt-8 text-2xl font-light w-11/12">Halo calon jamaah umroh kami adalah mitra terpercaya untuk perjalanan
                     spiritual anda dengan pengalaman <span class="font-bold">8+ tahun</span> kami siap mendampingi ibdadah
                     umroh dan haji anda</h1>
                 <div class="button font-medium text-white mt-5">
@@ -28,9 +28,13 @@
                     <button class="border-2 border-black capitalize text-lg px-6 py-3 text-black rounded-3xl">masu ></button>
                 </div>
             </div>
-            <div class="justify-center">
-                <div class="testimonial text-center w-4/12 h-80 bg-gray-300 shadow-lg mx-10">
+            <div class="flex justify-center items-center w-5/12 relative">
+                <div class="rounded-2xl bg-white p-4 absolute top-2 left-[-2rem]">
+                    <h1 class="font-bold text-xl">8+ years</h1>
+                    <h1 class="text-xl">experience</h1>
                 </div>
+                <img src="{{asset('aset/mekah.jpg')}}" alt="mekah" class="rounded-2xl w-[30rem]">
+                <img src="{{asset('aset/kakbah.jpg')}}" alt="kakbah" class="rounded-2xl absolute w-[15rem] bottom-2 right-[-2rem]">
             </div>
         </div>
 
@@ -81,14 +85,15 @@
         </div>
 
         <div class="dream m-20 grid grid-cols-2 gap-2">
-            <div class="image mx-10 p-100 h-96 bg-gray-300 rounded-xl">
+            {{-- <div class="image mx-10 p-100 h-96 bg-gray-300 rounded-xl">
 
-            </div>
+            </div> --}}
+            <img src="{{asset('aset/tower.jpg')}}" alt="tower" class="rounded-3xl mx-10 w-[35rem] h-[27rem]">
             <div class="dream-detail w-fit">
                 <h1 class="text-xl text-medium text-blue-600">Ingin umroh tapi terbentur biaya?</h1>
                 <h1 class="text-3xl font-semibold mt-4">Wujudkan impian tersebut bersama</h1>
                 <h1 class="text-3xl font-semibold">Kami dalam nabung umrah</h1>
-                <h1 class="text-2xl mt-4 font-semibold">mengisi formulir pendaftaran umroh</h1>
+                <h1 class="text-2xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
                 <div class="requirement grid grid-rows-3 gap-2">
                     <div class="require flex items-center gap-2">
                         <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
@@ -103,6 +108,18 @@
                         <h1 class="text-xl">Mengisi formulir pembukaan rekening bank syarah ( BSI,BRI,Nagari syariah )</h1>
                     </div>
                 </div>
+                <div class="grid grid-cols-2 justify-between">
+                    <div class="pagination mt-14 flex gap-2">
+                        <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                        <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                        <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                    </div>
+                    <div class="slide mt-10 flex gap-4 justify-end">
+                        <div class="border-2 border-blue-400 text-blue-400 items-center text-2xl rounded-full w-fit p-2"> < </div>
+                        <div class="border-2 bg-blue-400 text-white  items-center text-2xl rounded-full w-fit p-2"> > </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
