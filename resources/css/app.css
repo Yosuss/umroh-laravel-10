@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .packet-1:hover button {
     background-color: #fff;
     color: #E9B634;
