@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.packet-1:hover button {
+    background-color: #fff;
+    color: #E9B634;
+    transition-duration: 200ms;
+}
+
+.packet-2:hover button {
+    background-color: #fff;
+    color: rgb(37 99 235);
+    transition-duration: 200ms;
+}
+
+.mail .langganan {
+    background-color: #E9B634;
+}
