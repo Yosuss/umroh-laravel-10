@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .packet-1:hover button {
     background-color: #fff;
-    color: #E9B634;
+    color: #e9b634;
     transition-duration: 200ms;
 }
 
@@ -16,5 +15,11 @@
 }
 
 .mail .langganan {
-    background-color: #E9B634;
+    background-color: #e9b634;
+}
+
+@media screen and (min-width: 1300px) and (max-width: 2080px) {
+    :root {
+        font: 1.1vw;
+    }
 }
