@@ -53,46 +53,46 @@
         {{-- regist-page end --}}
 
         {{-- about me --}}
-        <div class="about-me capitalize text-lg p-20 bg-blue-600 w-full">
+        <div class="about-me capitalize text-lg py-10 px-4 lg:p-20 bg-blue-600 w-full">
             <h1 class="text-xl text-medium text-blue-600 w-fit py-2 px-4 rounded-3xl bg-white">tentang kami.</h1>
-            <div class="detail grid grid-cols-1 lg:grid-cols-2 gap-6 text-white">
-                <h1 class="text-4xl font-semibold mt-4 w-full lg:w-8/12">Siapa sih Sinai Umroh Indarung Padang itu?</h1>
+            <div class="detail grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6 text-white">
+                <h1 class="text-4xl font-semibold mb-4 mt-4 w-full lg:w-8/12">Siapa sih Sinai Umroh Indarung Padang itu?</h1>
                 <h1 class="text-xl justify-end">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem porro
                     ducimus id repudiandae soluta modi, aliquid expedita mollitia minus quo est magnam nemo a perferendis,
                     reprehenderit, quasi ullam! Doloremque odio doloribus, provident illo facere laudantium ab repudiandae
                     omnis ipsum in?</h1>
             </div>
 
-            <div class="items grid grid-cols-1 lg:grid-cols-3 justify-center gap-8 mt-10">
-                <div class="flex flex-col items-center bg-white p-4 rounded-lg text-center">
-                    <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
+            <div class="items grid grid-cols-1 lg:grid-cols-3 justify-center gap-0 lg:gap-8 mt-10">
+                <div class="flex flex-col items-center bg-white p-4 lg:rounded-lg text-center">
+                <img src="{{ asset('aset/mail.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
                     <h1 class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ex consequuntur autem
                         soluta ut pariatur! Repudiandae sapiente maxime velit? Impedit!</h1>
                 </div>
-                <div class="flex flex-col items-center bg-white p-4 rounded-lg text-center">
-                    <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
+                <div class="flex flex-col items-center bg-white p-4 lg:rounded-lg text-center">
+                <img src="{{ asset('aset/person.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
                     <h1 class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ex consequuntur autem
                         soluta ut pariatur! Repudiandae sapiente maxime velit? Impedit!</h1>
                 </div>
-                <div class="flex flex-col items-center bg-white p-4 rounded-lg text-center">
-                    <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
+                <div class="flex flex-col items-center bg-white p-4 lg:rounded-lg text-center">
+                <img src="{{ asset('aset/personpc.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
                     <h1 class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ex consequuntur autem
                         soluta ut pariatur! Repudiandae sapiente maxime velit? Impedit!</h1>
                 </div>
             </div>
 
-            <div class="items grid grid-cols-1 lg:grid-cols-2 justify-center gap-8 mt-5 px-0 lg:px-60">
-                <div class="flex flex-col items-center bg-white p-4 rounded-lg text-center">
-                    <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
+            <div class="items grid grid-cols-1 lg:grid-cols-2 justify-center gap-0 lg:gap-8 lg:mt-5 px-0 lg:px-60">
+                <div class="flex flex-col items-center bg-white p-4 lg:rounded-lg text-center">
+                <img src="{{ asset('aset/mailc.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
                     <h1 class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ex consequuntur autem
                         soluta ut pariatur! Repudiandae sapiente maxime velit? Impedit!</h1>
                 </div>
-                <div class="flex flex-col items-center bg-white p-4 rounded-lg text-center">
-                    <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
+                <div class="flex flex-col items-center bg-white p-4 lg:rounded-lg text-center">
+                <img src="{{ asset('aset/protect.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
                     <h1 class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ex consequuntur autem
                         soluta ut pariatur! Repudiandae sapiente maxime velit? Impedit!</h1>
@@ -101,14 +101,34 @@
         </div>
         {{-- about me end --}}
 
+        {{-- dokumentation --}}
+        <div class="dokumentation lg:px-60 my-20 py-10 w-full text-center">
+            <h1 class="text-xl mx-auto text-medium text-yellow-600 bg-yellow-100 w-fit px-4 py-2 rounded-full">Kenangan Suci dalam Setiap Jejak?</h1>
+            <h1 class="text-4xl font-semibold mt-2">Setiap foto <span class="text-yellow-600">berceriita</span>, setiap senyuman penuh <span class="text-blue-600">syukur</span>.</h1>
+            <h1 class="text-4xl font-semibold mt-2 mb-12">Yuk, jelajahi galeri kami!</h1>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="">
+                    <img src="{{ asset('aset/dc1.svg') }}" alt="tower" class="mb-6">
+                    <img src="{{ asset('aset/dc2.svg') }}" alt="tower" class="">
+                </div>
+                <div class="">
+                    <img src="{{ asset('aset/dc3.svg') }}" alt="tower" class="w-full h-full object-cover">
+                </div>
+                <div class="">
+                    <img src="{{ asset('aset/dc4.svg') }}" alt="tower" class="w-full h-full object-cover hidden lg:hidden	">
+                </div>
+            </div>
+        </div>
+        {{-- dokumentation end --}}
+
         {{-- dream-page --}}
-        <div class="dream mx-5 m-20 lg:m-20 grid grid-cols-1 lg:grid-cols-2 gap-2">
+        <div class="dream mx-0 px-10 lg:mx-5 py-16 m-20 lg:m-0 grid grid-cols-1 lg:grid-cols-2 gap-2 bg-blue-600 w-full">
             {{-- <div class="image mx-10 p-100 h-96 bg-gray-300 rounded-xl">
 
             </div> --}}
-            <img src="{{ asset('aset/tower.jpg') }}" alt="tower" class="rounded-3xl mx-0 lg:mx-10 w-[35rem] h-[27rem]">
-            <div class="dream-detail w-fit">
-                <h1 class="text-xl text-medium text-blue-600">Ingin umroh tapi terbentur biaya?</h1>
+            <img src="{{ asset('aset/tower.jpg') }}" alt="tower" class="rounded-3xl py-5 lg:py-0 mx-0 lg:mx-10 w-[35rem] h-[27rem]">
+            <div class="dream-detail w-fit text-white">
+                <h1 class="text-xl text-medium text-yellow-600 bg-yellow-100 w-fit px-4 py-2 rounded-full">Ingin umroh tapi terbentur biaya?</h1>
                 <h1 class="text-3xl font-semibold mt-4">Wujudkan impian tersebut bersama</h1>
                 <h1 class="text-3xl font-semibold">Kami dalam nabung umrah</h1>
                 <h1 class="text-2xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
@@ -129,30 +149,27 @@
                 </div>
                 <div class="grid grid-cols-2 justify-between">
                     <div class="pagination mt-14 flex gap-2">
-                        <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
                         <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
                         <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
                     </div>
                     <div class="slide mt-10 flex gap-4 justify-end">
-                        <i class="bi bi-arrow-left-circle text-4xl text-blue-600"></i>
-                        <i class="bi bi-arrow-right-circle-fill text-4xl text-blue-600"></i>
+                        <i class="bi bi-arrow-left-circle text-4xl text-white"></i>
+                        <i class="bi bi-arrow-right-circle-fill text-4xl text-white"></i>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
         {{-- dream-page end --}}
 
         {{-- packet --}}
-        <div class="packets mt-4 mx-10 lg:mx-60  text-center">
+        <div class="packets mt-28 mx-10 lg:mx-60 text-center">
             <h1 class="text-xl text-medium text-blue-600 semi-bodl">paket perjalanan ibadah</h1>
             <h1 class="text-4xl font-semibold mt-2">Yuk, umroh bareng sinai Umrah Pilihlah paket yang nyaman, biar ibadah
                 main berkesan</h1>
             <div class="packet grid grid-cols-1 lg:grid-cols-3 mt-6 gap-8">
                 <div
-                    class="packet-1 rounded-3xl bg-gradient-to-b from-white via-yellow-100 to-yellow-200 text-left mt-4 p-8 bg-white grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
+                    class="packet-1 rounded-3xl bg-gradient-to-b from-white via-yellow-100 to-yellow-200 text-left mt-4 p-8 grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
                     <h1 class="text-2xl text-semibold">product sinai agustus</h1>
                     <h1 class="font-bold text-lg uppercase">rp <span class="capitalize font-bold text-3xl">35,5 juta</span>
                     </h1>
@@ -171,7 +188,7 @@
                 </div>
 
                 <div
-                    class="packet-2 rounded-3xl bg-gradient-to-b from-white via-blue-100 to-blue-200 text-left mt-4 p-8 bg-white grid gap-4 hover:text-white hover:bg-blue-600 duration-200">
+                    class="packet-2 rounded-3xl bg-gradient-to-b from-white via-blue-100 to-blue-200 text-left mt-4 p-8 grid gap-4 hover:text-white hover:bg-blue-600 duration-200">
                     <h1 class="text-2xl text-semibold">product sinai agustus</h1>
                     <h1 class="font-bold text-lg uppercase">rp <span class="capitalize font-bold text-3xl">35,5
                             juta</span>
@@ -191,7 +208,7 @@
                 </div>
 
                 <div
-                    class="packet-1 rounded-3xl bg-gradient-to-b from-white via-yellow-100 to-yellow-200 text-left mt-4 p-8 bg-white grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
+                    class="packet-1 rounded-3xl bg-gradient-to-b from-white via-yellow-100 to-yellow-200 text-left mt-4 p-8 grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
                     <h1 class="text-2xl text-semibold">product sinai agustus</h1>
                     <h1 class="font-bold text-lg uppercase">rp <span class="capitalize font-bold text-3xl">35,5
                             juta</span>
@@ -221,7 +238,7 @@
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-4">Gimana perasaan mereka</h1>
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-2 mb-6">dengan sinai Umroh?</h1>
                 </div>
-                <div class="flex gap-4 items-end justify-end mb-6">
+                <div class="flex gap-4 items-start lg:items-end justify-end mb-6">
                     <i class="bi bi-arrow-left-circle text-4xl text-white"></i>
                     <i class="bi bi-arrow-right-circle-fill text-4xl text-white"></i>
                 </div>
@@ -288,7 +305,7 @@
             <div class=" mt-20 grid grid-cols-1 lg:grid-cols-2 bg-black text-white px-5 lg:px-20 py-10">
                 <div class="katalog grid">
                     <h1 class="text-sm font-light uppercase">katalog</h1>
-                    <div class="grid grid-cols-6 mt-4 w-full lg:w-4/6 justify-center gap-6">
+                    <div class="grid grid-cols-6 mt-4 w-full lg:w-4/6 justify-center gap-1">
                         <h1 class="capitalize text-lg">beranda</h1>
                         <h1 class="text-center">/</h1>
                         <h1 class="capitalize text-lg">layanan</h1>
@@ -299,7 +316,7 @@
                         <h1 class="text-center">/</h1>
                         <h1 class="capitalize text-lg">hubungi<span class="capitalize ml-2">kami</span></h1>
                     </div>
-                    <div class="mt-8 w-8/12">
+                    <div class="mt-32 w-8/12">
                         <h1 class="text-3xl font-bold">Book your trip in minute,get full Control for much longer.</h1>
                     </div>
                 </div>
