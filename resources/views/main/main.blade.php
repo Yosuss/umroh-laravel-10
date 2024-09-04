@@ -47,7 +47,7 @@
                 <img src="{{ asset('aset/mekah.jpg') }}" alt="mekah" class="rounded-2xl w-[30rem]">
                 <img src="{{ asset('aset/kakbah.jpg') }}" alt="kakbah"
                     class="rounded-2xl absolute w-[15rem] bottom-2 right-[-2rem]"> --}}
-                <img src="{{ asset('aset/hero.svg') }}" alt="tower" class="rounded-3xl lg:w-full w-200 mx-0 lg:mx-10 ">
+                <img src="{{ asset('aset/hero.svg') }}" alt="tower" class="rounded-3xl lg:w-full w-200 ">
             </div>
         </div>
         {{-- regist-page end --}}
@@ -122,7 +122,7 @@
         {{-- dokumentation end --}}
 
         {{-- dream-page --}}
-        <div class="dream mx-0 px-10 lg:mx-5 py-16 m-20 lg:m-0 grid grid-cols-1 lg:grid-cols-2 gap-2 bg-blue-800 w-full">
+        <div class="dream mx-0 px-10 lg:mx-0 py-16 m-20 lg:m-0 grid grid-cols-1 lg:grid-cols-2 gap-2 bg-blue-800 w-full">
             <div class="flex justofy-center items-center px-20">
                 <div class="bg-blue-100 px-6 lg:py-10 w-fit rounded-lg">
                     <img src="{{ asset('aset/tower.jpg') }}" alt="tower" class="rounded-3xl py-5 lg:py-0 mx-0 lg:mx-10 lg:w-4/6 lg:h-1/2 h-[27rem]">
@@ -336,10 +336,10 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright grid grid-cols-1 lg:grid-cols-3 w-full py-10 text-white">
+            <div class="copyright grid grid-cols-1 lg,md:mx-6 lg:grid-cols-3 w-full py-10 text-white">
                 <h1 class="text-sm font-light uppercase px-20">@2024</h1>
                 <h1 class="text-sm font-light uppercase px-[15rem]">@2024</h1>
-                <h1 class="text-sm font-light uppercase pl-[21rem]">@2024</h1>
+                <h1 class="text-sm font-light uppercase lg:pl-[10rem] md:pl-0 pl-[21rem]">@2024</h1>
             </div>
         </div>
         {{-- footer end --}}
