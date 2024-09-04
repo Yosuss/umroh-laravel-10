@@ -17,17 +17,17 @@
         {{-- navbar end --}}
 
         {{-- regist-page --}}
-        <div class="register flex flex-1 lg:flex-2 gap-2 mt-20 m-20">
-            <div class="info w-8/12">
+        <div class="register flex flex-col lg:flex-row gap-2 mt-20 m-10 lg:m-20">
+            <div class="info w-full lg:w-8/12">
                 <h1 class="font-bold text-2xl mb-5">Ahian wa sahlan <span class="font-normal">di situs resmi</span></h1>
                 <h1 class="text-6xl font-bold text-yellow-400 mb-4">Mulai Umrohmu bersama</h1>
-                <h1 class="text-6xl font-bold text-blue-600 mb-4">Sinai Umroh cabang</h1>
-                <h1 class="text-6xl font-bold text-blue-600 mb-4">Indarung Padang.</h1>
+                <h1 class="text-6xl font-bold text-blue-800 mb-4">Sinai Umroh cabang</h1>
+                <h1 class="text-6xl font-bold text-blue-800 mb-4">Indarung Padang.</h1>
                 <h1 class="mt-8 text-2xl font-light w-11/12">Halo calon jamaah umroh kami adalah mitra terpercaya untuk
                     perjalanan
                     spiritual anda dengan pengalaman <span class="font-bold">8+ tahun</span> kami siap mendampingi ibdadah
                     umroh dan haji anda</h1>
-                <div class="button font-medium text-white mt-5">
+                <div class="button font-medium text-white mt-5 flex">
                     <button class="bg-yellow-400 capitalize text-lg px-6 py-3 mr-4 rounded-3xl">daftar sekarang</button>
                     <button
                         class="border-2 inline-flex items-center gap-4 border-black capitalize text-lg px-6 py-3 text-black rounded-3xl">masuk
@@ -47,14 +47,14 @@
                 <img src="{{ asset('aset/mekah.jpg') }}" alt="mekah" class="rounded-2xl w-[30rem]">
                 <img src="{{ asset('aset/kakbah.jpg') }}" alt="kakbah"
                     class="rounded-2xl absolute w-[15rem] bottom-2 right-[-2rem]"> --}}
-                <img src="{{ asset('aset/hero.svg') }}" alt="tower" class="rounded-3xl mx-0 lg:mx-10 ">
+                <img src="{{ asset('aset/hero.svg') }}" alt="tower" class="rounded-3xl lg:w-full w-200 mx-0 lg:mx-10 ">
             </div>
         </div>
         {{-- regist-page end --}}
 
         {{-- about me --}}
-        <div class="about-me capitalize text-lg py-10 px-4 lg:p-20 bg-blue-600 w-full">
-            <h1 class="text-xl text-medium text-blue-600 w-fit py-2 px-4 rounded-3xl bg-white">tentang kami.</h1>
+        <div class="about-me capitalize text-lg py-10 px-4 lg:p-20 bg-blue-800 w-full">
+            <h1 class="text-xl text-medium text-blue-800 w-fit py-2 px-4 rounded-3xl bg-white">tentang kami.</h1>
             <div class="detail grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6 text-white">
                 <h1 class="text-4xl font-semibold mb-4 mt-4 w-full lg:w-8/12">Siapa sih Sinai Umroh Indarung Padang itu?</h1>
                 <h1 class="text-xl justify-end">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem porro
@@ -104,7 +104,7 @@
         {{-- dokumentation --}}
         <div class="dokumentation lg:px-60 my-20 py-10 w-full text-center">
             <h1 class="text-xl mx-auto text-medium text-yellow-600 bg-yellow-100 w-fit px-4 py-2 rounded-full">Kenangan Suci dalam Setiap Jejak?</h1>
-            <h1 class="text-4xl font-semibold mt-2">Setiap foto <span class="text-yellow-600">berceriita</span>, setiap senyuman penuh <span class="text-blue-600">syukur</span>.</h1>
+            <h1 class="text-4xl font-semibold mt-2">Setiap foto <span class="text-yellow-600">bercerita</span>, setiap senyuman penuh <span class="text-blue-800">syukur</span>.</h1>
             <h1 class="text-4xl font-semibold mt-2 mb-12">Yuk, jelajahi galeri kami!</h1>
             <div class="grid grid-cols-3 gap-6">
                 <div class="">
@@ -115,18 +115,18 @@
                     <img src="{{ asset('aset/dc3.svg') }}" alt="tower" class="w-full h-full object-cover">
                 </div>
                 <div class="">
-                    <img src="{{ asset('aset/dc4.svg') }}" alt="tower" class="w-full h-full object-cover hidden lg:hidden	">
+                    <img src="{{ asset('aset/dc4.svg') }}" alt="tower" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
         {{-- dokumentation end --}}
 
         {{-- dream-page --}}
-        <div class="dream mx-0 px-10 lg:mx-5 py-16 m-20 lg:m-0 grid grid-cols-1 lg:grid-cols-2 gap-2 bg-blue-600 w-full">
+        <div class="dream mx-0 px-10 lg:mx-5 py-16 m-20 lg:m-0 grid grid-cols-1 lg:grid-cols-2 gap-2 bg-blue-800 w-full">
             {{-- <div class="image mx-10 p-100 h-96 bg-gray-300 rounded-xl">
 
             </div> --}}
-            <img src="{{ asset('aset/tower.jpg') }}" alt="tower" class="rounded-3xl py-5 lg:py-0 mx-0 lg:mx-10 w-[35rem] h-[27rem]">
+            <img src="{{ asset('aset/towerw.svg') }}" alt="tower" class="rounded-3xl py-5 lg:py-0 mx-0 lg:mx-10 h-[27rem]">
             <div class="dream-detail w-fit text-white">
                 <h1 class="text-xl text-medium text-yellow-600 bg-yellow-100 w-fit px-4 py-2 rounded-full">Ingin umroh tapi terbentur biaya?</h1>
                 <h1 class="text-3xl font-semibold mt-4">Wujudkan impian tersebut bersama</h1>
@@ -134,15 +134,15 @@
                 <h1 class="text-2xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
                 <div class="requirement grid grid-rows-3 gap-2">
                     <div class="require flex items-center gap-4 mt-6">
-                        <i class="bi bi-check2 text-xl p-1 px-2 rounded-full bg-blue-200 text-blue-600"></i>
+                        <i class="bi bi-check2 text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
                         <h1 class="text-xl">Menyiapkan KTP</h1>
                     </div>
                     <div class="require flex items-center gap-4">
-                        <i class="bi bi-check2 text-xl p-1 px-2 rounded-full bg-blue-200 text-blue-600"></i>
+                        <i class="bi bi-check2 text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
                         <h1 class="text-xl">Mengisi formulir pendaftaran umroh</h1>
                     </div>
                     <div class="require flex items-center gap-4">
-                        <i class="bi bi-check2 text-xl p-1 px-2 rounded-full bg-blue-200 text-blue-600"></i>
+                        <i class="bi bi-check2 text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
                         <h1 class="text-xl w-8/12">Mengisi formulir pembukaan rekening bank syarah ( BSI,BRI,Nagari syariah
                             )</h1>
                     </div>
@@ -164,12 +164,12 @@
 
         {{-- packet --}}
         <div class="packets mt-28 mx-10 lg:mx-60 text-center">
-            <h1 class="text-xl text-medium text-blue-600 semi-bodl">paket perjalanan ibadah</h1>
+            <h1 class="text-xl text-medium text-blue-800 semi-bodl">paket perjalanan ibadah</h1>
             <h1 class="text-4xl font-semibold mt-2">Yuk, umroh bareng sinai Umrah Pilihlah paket yang nyaman, biar ibadah
                 main berkesan</h1>
             <div class="packet grid grid-cols-1 lg:grid-cols-3 mt-6 gap-8">
                 <div
-                    class="packet-1 rounded-3xl bg-gradient-to-b from-white via-yellow-100 to-yellow-200 text-left mt-4 p-8 grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
+                    class="packet-1 rounded-3xl bg-yellow-50 text-left mt-4 p-8 grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
                     <h1 class="text-2xl text-semibold">product sinai agustus</h1>
                     <h1 class="font-bold text-lg uppercase">rp <span class="capitalize font-bold text-3xl">35,5 juta</span>
                     </h1>
@@ -188,7 +188,7 @@
                 </div>
 
                 <div
-                    class="packet-2 rounded-3xl bg-gradient-to-b from-white via-blue-100 to-blue-200 text-left mt-4 p-8 grid gap-4 hover:text-white hover:bg-blue-600 duration-200">
+                    class="packet-2 rounded-3xl bg-blue-50 text-left mt-4 p-8 grid gap-4 hover:text-white hover:bg-blue-800 duration-200">
                     <h1 class="text-2xl text-semibold">product sinai agustus</h1>
                     <h1 class="font-bold text-lg uppercase">rp <span class="capitalize font-bold text-3xl">35,5
                             juta</span>
@@ -202,13 +202,13 @@
                         <h1 class="capitalize text-lg">dapat 2x jum'at</h1>
                         <h1 class="capitalize text-lg">free thaif & kereta gantung</h1>
                         <button
-                            class="bg-blue-600 w-full py-2 rounded-xl text-white text-semibold hover:text-blue-600 hover:bg-white duration-200">pilih
+                            class="bg-blue-800 w-full py-2 rounded-xl text-white text-semibold hover:text-blue-800 hover:bg-white duration-200">pilih
                             paket</button>
                     </div>
                 </div>
 
                 <div
-                    class="packet-1 rounded-3xl bg-gradient-to-b from-white via-yellow-100 to-yellow-200 text-left mt-4 p-8 grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
+                    class="packet-1 rounded-3xl bg-yellow-50 text-left mt-4 p-8 grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
                     <h1 class="text-2xl text-semibold">product sinai agustus</h1>
                     <h1 class="font-bold text-lg uppercase">rp <span class="capitalize font-bold text-3xl">35,5
                             juta</span>
@@ -231,7 +231,7 @@
         {{-- packet end --}}
 
         {{-- testimoni --}}
-        <div class="testimonial mt-20 p-10 lg:mx-0 lg:pt-10 lg:px-40 lg:pb-2 bg-blue-600 ">
+        <div class="testimonial mt-20 p-10 lg:mx-0 lg:pt-10 lg:px-40 lg:pb-2 bg-blue-800 ">
             <div class="grid grid-cols-1 lg:grid-cols-2 justify-between">
                 <div class="text-white">
                     <h1 class="text-xl text-medium capitalize">testimoni</h1>
@@ -288,7 +288,7 @@
         {{-- ending information --}}
         <div class="w-full flex items-center justify-center text-center mt-20">
             <div class="ending-information p-8 w-fit rounded-xl">
-                <h1 class="text-xl font-medium text-blue-600 capitalize">Temukan informasi lebih</h1>
+                <h1 class="text-xl font-medium text-blue-800 capitalize">Temukan informasi lebih</h1>
                 <h1 class="text-3xl font-semibold mt-4">Dapatkan informasi terkait promo, diskon atau</h1>
                 <h1 class="text-3xl font-semibold mt-4">informasi menarik lainnya dengan subscribe</h1>
                 <h1 class="text-3xl font-semibold mt-4">ke email kami.</h1>
