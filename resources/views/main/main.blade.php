@@ -2,7 +2,7 @@
 @section('konten')
     <div class="pages w-full font-sans">
         {{-- navbar --}}
-        <div class="navbar justify-between capitalize text-lg grid grid-cols-2 mt-12 mx-0 md:ml-20 md:mr-10">
+        <div class="navbar justify-between capitalize text-lg grid grid-cols-2 mt-12 mx-0 lg:ml-20 lg:mr-10">
             <div class="logo font-extrabold text-3xl">
                 <h1>logo</h1>
             </div>
@@ -17,10 +17,10 @@
         {{-- navbar end --}}
 
         {{-- regist-page --}}
-        <div class="register flex flex-1 md:flex-2 gap-2 mt-20 m-20">
+        <div class="register flex flex-1 lg:flex-2 gap-2 mt-20 m-20">
             <div class="info w-8/12">
                 <h1 class="font-bold text-2xl mb-5">Ahian wa sahlan <span class="font-normal">di situs resmi</span></h1>
-                <h1 class="text-6xl font-bold text-blue-600	mb-4">Mulai Umrohmu bersama</h1>
+                <h1 class="text-6xl font-bold text-yellow-400 mb-4">Mulai Umrohmu bersama</h1>
                 <h1 class="text-6xl font-bold text-blue-600 mb-4">Sinai Umroh cabang</h1>
                 <h1 class="text-6xl font-bold text-blue-600 mb-4">Indarung Padang.</h1>
                 <h1 class="mt-8 text-2xl font-light w-11/12">Halo calon jamaah umroh kami adalah mitra terpercaya untuk
@@ -28,11 +28,15 @@
                     spiritual anda dengan pengalaman <span class="font-bold">8+ tahun</span> kami siap mendampingi ibdadah
                     umroh dan haji anda</h1>
                 <div class="button font-medium text-white mt-5">
-                    <button class="bg-blue-600 capitalize text-lg px-6 py-3 mr-4 rounded-3xl">daftar sekarang</button>
-                    <button class="border-2 inline-flex items-center gap-4 border-black capitalize text-lg px-6 py-3 text-black rounded-3xl">masuk <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 10.6172L10 1.38281M10 1.38281H1M10 1.38281V10.3828" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <button class="bg-yellow-400 capitalize text-lg px-6 py-3 mr-4 rounded-3xl">daftar sekarang</button>
+                    <button
+                        class="border-2 inline-flex items-center gap-4 border-black capitalize text-lg px-6 py-3 text-black rounded-3xl">masuk
+                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 10.6172L10 1.38281M10 1.38281H1M10 1.38281V10.3828" stroke="#1E1E1E"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                        </button>
+                    </button>
                 </div>
             </div>
             <div class="flex justify-center items-center w-5/12 relative">
@@ -43,22 +47,23 @@
                 <img src="{{ asset('aset/mekah.jpg') }}" alt="mekah" class="rounded-2xl w-[30rem]">
                 <img src="{{ asset('aset/kakbah.jpg') }}" alt="kakbah"
                     class="rounded-2xl absolute w-[15rem] bottom-2 right-[-2rem]"> --}}
-                <img src="{{ asset('aset/hero.svg') }}" alt="tower" class="rounded-3xl mx-0 md:mx-10 ">
+                <img src="{{ asset('aset/hero.svg') }}" alt="tower" class="rounded-3xl mx-0 lg:mx-10 ">
             </div>
         </div>
         {{-- regist-page end --}}
 
         {{-- about me --}}
-        <div class="about-me capitalize text-lg m-20">
-            <h1 class="text-xl text-medium text-blue-600">tentang kami.</h1>
-            <div class="detail grid grid-cols-1 md:grid-cols-2 gap-6">
-                <h1 class="text-4xl font-semibold mt-4 w-full md:w-8/12">Siapa sih Sinai Umroh Indarung Padang itu?</h1>
-                <h1 class="text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dolorem sed iure odit?
-                    Dignissimos, qui reprehenderit. Tenetur provident recusandae, aut laboriosam qui veniam necessitatibus
-                    nihil.</h1>
+        <div class="about-me capitalize text-lg p-20 bg-blue-600 w-full">
+            <h1 class="text-xl text-medium text-blue-600 w-fit py-2 px-4 rounded-3xl bg-white">tentang kami.</h1>
+            <div class="detail grid grid-cols-1 lg:grid-cols-2 gap-6 text-white">
+                <h1 class="text-4xl font-semibold mt-4 w-full lg:w-8/12">Siapa sih Sinai Umroh Indarung Padang itu?</h1>
+                <h1 class="text-xl justify-end">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem porro
+                    ducimus id repudiandae soluta modi, aliquid expedita mollitia minus quo est magnam nemo a perferendis,
+                    reprehenderit, quasi ullam! Doloremque odio doloribus, provident illo facere laudantium ab repudiandae
+                    omnis ipsum in?</h1>
             </div>
 
-            <div class="items grid grid-cols-1 md:grid-cols-3 justify-center gap-8 mt-10">
+            <div class="items grid grid-cols-1 lg:grid-cols-3 justify-center gap-8 mt-10">
                 <div class="flex flex-col items-center bg-white p-4 rounded-lg text-center">
                     <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
                     <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
@@ -79,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="items grid grid-cols-1 md:grid-cols-2 justify-center gap-8 mt-5 px-0 md:px-60">
+            <div class="items grid grid-cols-1 lg:grid-cols-2 justify-center gap-8 mt-5 px-0 lg:px-60">
                 <div class="flex flex-col items-center bg-white p-4 rounded-lg text-center">
                     <div class="icon p-2 w-fit rounded-full bg-blue-100 text-blue-300">O</div>
                     <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
@@ -97,11 +102,11 @@
         {{-- about me end --}}
 
         {{-- dream-page --}}
-        <div class="dream mx-5 md:m-20 grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div class="dream mx-5 m-20 lg:m-20 grid grid-cols-1 lg:grid-cols-2 gap-2">
             {{-- <div class="image mx-10 p-100 h-96 bg-gray-300 rounded-xl">
 
             </div> --}}
-            <img src="{{ asset('aset/tower.jpg') }}" alt="tower" class="rounded-3xl mx-0 md:mx-10 w-[35rem] h-[27rem]">
+            <img src="{{ asset('aset/tower.jpg') }}" alt="tower" class="rounded-3xl mx-0 lg:mx-10 w-[35rem] h-[27rem]">
             <div class="dream-detail w-fit">
                 <h1 class="text-xl text-medium text-blue-600">Ingin umroh tapi terbentur biaya?</h1>
                 <h1 class="text-3xl font-semibold mt-4">Wujudkan impian tersebut bersama</h1>
@@ -118,7 +123,8 @@
                     </div>
                     <div class="require flex items-center gap-4">
                         <i class="bi bi-check2 text-xl p-1 px-2 rounded-full bg-blue-200 text-blue-600"></i>
-                        <h1 class="text-xl w-8/12">Mengisi formulir pembukaan rekening bank syarah ( BSI,BRI,Nagari syariah )</h1>
+                        <h1 class="text-xl w-8/12">Mengisi formulir pembukaan rekening bank syarah ( BSI,BRI,Nagari syariah
+                            )</h1>
                     </div>
                 </div>
                 <div class="grid grid-cols-2 justify-between">
@@ -135,20 +141,20 @@
 
             </div>
 
-            
+
         </div>
         {{-- dream-page end --}}
 
         {{-- packet --}}
-        <div class="packets mt-4 mx-10 md:mx-60 text-center">
+        <div class="packets mt-4 mx-10 lg:mx-60  text-center">
             <h1 class="text-xl text-medium text-blue-600 semi-bodl">paket perjalanan ibadah</h1>
             <h1 class="text-4xl font-semibold mt-2">Yuk, umroh bareng sinai Umrah Pilihlah paket yang nyaman, biar ibadah
                 main berkesan</h1>
-            <div class="packet grid grid-cols-1 md:grid-cols-3 mt-6 gap-8">
+            <div class="packet grid grid-cols-1 lg:grid-cols-3 mt-6 gap-8">
                 <div
                     class="packet-1 rounded-3xl bg-gradient-to-b from-white via-yellow-100 to-yellow-200 text-left mt-4 p-8 bg-white grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
                     <h1 class="text-2xl text-semibold">product sinai agustus</h1>
-                    <h1 class="font-bold text-md uppercase">rp <span class="capitalize font-bold text-3xl">35,5 juta</span>
+                    <h1 class="font-bold text-lg uppercase">rp <span class="capitalize font-bold text-3xl">35,5 juta</span>
                     </h1>
                     <h1 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos
                         sequi esse.</h1>
@@ -167,7 +173,8 @@
                 <div
                     class="packet-2 rounded-3xl bg-gradient-to-b from-white via-blue-100 to-blue-200 text-left mt-4 p-8 bg-white grid gap-4 hover:text-white hover:bg-blue-600 duration-200">
                     <h1 class="text-2xl text-semibold">product sinai agustus</h1>
-                    <h1 class="font-bold text-md uppercase">rp <span class="capitalize font-bold text-3xl">35,5 juta</span>
+                    <h1 class="font-bold text-lg uppercase">rp <span class="capitalize font-bold text-3xl">35,5
+                            juta</span>
                     </h1>
                     <h1 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos
                         sequi esse.</h1>
@@ -186,7 +193,7 @@
                 <div
                     class="packet-1 rounded-3xl bg-gradient-to-b from-white via-yellow-100 to-yellow-200 text-left mt-4 p-8 bg-white grid gap-4 hover:text-white hover:bg-yellow-400 duration-200">
                     <h1 class="text-2xl text-semibold">product sinai agustus</h1>
-                    <h1 class="font-bold text-md uppercase">rp <span class="capitalize font-bold text-3xl">35,5
+                    <h1 class="font-bold text-lg uppercase">rp <span class="capitalize font-bold text-3xl">35,5
                             juta</span>
                     </h1>
                     <h1 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos
@@ -207,12 +214,12 @@
         {{-- packet end --}}
 
         {{-- testimoni --}}
-        <div class="testimonial mt-20 p-10 md:mx-0 md:pt-10 md:px-40 md:pb-2 bg-blue-600 ">
-            <div class="grid grid-cols-1 md:grid-cols-2 justify-between">
+        <div class="testimonial mt-20 p-10 lg:mx-0 lg:pt-10 lg:px-40 lg:pb-2 bg-blue-600 ">
+            <div class="grid grid-cols-1 lg:grid-cols-2 justify-between">
                 <div class="text-white">
                     <h1 class="text-xl text-medium capitalize">testimoni</h1>
-                    <h1 class="text-3xl md:text-4xl font-semibold mt-4">Gimana perasaan mereka</h1>
-                    <h1 class="text-3xl md:text-4xl font-semibold mt-2 mb-6">dengan sinai Umroh?</h1>
+                    <h1 class="text-3xl lg:text-4xl font-semibold mt-4">Gimana perasaan mereka</h1>
+                    <h1 class="text-3xl lg:text-4xl font-semibold mt-2 mb-6">dengan sinai Umroh?</h1>
                 </div>
                 <div class="flex gap-4 items-end justify-end mb-6">
                     <i class="bi bi-arrow-left-circle text-4xl text-white"></i>
@@ -220,7 +227,7 @@
                 </div>
             </div>
 
-            <div class="testimoni-detail grid grid-cols-2 md:grid-cols-3 gap-6 mb-20">
+            <div class="testimoni-detail grid grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
                 <div class="values bg-white rounded-xl">
                     <div class="value flex px-5 pt-5 pb-2 gap-2 items-center">
                         <div class="w-10 h-10 bg-black rounded-full"></div>
@@ -278,10 +285,10 @@
 
         {{-- footer --}}
         <div class="footer bg-black">
-            <div class=" mt-20 grid grid-cols-1 md:grid-cols-2 bg-black text-white px-5 md:px-20 py-10">
+            <div class=" mt-20 grid grid-cols-1 lg:grid-cols-2 bg-black text-white px-5 lg:px-20 py-10">
                 <div class="katalog grid">
                     <h1 class="text-sm font-light uppercase">katalog</h1>
-                    <div class="grid grid-cols-6 mt-4 w-full md:w-4/6 justify-center gap-6">
+                    <div class="grid grid-cols-6 mt-4 w-full lg:w-4/6 justify-center gap-6">
                         <h1 class="capitalize text-lg">beranda</h1>
                         <h1 class="text-center">/</h1>
                         <h1 class="capitalize text-lg">layanan</h1>
@@ -296,7 +303,7 @@
                         <h1 class="text-3xl font-bold">Book your trip in minute,get full Control for much longer.</h1>
                     </div>
                 </div>
-                <div class="flex flex-2 mt-5 md:mt-0 justify-between w-full">
+                <div class="flex flex-2 mt-5 lg:mt-0 justify-between w-full">
                     <div class="contact">
                         <h1 class="text-sm font-light uppercase">kontak</h1>
                         <h1 class="capitalize text-lg mt-4 text-yellow-400">+62 892 161 572</h1>
@@ -311,7 +318,7 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright grid grid-cols-1 md:grid-cols-3 w-full py-10 text-white">
+            <div class="copyright grid grid-cols-1 lg:grid-cols-3 w-full py-10 text-white">
                 <h1 class="text-sm font-light uppercase px-20">@2024</h1>
                 <h1 class="text-sm font-light uppercase px-[15rem]">@2024</h1>
                 <h1 class="text-sm font-light uppercase pl-[21rem]">@2024</h1>
