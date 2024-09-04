@@ -18,8 +18,8 @@
     background-color: #e9b634;
 }
 
-@media screen and (min-width: 1300px) and (max-width: 2080px) {
+@media only screen and (min-width: 1366px) {
     :root {
-        font: 1.1vw;
+        font-size: 1.1vw;
     }
 }

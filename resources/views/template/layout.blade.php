@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
-<body class=" bg-gray-100">
+<body class=" bg-gray-100 max-w[2000px]">
     {{-- @include('komponen.pesan') --}}
     @yield('konten')
 </body>

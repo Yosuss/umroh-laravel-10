@@ -17,10 +17,10 @@
         {{-- navbar end --}}
 
         {{-- regist-page --}}
-        <div class="register flex flex-col lg:flex-row gap-2 mt-20 m-10 lg:m-20">
+        <div class="register flex flex-col lg:flex-row gap-2 mt-20 m-10 lg:mb-36 lg:m-20">
             <div class="info w-full lg:w-8/12">
                 <h1 class="font-bold text-2xl mb-5">Ahian wa sahlan <span class="font-normal">di situs resmi</span></h1>
-                <h1 class="text-6xl font-bold text-yellow-400 mb-4">Mulai Umrohmu bersama</h1>
+                <h1 class="text-6xl font-bold text-yellow-500 mb-4">Mulai Umrohmu bersama</h1>
                 <h1 class="text-6xl font-bold text-blue-800 mb-4">Sinai Umroh cabang</h1>
                 <h1 class="text-6xl font-bold text-blue-800 mb-4">Indarung Padang.</h1>
                 <h1 class="mt-8 text-2xl font-light w-11/12">Halo calon jamaah umroh kami adalah mitra terpercaya untuk
@@ -28,7 +28,7 @@
                     spiritual anda dengan pengalaman <span class="font-bold">8+ tahun</span> kami siap mendampingi ibdadah
                     umroh dan haji anda</h1>
                 <div class="button font-medium text-white mt-5 flex">
-                    <button class="bg-yellow-400 capitalize text-lg px-6 py-3 mr-4 rounded-3xl">daftar sekarang</button>
+                    <button class="bg-yellow-500 capitalize text-lg px-6 py-3 mr-4 rounded-3xl">daftar sekarang</button>
                     <button
                         class="border-2 inline-flex items-center gap-4 border-black capitalize text-lg px-6 py-3 text-black rounded-3xl">masuk
                         <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
@@ -123,10 +123,11 @@
 
         {{-- dream-page --}}
         <div class="dream mx-0 px-10 lg:mx-5 py-16 m-20 lg:m-0 grid grid-cols-1 lg:grid-cols-2 gap-2 bg-blue-800 w-full">
-            {{-- <div class="image mx-10 p-100 h-96 bg-gray-300 rounded-xl">
-
-            </div> --}}
-            <img src="{{ asset('aset/towerw.svg') }}" alt="tower" class="rounded-3xl py-5 lg:py-0 mx-0 lg:mx-10 h-[27rem]">
+            <div class="flex justofy-center items-center px-20">
+                <div class="bg-blue-100 px-6 lg:py-10 w-fit rounded-lg">
+                    <img src="{{ asset('aset/tower.jpg') }}" alt="tower" class="rounded-3xl py-5 lg:py-0 mx-0 lg:mx-10 lg:w-4/6 lg:h-1/2 h-[27rem]">
+                </div>
+            </div>
             <div class="dream-detail w-fit text-white">
                 <h1 class="text-xl text-medium text-yellow-600 bg-yellow-100 w-fit px-4 py-2 rounded-full">Ingin umroh tapi terbentur biaya?</h1>
                 <h1 class="text-3xl font-semibold mt-4">Wujudkan impian tersebut bersama</h1>
@@ -288,7 +289,7 @@
         {{-- ending information --}}
         <div class="w-full flex items-center justify-center text-center mt-20">
             <div class="ending-information p-8 w-fit rounded-xl">
-                <h1 class="text-xl font-medium text-blue-800 capitalize">Temukan informasi lebih</h1>
+                <h1 class="text-xl font-medium text-yellow-400 capitalize">Temukan informasi lebih</h1>
                 <h1 class="text-3xl font-semibold mt-4">Dapatkan informasi terkait promo, diskon atau</h1>
                 <h1 class="text-3xl font-semibold mt-4">informasi menarik lainnya dengan subscribe</h1>
                 <h1 class="text-3xl font-semibold mt-4">ke email kami.</h1>
