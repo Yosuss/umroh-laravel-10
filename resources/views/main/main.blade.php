@@ -11,8 +11,8 @@
                 <!-- Burger Button (visible only on small screens) -->
                 <div class="lg:hidden">
                     <button id="burger" class="p-2 focus:outline-none relative z-[999] flex flex-col justify-center">
-                        <span class="line left-0 w-12 h-1 bg-black translate-y-2 duration-200 mb-2"></span>
-                        <span class="line left-0 w-12 h-1 bg-black translate-y-2 duration-200"></span>                  
+                        <span class="line left-0 w-12 h-1 bg-black duration-200 mb-2"></span>
+                        <span class="line left-0 w-12 h-1 bg-black duration-200"></span>                  
                     </button>
                 </div>
 
