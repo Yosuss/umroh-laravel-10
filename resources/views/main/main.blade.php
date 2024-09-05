@@ -283,7 +283,7 @@
                 </div>
             </div>
 
-            <div class="testimoni-detail grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 lg:mb-20">
+            <div class="testimoni-detail grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 lg:mb-20">
                 <div class="values bg-white rounded-xl">
                     <div class="value flex px-5 pt-5 pb-2 gap-2 items-center">
                         <div class="w-10 h-10 bg-black rounded-full"></div>
@@ -291,11 +291,11 @@
                     </div>
                     <div class="value px-5 pb-5 lg:pb-20 gap-2">
                         <h1 class="pl-4 text-2xl">"</h1>
-                        <h1>Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet, tour guide nya baikk
+                        <h1 class="">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet, tour guide nya baikk
                             bnget, sukses terus Sinai Umrah. </h1>
                     </div>
                 </div>
-                <div class="values bg-white rounded-xl">
+                <div class="values bg-white rounded-xl max-lg:hidden">
                     <div class="value flex px-5 pt-5 pb-2 gap-2 items-center">
                         <div class="w-10 h-10 bg-black rounded-full"></div>
                         <h1 class="capitalize text-lg font-semibold">anugrah</h1>
