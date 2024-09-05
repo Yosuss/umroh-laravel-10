@@ -18,7 +18,12 @@
     background-color: #e9b634;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px){
+    :root {
+        font-size: 1.1vw;
+    }
+}
+@media only screen and (min-height: 1080px){
     :root {
         font-size: 1.1vw;
     }

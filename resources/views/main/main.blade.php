@@ -1,37 +1,39 @@
 @extends('template.layout')
 @section('konten')
-    <div class="pages w-full px font-sans">
+    <div class="pages w-full font-sans">
         {{-- navbar --}}
-        <div class="navbar justify-between capitalize text-lg grid grid-cols-2 mt-12 m-10 lg:ml-20 lg:mr-10">
+        <div class="navbar justify-between capitalize text-lg grid grid-cols-2 mt-12 m-10 lg:ml-20 lg:mr-20">
             <div class="logo font-extrabold text-3xl">
-                <h1>logo</h1>
+                <img src="{{ asset('aset/sinaii.svg') }}" alt="" class="w-1/12">
             </div>
 
             <div class="section flex font-medium text-lg font-sans items-center justify-end">
                 <!-- Burger Button (visible only on small screens) -->
                 <div class="lg:hidden">
-                    <button id="burger" class="p-2 focus:outline-none flex flex-col justify-center">
-                        <span class="line left-0 w-12 h-1 bg-black transition-transform duration-200 mb-4"></span>
-                        <span class="line left-0 w-12 h-[0.] bg-black transition-transform duration-200"></span>                  
+                    <button id="burger" class="p-2 focus:outline-none relative z-[999] flex flex-col justify-center">
+                        <span class="line left-0 w-12 h-1 bg-black translate-y-2 duration-200 mb-2"></span>
+                        <span class="line left-0 w-12 h-1 bg-black translate-y-2 duration-200"></span>                  
                     </button>
                 </div>
 
                 <!-- Menu items -->
-                <div id="menu" class="hidden lg:grid lg:grid-cols-5 space-x-4">
+                <div id="menu" class="hidden lg:grid lg:grid-cols-5 text-center">
                     <h1>beranda</h1>
                     <h1>layanan</h1>
                     <h1>tentang kami</h1>
                     <h1>testimonial</h1>
-                    <h1>hubungi kami</h1>
+                    <h1>hubungi<span class="ml-1">kami</span></h1>
                 </div>
 
                 <!-- Dropdown for mobile -->
-                <div id="dropdown" class="hidden bg-white/30 backdrop-blur-md lg:hidden left-0 w-full space-y-2 mt-2 h-[60rem] z-50 grid grid-rows-5 absolute justify-center items-center">
-                    <h1 class="bg-black text-white text-end py-10">beranda</h1>
-                    <h1 class="bg-black text-white text-end py-10">layanan</h1>
-                    <h1 class="bg-black text-white text-end py-10">tentang kami</h1>
-                    <h1 class="bg-black text-white text-end py-10">testimonial</h1>
-                    <h1 class="bg-black text-white text-end py-10">hubungi kami</h1>
+                <div id="dropdown" class="hidden backdrop-blur-lg top-0 left-0 w-full space-y-2 mt-2 h-screen z-50 absolute ">
+                    <div class="absolute bottom-0 w-full">
+                        <h1 class="bg-black text-white py-4">beranda</h1>
+                        <h1 class="bg-black text-white py-4">layanan</h1>
+                        <h1 class="bg-black text-white py-4">tentang kami</h1>
+                        <h1 class="bg-black text-white py-4">testimonial</h1>
+                        <h1 class="bg-black text-white py-4">hubungi kami</h1>
+                    </div>
                 </div>
             </div>
 
@@ -39,13 +41,13 @@
         {{-- navbar end --}}
 
         {{-- regist-page --}}
-        <div class="register flex flex-col lg:flex-row gap-2 mt-20 m-10 lg:mb-36 lg:m-20">
+        <div class="register flex flex-col-reverse lg:flex-row gap-2 mt-20 m-10 lg:mb-36 lg:m-20">
             <div class="info w-full ">
                 <h1 class="font-bold text-2xl mb-5">Ahlan wa sahlan <span class="font-normal">di situs resmi</span></h1>
-                <h1 class="text-5xl font-bold text-yellow-500 mb-4">Mulai Umrohmu bersama</h1>
-                <h1 class="text-5xl font-bold text-blue-800 mb-4">Sinai Umroh cabang</h1>
-                <h1 class="text-5xl font-bold text-blue-800 mb-4">Indarung Padang.</h1>
-                <h1 class="mt-8 text-2xl font-light w-11/12">Halo calon jamaah umroh kami adalah mitra terpercaya untuk
+                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-yellow-500 ">Mulai Umrohmu bersama</h1>
+                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-blue-800 ">Sinai Umroh cabang</h1>
+                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-blue-800 ">Indarung Padang.</h1>
+                <h1 class="mt-8 text-lg font-light w-11/12">Halo calon jamaah umroh kami adalah mitra terpercaya untuk
                     perjalanan
                     spiritual anda dengan pengalaman <span class="font-bold">8+ tahun</span> kami siap mendampingi ibdadah
                     umroh dan haji anda</h1>
@@ -61,7 +63,7 @@
                     </button>
                 </div>
             </div>
-            <div class="flex justify-center items-center w-full  relative">
+            <div class="flex justify-center items-center size-full relative">
                 {{-- <div class="rounded-2xl bg-white p-4 absolute top-2 left-[-2rem]">
                     <h1 class="font-bold text-xl">8+ years</h1>
                     <h1 class="text-xl">experience</h1>
@@ -125,7 +127,7 @@
         {{-- about me end --}}
 
         {{-- dokumentation --}}
-        <div class="dokumentation px-10 lg:px-60 my-20 py-10 w-full text-center">
+        <div class="dokumentation px-10 lg:px-20 my-20 py-10 w-full text-center">
             <h1 class="text-xl mx-auto text-medium text-yellow-600 bg-yellow-100 w-fit px-4 py-2 rounded-full">Kenangan Suci
                 dalam Setiap Jejak?</h1>
             <h1 class="text-4xl font-semibold mt-2">Setiap foto <span class="text-yellow-600">bercerita</span>, setiap
@@ -133,8 +135,8 @@
             <h1 class="text-4xl font-semibold mt-2 mb-12">Yuk, jelajahi galeri kami!</h1>
             <div class="grid grid-cols-3 gap-2 lg:gap-6">
                 <div class="">
-                    <img src="{{ asset('aset/dc1.svg') }}" alt="tower" class="mb-2 lg:mb-6">
-                    <img src="{{ asset('aset/dc2.svg') }}" alt="tower" class="">
+                    <img src="{{ asset('aset/dc1.svg') }}" alt="tower" class="mb-2 lg:mb-6 w-full">
+                    <img src="{{ asset('aset/dc2.svg') }}" alt="tower" class="w-full">
                 </div>
                 <div class="">
                     <img src="{{ asset('aset/dc3.svg') }}" alt="tower" class="w-full h-full object-cover">
@@ -147,11 +149,11 @@
         {{-- dokumentation end --}}
 
         {{-- dream-page --}}
-        <div class="dream mx-0 px-10 lg:mx-0 py-16 m-20 lg:m-0 grid grid-cols-1 lg:grid-cols-2 gap-2 bg-blue-800 w-full">
-            <div class="flex justofy-center items-center px-20">
-                <div class="bg-blue-100 px-6 lg:py-10 w-fit rounded-lg">
+        <div class="dream mx-0 px-10 lg:px-32 lg:mx-0 py-16 m-20 lg:m-0 grid grid-cols-1 lg:grid-cols-2 gap-[8rem] bg-blue-800 w-full">
+            <div class="flex justofy-center items-center">
+                <div class="bg-white rounded-2xl size-full p-4">
                     <img src="{{ asset('aset/tower.jpg') }}" alt="tower"
-                        class="rounded-3xl py-5 lg:py-0 mx-0 lg:mx-10 lg:w-4/6 lg:h-1/2 h-[27rem]">
+                        class="rounded-xl size-full object-cover">
                 </div>
             </div>
             <div class="dream-detail w-fit text-white">
@@ -260,7 +262,7 @@
         {{-- packet end --}}
 
         {{-- testimoni --}}
-        <div class="testimonial mt-20 p-10 lg:mx-0 lg:pt-10 lg:px-40 lg:pb-2 bg-blue-800 ">
+        <div class="testimonial mt-20 p-10 lg:mx-0 lg:pt-10 lg:px-20 lg:pb-2 bg-blue-800 ">
             <div class="grid grid-cols-1 lg:grid-cols-2 justify-between">
                 <div class="text-white">
                     <h1 class="text-xl text-medium capitalize">testimoni</h1>
@@ -364,10 +366,10 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright grid grid-cols-1 lg,md:mx-6 lg:grid-cols-3 w-full py-10 text-white">
-                <h1 class="text-sm font-light uppercase px-20">@2024</h1>
-                <h1 class="text-sm font-light uppercase px-[15rem]">@2024</h1>
-                <h1 class="text-sm font-light uppercase lg:pl-[10rem] md:pl-0 pl-[21rem]">@2024</h1>
+            <div class="copyright grid grid-cols-3 text-center max-md:mx-6  py-10 text-white">
+                <h1 class="text-sm font-light uppercase ">@2024</h1>
+                <h1 class="text-sm font-light uppercase ">@2024</h1>
+                <h1 class="text-sm font-light uppercase">@2024</h1>
             </div>
         </div>
         {{-- footer end --}}
