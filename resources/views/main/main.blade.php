@@ -2,17 +2,18 @@
 @section('konten')
     <div class="pages w-full font-sans">
         {{-- navbar --}}
-        <div class="navbar justify-between capitalize text-lg grid grid-cols-2 mt-12 m-10 lg:ml-20 lg:mr-20">
-            <div class="logo font-extrabold text-3xl">
-                <img src="{{ asset('aset/sinaii.svg') }}" alt="" class="w-1/6">
+        <div class="navbar z-50 top-0 backdrop-blur-lg justify-between w-full gap-1 capitalize text-lg grid grid-cols-2 fixed lg:relative">
+            <div class="logo w-full p-10 lg:pl-20 z-1">
+                <img src="{{ asset('aset/sinaii.svg') }}" alt="" class=" w-6/12 lg:w-1/12">
             </div>
 
-            <div class="section flex font-medium text-lg font-sans items-center justify-end">
+            <div
+                class="section flex font-medium text-lg font-sans items-center  mr-10 lg:mr-20 justify-end lg:justify-center">
                 <!-- Burger Button (visible only on small screens) -->
                 <div class="lg:hidden">
                     <button id="burger" class="p-2 focus:outline-none relative z-[999] flex flex-col justify-center">
-                        <span class="line left-0 w-12 h-1 bg-black duration-200 mb-2"></span>
-                        <span class="line left-0 w-12 h-1 bg-black duration-200"></span>
+                        <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200 mb-2"></span>
+                        <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200"></span>                  
                     </button>
                 </div>
 
@@ -26,33 +27,32 @@
                 </div>
 
                 <!-- Dropdown for mobile -->
-                <div id="dropdown" class="hidden backdrop-blur-lg top-0 left-0 w-full space-y-2 mt-2 h-screen z-50 absolute ">
+                <div id="dropdown" class="hidden bg-white top-0 left-0 w-full space-y-2 lg:mt-2 h-screen z-50 fixed">
                     <div class="absolute bottom-0 w-full">
-                        <h1 class="bg-black text-white py-4">beranda</h1>
-                        <h1 class="bg-black text-white py-4">layanan</h1>
-                        <h1 class="bg-black text-white py-4">tentang kami</h1>
-                        <h1 class="bg-black text-white py-4">testimonial</h1>
-                        <h1 class="bg-black text-white py-4">hubungi kami</h1>
+                        <h1 class="text-black text-4xl px-2 py-4">beranda</h1>
+                        <h1 class="text-black text-4xl px-2 py-4">layanan</h1>
+                        <h1 class="text-black text-4xl px-2 py-4">tentang kami</h1>
+                        <h1 class="text-black text-4xl px-2 py-4">testimonial</h1>
+                        <h1 class="text-black text-4xl px-2 py-4">hubungi kami</h1>
                     </div>
                 </div>
             </div>
-
         </div>
         {{-- navbar end --}}
 
         {{-- regist-page --}}
-        <div class="register flex flex-col-reverse lg:flex-row gap-2 mt-20 m-10 lg:mb-36 lg:m-20">
+        <div class="register flex flex-col-reverse lg:flex-row gap-2 mt-40 lg:mt-20 m-10 lg:mb-36 lg:m-20">
             <div class="info w-full ">
-                <h1 class="font-bold text-2xl ms-1 -mb-2">Ahlan wa sahlan <span class="font-normal">di situs resmi</span></h1>
-                <h1 class="text-[1.8rem] lg:text-[4rem] font-bold text-yellow-500 ">Mulai Umrohmu bersama</h1>
-                <h1 class="text-[1.8rem] lg:text-[4rem] font-bold text-blue-800 ">Sinai Umroh cabang Indarung Padang.</h1>
-                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-blue-800 "></h1>
-                <h1 class="mt-8 text-2xl font-light w-11/12">Halo calon jamaah umroh kami adalah mitra terpercaya untuk
+                <h1 class="font-bold text-lg lg:text-2xl mb-5">Ahlan wa sahlan <span class="font-normal">di situs resmi</span></h1>
+                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-yellow-500 ">Mulai Umrohmu bersama</h1>
+                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-blue-800 ">Sinai Umroh cabang</h1>
+                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-blue-800 ">Indarung Padang.</h1>
+                <h1 class="mt-8 text-lg font-light w-11/12">Halo calon jamaah umroh kami adalah mitra terpercaya untuk
                     perjalanan
                     spiritual anda dengan pengalaman <span class="font-bold">8+ tahun</span> kami siap mendampingi ibdadah
                     umroh dan haji anda</h1>
                 <div class="button font-medium text-white mt-5 flex">
-                    <button class="bg-yellow-500 capitalize text-lg px-6 pt-3 pb-4 mr-4 rounded-3xl">daftar sekarang</button>
+                    <button class="bg-yellow-500 capitalize text-lg px-6 py-3 mr-4 rounded-3xl">daftar sekarang</button>
                     <button
                         class="border-2 inline-flex items-center gap-4 border-black capitalize text-lg px-6 pt-3 pb-4 text-black rounded-3xl">masuk
                         <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
@@ -71,108 +71,116 @@
                 <img src="{{ asset('aset/mekah.jpg') }}" alt="mekah" class="rounded-2xl w-[30rem]">
                 <img src="{{ asset('aset/kakbah.jpg') }}" alt="kakbah"
                     class="rounded-2xl absolute w-[15rem] bottom-2 right-[-2rem]"> --}}
-                <img src="{{ asset('aset/hero.svg') }}" alt="tower" class="rounded-3xl lg:size-full -mt-10 w-200 object-cover">
+                <img src="{{ asset('aset/hero.svg') }}" alt="tower" class="rounded-3xl lg:size-full w-200 object-cover">
             </div>
         </div>
         {{-- regist-page end --}}
 
         {{-- about me --}}
         <div class="about-me capitalize text-lg py-10 px-4 lg:p-20 bg-blue-800 w-full">
-            <h1 class="text-xl text-medium text-blue-800 w-fit py-2 px-4 rounded-3xl bg-white">tentang kami.</h1>
+            <h1 class="text-sm lg:text-xl text-medium text-blue-800 w-fit py-2 px-4 rounded-3xl bg-white">tentang kami.</h1>
             <div class="detail grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6 text-white">
                 <h1 class="text-4xl font-semibold mb-4 mt-4 w-full lg:w-8/12">Siapa sih Sinai Umroh Indarung Padang itu?
                 </h1>
-                <h1 class="text-xl justify-end">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem porro
-                    ducimus id repudiandae soluta modi, aliquid expedita mollitia minus quo est magnam nemo a perferendis,
-                    reprehenderit, quasi ullam! Doloremque odio doloribus, provident illo facere laudantium ab repudiandae
-                    omnis ipsum in?</h1>
+                <h1 class="text-xl justify-end">Sinai Umrah adalah penyedia resmi visa Umrah, fokus pada pelayanan
+                    berkualitas, kenyamanan jamaah, dan keamanan dana ibadah. Dengan pengalaman lebih dari 8 tahun dan
+                    anggota IATA, ASITA, serta KESTHURI, kami siap wujudkan perjalanan ibadah yang aman dan berkesan.</h1>
             </div>
 
             <div class="items grid grid-cols-1 lg:grid-cols-3 justify-center gap-0 lg:gap-8 mt-10">
-                <div class="flex flex-col items-center bg-white p-4 lg:rounded-lg text-center">
+                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center">
                     <img src="{{ asset('aset/mail.svg') }}" alt="tower" class="">
-                    <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
-                    <h1 class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ex consequuntur autem
-                        soluta ut pariatur! Repudiandae sapiente maxime velit? Impedit!</h1>
+                    <h1 class="mt-2 text-xl font-bold">Travel dengan
+                        ber-izin resmi</h1>
+                    <h1 class="mt-2">Sinai & Amanah Travel, resmi di bawah Kemenag RI (PPIU No. 292/2020), menjamin
+                        keberangkatan setiap jamaah.</h1>
                 </div>
-                <div class="flex flex-col items-center bg-white p-4 lg:rounded-lg text-center">
+                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center">
                     <img src="{{ asset('aset/person.svg') }}" alt="tower" class="">
-                    <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
-                    <h1 class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ex consequuntur autem
-                        soluta ut pariatur! Repudiandae sapiente maxime velit? Impedit!</h1>
+                    <h1 class="mt-2 text-xl font-bold">Member Resmi IATA,
+                        ASITA & Kesthuri</h1>
+                    <h1 class="mt-2">Sinai & Amanah Travel adalah anggota resmi IATA, ASITA, dan KESTHURI, menjamin
+                        layanan umrah dan haji yang berkualitas.</h1>
                 </div>
-                <div class="flex flex-col items-center bg-white p-4 lg:rounded-lg text-center">
+                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center">
                     <img src="{{ asset('aset/personpc.svg') }}" alt="tower" class="">
-                    <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
-                    <h1 class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ex consequuntur autem
-                        soluta ut pariatur! Repudiandae sapiente maxime velit? Impedit!</h1>
+                    <h1 class="mt-2 text-xl font-bold">Terakreditasi secara
+                        Nasional</h1>
+                    <h1 class="mt-2">Komite Akreditasi Nasional (KAN) adalah lembaga non-struktural yang bertanggung jawab
+                        atas akreditasi penilaian kesesuaian.</h1>
                 </div>
             </div>
 
             <div class="items grid grid-cols-1 lg:grid-cols-2 justify-center gap-0 lg:gap-8 lg:mt-5 px-0 lg:px-60">
-                <div class="flex flex-col items-center bg-white p-4 lg:rounded-lg text-center">
+                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center">
                     <img src="{{ asset('aset/mailc.svg') }}" alt="tower" class="">
-                    <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
-                    <h1 class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ex consequuntur autem
-                        soluta ut pariatur! Repudiandae sapiente maxime velit? Impedit!</h1>
+                    <h1 class="mt-2 text-xl font-bold">Legalitas Operasional
+                        Kantor Cabang</h1>
+                    <h1 class="mt-2">Setiap kantor cabang dilengkapi SK resmi dari kantor pusat, izin Kemenag setempat,
+                        dan legalitas dari IATA, ASITA, & AMPHURI.</h1>
                 </div>
-                <div class="flex flex-col items-center bg-white p-4 lg:rounded-lg text-center">
+                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center">
                     <img src="{{ asset('aset/protect.svg') }}" alt="tower" class="">
-                    <h1 class="mt-2 text-xl font-bold">Lorem ipsum dolor sit.</h1>
-                    <h1 class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ex consequuntur autem
-                        soluta ut pariatur! Repudiandae sapiente maxime velit? Impedit!</h1>
+                    <h1 class="mt-2 text-xl font-bold">Sistem umroh yang
+                        aman & terpercaya</h1>
+                    <h1 class="mt-2">Fokus dalam penyediaan resmi visa umrah & pada pelayanan, kualitas, dan kenyamanan
+                        jamaah, serta menjamin keamanan dana ibadah.</h1>
                 </div>
             </div>
         </div>
         {{-- about me end --}}
 
         {{-- dokumentation --}}
-        <div class="dokumentation px-10 lg:px-20 my-20 py-10 w-full text-center">
-            <h1 class="text-xl mx-auto text-medium text-yellow-600 bg-yellow-100 w-fit px-4 py-2 rounded-full">Kenangan Suci
+        <div class="dokumentation px-10 lg:px-20 my-20 py-2 lg:py-10 w-full text-center">
+            <h1 class="text-sm lg:text-xl mx-auto text-yellow-600 bg-yellow-100 w-fit px-4 py-2 rounded-full">Kenangan Suci
                 dalam Setiap Jejak?</h1>
-            <h1 class="text-4xl font-semibold mt-2">Setiap foto <span class="text-yellow-600">bercerita</span>, setiap
+            <h1 class="text-2xl lg:text-4xl font-semibold mt-2">Setiap foto <span class="text-yellow-600">bercerita</span>,
+                setiap
                 senyuman penuh <span class="text-blue-800">syukur</span>.</h1>
-            <h1 class="text-4xl font-semibold mt-2 mb-12">Yuk, jelajahi galeri kami!</h1>
-            <div class="grid grid-cols-3 gap-2 lg:gap-6">
-                <div class="">
+            <h1 class="text-2xl lg:text-4xl font-semibold mt-2 mb-6 lg:mb-12">Yuk, jelajahi galeri kami!</h1>
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
+                <div class="w-full">
                     <img src="{{ asset('aset/dc1.svg') }}" alt="tower" class="mb-2 lg:mb-6 w-full">
                     <img src="{{ asset('aset/dc2.svg') }}" alt="tower" class="w-full">
                 </div>
-                <div class="">
+                <div class="w-full">
                     <img src="{{ asset('aset/dc3.svg') }}" alt="tower" class="w-full h-full object-cover">
                 </div>
-                <div class="">
-                    <img src="{{ asset('aset/dc4.svg') }}" alt="tower" class="w-full h-full object-cover">
+                <div class="w-full">
+                    <img src="{{ asset('aset/dc4.svg') }}" alt="tower"
+                        class="w-full h-full object-cover max-lg:hidden">
                 </div>
             </div>
         </div>
         {{-- dokumentation end --}}
 
         {{-- dream-page --}}
-        <div class="dream mx-0 px-10 lg:px-32 lg:mx-0 py-16 m-20 lg:m-0 grid grid-cols-1 lg:grid-cols-2 gap-[8rem] bg-blue-800 w-full">
+        <div
+            class="dream mx-0 px-10 lg:px-32 lg:mx-0 py-16 m-20 lg:m-0 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-[8rem] bg-blue-800 w-full">
             <div class="flex justofy-center items-center">
                 <div class="bg-white rounded-2xl size-full p-4">
-                    <img src="{{ asset('aset/tower.jpg') }}" alt="tower"
-                        class="rounded-xl size-full object-cover">
+                    <img src="{{ asset('aset/tower.jpg') }}" alt="tower" class="rounded-xl size-full object-cover">
                 </div>
             </div>
             <div class="dream-detail w-fit text-white">
-                <h1 class="text-xl text-medium text-yellow-600 bg-yellow-100 w-fit px-4 py-2 rounded-full">Ingin umroh tapi
+                <h1 class="text-sm lg:text-xl text-medium text-yellow-600 bg-yellow-100 w-fit px-4 py-2 rounded-full">Ingin
+                    umroh tapi
                     terbentur biaya?</h1>
-                <h1 class="text-3xl font-semibold mt-4">Wujudkan impian tersebut bersama</h1>
-                <h1 class="text-3xl font-semibold">Kami dalam nabung umrah</h1>
-                <h1 class="text-2xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
+                <h1 class="text-[1.7rem] lg:text-3xl font-semibold mt-4">Wujudkan impian tersebut bersama kami dalam nabung
+                    umrah</h1>
+                <h1 class="text-[1.7rem] lg:text-3xl font-semibold"></h1>
+                <h1 class="text-xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
                 <div class="requirement grid grid-rows-3 gap-2">
                     <div class="require flex items-center gap-4 mt-6">
-                        <i class="bi bi-check2 text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                        <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
                         <h1 class="text-xl">Menyiapkan KTP</h1>
                     </div>
                     <div class="require flex items-center gap-4">
-                        <i class="bi bi-check2 text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                        <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
                         <h1 class="text-xl">Mengisi formulir pendaftaran umroh</h1>
                     </div>
                     <div class="require flex items-center gap-4">
-                        <i class="bi bi-check2 text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                        <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
                         <h1 class="text-xl w-8/12">Mengisi formulir pembukaan rekening bank syarah ( BSI,BRI,Nagari syariah
                             )</h1>
                     </div>
@@ -194,7 +202,7 @@
 
         {{-- packet --}}
         <div class="packets mt-28 mx-10 lg:mx-60 text-center">
-            <h1 class="text-xl text-medium text-blue-800 semi-bodl">paket perjalanan ibadah</h1>
+            <h1 class="text-sm lg:text-xl text-medium text-blue-800 semi-bodl">Paket perjalanan ibadah</h1>
             <h1 class="text-4xl font-semibold mt-2">Yuk, umroh bareng sinai Umrah Pilihlah paket yang nyaman, biar ibadah
                 main berkesan</h1>
             <div class="packet grid grid-cols-1 lg:grid-cols-3 mt-6 gap-8">
@@ -265,7 +273,7 @@
         <div class="testimonial mt-20 p-10 lg:mx-0 lg:pt-10 lg:px-20 lg:pb-2 bg-blue-800 ">
             <div class="grid grid-cols-1 lg:grid-cols-2 justify-between">
                 <div class="text-white">
-                    <h1 class="text-xl text-medium capitalize">testimoni</h1>
+                    <h1 class="text-sm lg:text-xl text-medium capitalize">Testimoni</h1>
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-4">Gimana perasaan mereka</h1>
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-2 mb-6">dengan sinai Umroh?</h1>
                 </div>
@@ -283,9 +291,8 @@
                     </div>
                     <div class="value px-5 pb-20 gap-2">
                         <h1 class="pl-4 text-2xl">"</h1>
-                        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio commodi accusamus vel harum
-                            nesciunt inventore facilis repellendus modi et necessitatibus, totam quos iste officia
-                            consectetur.</h1>
+                        <h1>Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet, tour guide nya baikk
+                            bnget, sukses terus Sinai Umrah. </h1>
                     </div>
                 </div>
                 <div class="values bg-white rounded-xl">
@@ -295,9 +302,8 @@
                     </div>
                     <div class="value px-5 pb-20 gap-2">
                         <h1 class="pl-4 text-2xl">"</h1>
-                        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio commodi accusamus vel harum
-                            nesciunt inventore facilis repellendus modi et necessitatibus, totam quos iste officia
-                            consectetur.</h1>
+                        <h1>Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet, tour guide nya baikk
+                            bnget, sukses terus Sinai Umrah. </h1>
                     </div>
                 </div>
                 <div class="values bg-white rounded-xl">
@@ -307,9 +313,8 @@
                     </div>
                     <div class="value px-5 pb-20 gap-2">
                         <h1 class="pl-4 text-2xl">"</h1>
-                        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio commodi accusamus vel harum
-                            nesciunt inventore facilis repellendus modi et necessitatibus, totam quos iste officia
-                            consectetur.</h1>
+                        <h1>Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet, tour guide nya baikk
+                            bnget, sukses terus Sinai Umrah. </h1>
                     </div>
                 </div>
             </div>
@@ -318,8 +323,8 @@
 
         {{-- ending information --}}
         <div class="w-full flex items-center justify-center text-center mt-20">
-            <div class="ending-information p-8 w-fit rounded-xl">
-                <h1 class="text-xl font-medium text-yellow-400 capitalize">Temukan informasi lebih</h1>
+            <div class="ending-information p-0 lg:p-8 lg:w-fit rounded-xl">
+                <h1 class="text-sm lg:text-xl font-medium text-yellow-400 capitalize">Temukan informasi lebih</h1>
                 <h1 class="text-3xl font-semibold mt-4">Dapatkan informasi terkait promo, diskon atau</h1>
                 <h1 class="text-3xl font-semibold mt-4">informasi menarik lainnya dengan subscribe</h1>
                 <h1 class="text-3xl font-semibold mt-4">ke email kami.</h1>
