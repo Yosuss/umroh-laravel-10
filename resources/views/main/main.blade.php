@@ -4,7 +4,7 @@
         {{-- navbar --}}
         <div class="navbar justify-between capitalize text-lg grid grid-cols-2 mt-12 m-10 lg:ml-20 lg:mr-20">
             <div class="logo font-extrabold text-3xl">
-                <img src="{{ asset('aset/sinaii.svg') }}" alt="" class="w-1/12">
+                <img src="{{ asset('aset/sinaii.svg') }}" alt="" class="w-1/6">
             </div>
 
             <div class="section flex font-medium text-lg font-sans items-center justify-end">
@@ -12,7 +12,7 @@
                 <div class="lg:hidden">
                     <button id="burger" class="p-2 focus:outline-none relative z-[999] flex flex-col justify-center">
                         <span class="line left-0 w-12 h-1 bg-black duration-200 mb-2"></span>
-                        <span class="line left-0 w-12 h-1 bg-black duration-200"></span>                  
+                        <span class="line left-0 w-12 h-1 bg-black duration-200"></span>
                     </button>
                 </div>
 
@@ -43,18 +43,18 @@
         {{-- regist-page --}}
         <div class="register flex flex-col-reverse lg:flex-row gap-2 mt-20 m-10 lg:mb-36 lg:m-20">
             <div class="info w-full ">
-                <h1 class="font-bold text-2xl mb-5">Ahlan wa sahlan <span class="font-normal">di situs resmi</span></h1>
-                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-yellow-500 ">Mulai Umrohmu bersama</h1>
-                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-blue-800 ">Sinai Umroh cabang</h1>
-                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-blue-800 ">Indarung Padang.</h1>
-                <h1 class="mt-8 text-lg font-light w-11/12">Halo calon jamaah umroh kami adalah mitra terpercaya untuk
+                <h1 class="font-bold text-2xl ms-1 -mb-2">Ahlan wa sahlan <span class="font-normal">di situs resmi</span></h1>
+                <h1 class="text-[1.8rem] lg:text-[4rem] font-bold text-yellow-500 ">Mulai Umrohmu bersama</h1>
+                <h1 class="text-[1.8rem] lg:text-[4rem] font-bold text-blue-800 ">Sinai Umroh cabang Indarung Padang.</h1>
+                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-blue-800 "></h1>
+                <h1 class="mt-8 text-2xl font-light w-11/12">Halo calon jamaah umroh kami adalah mitra terpercaya untuk
                     perjalanan
                     spiritual anda dengan pengalaman <span class="font-bold">8+ tahun</span> kami siap mendampingi ibdadah
                     umroh dan haji anda</h1>
                 <div class="button font-medium text-white mt-5 flex">
-                    <button class="bg-yellow-500 capitalize text-lg px-6 py-3 mr-4 rounded-3xl">daftar sekarang</button>
+                    <button class="bg-yellow-500 capitalize text-lg px-6 pt-3 pb-4 mr-4 rounded-3xl">daftar sekarang</button>
                     <button
-                        class="border-2 inline-flex items-center gap-4 border-black capitalize text-lg px-6 py-3 text-black rounded-3xl">masuk
+                        class="border-2 inline-flex items-center gap-4 border-black capitalize text-lg px-6 pt-3 pb-4 text-black rounded-3xl">masuk
                         <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 10.6172L10 1.38281M10 1.38281H1M10 1.38281V10.3828" stroke="#1E1E1E"
@@ -71,7 +71,7 @@
                 <img src="{{ asset('aset/mekah.jpg') }}" alt="mekah" class="rounded-2xl w-[30rem]">
                 <img src="{{ asset('aset/kakbah.jpg') }}" alt="kakbah"
                     class="rounded-2xl absolute w-[15rem] bottom-2 right-[-2rem]"> --}}
-                <img src="{{ asset('aset/hero.svg') }}" alt="tower" class="rounded-3xl lg:size-full w-200 object-cover">
+                <img src="{{ asset('aset/hero.svg') }}" alt="tower" class="rounded-3xl lg:size-full -mt-10 w-200 object-cover">
             </div>
         </div>
         {{-- regist-page end --}}
