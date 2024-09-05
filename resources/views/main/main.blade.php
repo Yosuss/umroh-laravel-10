@@ -4,7 +4,7 @@
         {{-- navbar --}}
         <div class="navbar z-50 top-0 backdrop-blur-lg justify-between w-full gap-1 capitalize text-lg grid grid-cols-2 fixed lg:relative">
             <div class="logo w-full p-10 lg:pl-20 z-1">
-                <img src="{{ asset('aset/sinaii.svg') }}" alt="" class=" w-6/12 lg:w-1/12">
+                <img src="{{ asset('aset/sinaii.svg') }}" alt="" class=" w-6/12 lg:w-2/12">
             </div>
 
             <div
@@ -41,7 +41,7 @@
         {{-- navbar end --}}
 
         {{-- regist-page --}}
-        <div class="register flex flex-col-reverse lg:flex-row gap-2 mt-40 lg:mt-20 m-10 lg:mb-36 lg:m-20">
+        <div class="register flex flex-col-reverse lg:flex-row gap-2 mt-40 lg:mt-10 m-10 lg:mb-44 lg:m-20">
             <div class="info w-full ">
                 <h1 class="font-bold text-lg lg:text-2xl mb-5">Ahlan wa sahlan <span class="font-normal">di situs resmi</span></h1>
                 <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-yellow-500 ">Mulai Umrohmu bersama</h1>
@@ -71,7 +71,7 @@
                 <img src="{{ asset('aset/mekah.jpg') }}" alt="mekah" class="rounded-2xl w-[30rem]">
                 <img src="{{ asset('aset/kakbah.jpg') }}" alt="kakbah"
                     class="rounded-2xl absolute w-[15rem] bottom-2 right-[-2rem]"> --}}
-                <img src="{{ asset('aset/hero.svg') }}" alt="tower" class="rounded-3xl lg:size-full w-200 object-cover">
+                <img src="{{ asset('aset/hero.svg') }}" alt="tower" class="rounded-3xl lg:w-full object-cover">
             </div>
         </div>
         {{-- regist-page end --}}
@@ -80,7 +80,7 @@
         <div class="about-me capitalize text-lg py-10 px-4 lg:p-20 bg-blue-800 w-full">
             <h1 class="text-sm lg:text-xl text-medium text-blue-800 w-fit py-2 px-4 rounded-3xl bg-white">tentang kami.</h1>
             <div class="detail grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6 text-white">
-                <h1 class="text-4xl font-semibold mb-4 mt-4 w-full lg:w-8/12">Siapa sih Sinai Umroh Indarung Padang itu?
+                <h1 class="text-3xl max-lg:w-3/4 font-semibold mb-4 mt-4 w-full lg:w-8/12">Siapa sih Sinai Umroh Indarung Padang itu?
                 </h1>
                 <h1 class="text-xl justify-end">Sinai Umrah adalah penyedia resmi visa Umrah, fokus pada pelayanan
                     berkualitas, kenyamanan jamaah, dan keamanan dana ibadah. Dengan pengalaman lebih dari 8 tahun dan
@@ -270,7 +270,7 @@
         {{-- packet end --}}
 
         {{-- testimoni --}}
-        <div class="testimonial mt-20 p-10 lg:mx-0 lg:pt-10 lg:px-20 lg:pb-2 bg-blue-800 ">
+        <div class="testimonial mt-20 lg:mx-0 lg:pt-10 p-5 lg:px-20 lg:pb-2 bg-blue-800 ">
             <div class="grid grid-cols-1 lg:grid-cols-2 justify-between">
                 <div class="text-white">
                     <h1 class="text-sm lg:text-xl text-medium capitalize">Testimoni</h1>
@@ -283,13 +283,13 @@
                 </div>
             </div>
 
-            <div class="testimoni-detail grid grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+            <div class="testimoni-detail grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 lg:mb-20">
                 <div class="values bg-white rounded-xl">
                     <div class="value flex px-5 pt-5 pb-2 gap-2 items-center">
                         <div class="w-10 h-10 bg-black rounded-full"></div>
                         <h1 class="capitalize text-lg font-semibold">anugrah</h1>
                     </div>
-                    <div class="value px-5 pb-20 gap-2">
+                    <div class="value px-5 pb-5 lg:pb-20 gap-2">
                         <h1 class="pl-4 text-2xl">"</h1>
                         <h1>Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet, tour guide nya baikk
                             bnget, sukses terus Sinai Umrah. </h1>
@@ -300,13 +300,13 @@
                         <div class="w-10 h-10 bg-black rounded-full"></div>
                         <h1 class="capitalize text-lg font-semibold">anugrah</h1>
                     </div>
-                    <div class="value px-5 pb-20 gap-2">
+                    <div class="value px-5 pb-5 lg:pb-20 gap-2">
                         <h1 class="pl-4 text-2xl">"</h1>
                         <h1>Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet, tour guide nya baikk
                             bnget, sukses terus Sinai Umrah. </h1>
                     </div>
                 </div>
-                <div class="values bg-white rounded-xl">
+                <div class="values bg-white rounded-xl max-lg:hidden">
                     <div class="value flex px-5 pt-5 pb-2 gap-2 items-center">
                         <div class="w-10 h-10 bg-black rounded-full"></div>
                         <h1 class="capitalize text-lg font-semibold">anugrah</h1>
