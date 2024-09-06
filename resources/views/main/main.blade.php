@@ -206,7 +206,7 @@
 
             {{-- Swiper --}}
             <div class="flex flex-col">
-                
+
                 <div class="w-fit text-white">
                     <h1 class="text-sm lg:text-xl text-medium text-yellow-600 bg-yellow-50 w-fit px-4 py-2 rounded-full">
                         Ingin
@@ -218,7 +218,6 @@
                         umrah</h1>
 
                     <h1 class="text-[1.7rem] lg:text-3xl font-semibold"></h1>
-                    <h1 class="text-xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
                 </div>
                 <div class="">
                     <div class="swiper-container overflow-hidden">
@@ -226,6 +225,7 @@
                             <!-- Slides -->
                             <div class="swiper-slide">
                                 <div class="w-fit text-white">
+                                    <h1 class="text-xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
                                     <div class="requirement grid grid-rows-3 gap-0">
                                         <div class="require flex items-center gap-4 mt-6">
                                             <i
@@ -250,6 +250,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="w-fit text-white">
+                                    <h1 class="text-xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
                                     <div class="requirement grid grid-rows-3 gap-0">
                                         <div class="require flex items-center gap-4 mt-6">
                                             <i
@@ -274,6 +275,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="w-fit text-white">
+                                    <h1 class="text-xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
                                     <div class="requirement grid grid-rows-3 gap-0">
                                         <div class="require flex items-center gap-4 mt-6">
                                             <i
@@ -294,12 +296,13 @@
                                                 )</h1>
                                         </div>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
                         <div class="flex w-full relative justify-between">
-                            <div class="swiper-pagination w-fit"></div>
+                            <div class="w-fit relative right-0 left-0">
+                                <div class="swiper-pagination text-white w-fit"></div>
+                            </div>
                             <div class="slide mt-10 flex gap-4 items-end">
                                 <i class="button-prev bi bi-arrow-left-circle text-4xl text-white"></i>
                                 <i class="button-next bi bi-arrow-right-circle-fill text-4xl text-white"></i>
