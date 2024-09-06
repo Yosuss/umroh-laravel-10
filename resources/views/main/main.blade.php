@@ -429,7 +429,7 @@
             </div>
 
             <div class="swiper-container-2 w-full overflow-hidden">
-                <div class="swiper-wrapper flex items-center w-full gap-8">
+                <div class="swiper-wrapper flex items-center w-full gap-0">
                     <div class="swiper-slide">
                         <div class="testimoni-detail flex gap-2 lg:gap-6 lg:mb-20">
                             <div class="values bg-white rounded-xl px-10 lg:mt-5 lg:mb-0">
@@ -690,27 +690,6 @@
         </div>
         {{-- footer end --}}
     </div>
-
-    {{-- Swiper --}}
-    {{-- <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1">
-            </div>
-            <div class="swiper-slide">
-                <img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2">
-            </div>
-            <div class="swiper-slide">
-                <img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3">
-            </div>
-        </div> --}}
-    <!-- Add Pagination -->
-    {{-- <div class="swiper-pagination"></div> --}}
-    <!-- Add Navigation -->
-    {{-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> --}}
-    {{-- </div> --}}
 
     <script>
         new Swiper('.swiper-container', {
