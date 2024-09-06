@@ -3,15 +3,15 @@
     <div class="pages w-full font-sans">
         {{-- navbar --}}
         <div
-            class="navbar z-50 top-0 backdrop-blur-lg justify-between w-full gap-1 capitalize text-lg grid grid-cols-2 fixed lg:relative">
-            <div class="logo w-full p-10 lg:pl-20 z-1">
+            class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
+            <div class="logo p-10 lg:pl-20 z-1 max-lg:w-3/6 w-2/6">
                 <img src="{{ asset('aset/sinaii.svg') }}" alt="" class=" w-6/12 lg:w-2/12">
             </div>
 
             <div
-                class="section flex font-medium text-lg font-sans items-center  mr-10 lg:mr-20 justify-end lg:justify-center">
+                class="section flex font-medium text-lg font-sans">
                 <!-- Burger Button (visible only on small screens) -->
-                <div class="lg:hidden">
+                <div class="lg:hidden max-lg:text-end max-lg:w-full">
                     <button id="burger" class="p-2 focus:outline-none relative z-[999] flex flex-col justify-center">
                         <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200 mb-2"></span>
                         <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200"></span>
@@ -19,12 +19,12 @@
                 </div>
 
                 <!-- Menu items -->
-                <div id="menu" class="hidden lg:grid lg:grid-cols-5 text-center">
+                <div id="menu" class="hidden w-4/6 lg:flex text-center">
                     <h1>beranda</h1>
                     <h1>layanan</h1>
                     <h1>tentang kami</h1>
                     <h1>testimonial</h1>
-                    <h1>hubungi<span class="ml-1">kami</span></h1>
+                    <h1>hubungi<span class="">kami</span></h1>
                 </div>
 
                 <!-- Dropdown for mobile -->
@@ -211,7 +211,7 @@
         </div>
         <div class="packet grid grid-cols-1 lg:grid-cols-3 mt-6 px-2 lg:px-20 gap-8">
             <div
-                class="packet-1 rounded-3xl bg-yellow-50 text-left mt-4 p-8 gap-4 hover:text-white hover:bg-yellow-400 duration-200">
+                class="packet-1 group rounded-3xl bg-yellow-50 text-left mt-4 p-8 gap-4 hover:text-white hover:bg-yellow-400 duration-200">
                 <div class="grid lg:grid-cols-1 grid-cols-2  gap-4">
                     <div class="">
                         <h1 class="text-2xl text-semibold">product sinai agustus</h1>
@@ -231,12 +231,12 @@
                     </div>
                 </div>
                 <button
-                    class="bg-yellow-400 w-full  mt-5 py-2 rounded-xl text-white text-semibold hover:text-yellow-400 hover:bg-white duration-200">pilih
+                    class="group-hover:bg-white group-hover:text-yellow-400 bg-yellow-400 w-full  mt-5 py-2 rounded-xl text-white text-semibold hover:text-yellow-400 hover:bg-white duration-200">pilih
                     paket</button>
             </div>
 
             <div
-                class="packet-2 rounded-3xl bg-blue-50 text-left mt-4 p-8 gap-4 hover:text-white hover:bg-blue-800 duration-200">
+                class="packet-2 group rounded-3xl bg-blue-50 text-left mt-4 p-8 gap-4 hover:text-white hover:bg-blue-800 duration-200">
                 <div class="grid lg:grid-cols-1 grid-cols-2  gap-4">
                     <div class="">
                         <h1 class="text-2xl text-semibold">product sinai agustus</h1>
@@ -256,12 +256,12 @@
                     </div>
                 </div>
                 <button
-                    class="bg-blue-800 w-full  mt-5 py-2 rounded-xl text-white text-semibold hover:text-blue-400 hover:bg-white duration-200">pilih
+                    class="group-hover:bg-white group-hover:text-blue-800 bg-blue-800 w-full  mt-5 py-2 rounded-xl text-white text-semibold hover:text-blue-400 hover:bg-white duration-200">pilih
                     paket</button>
             </div>
 
             <div
-                class="packet-1 rounded-3xl bg-yellow-50 text-left mt-4 p-8 gap-4 hover:text-white hover:bg-yellow-400 duration-200">
+                class="packet-1 group rounded-3xl bg-yellow-50 text-left mt-4 p-8 gap-4 hover:text-white hover:bg-yellow-400 duration-200">
                 <div class="grid lg:grid-cols-1 grid-cols-2  gap-4">
                     <div class="">
                         <h1 class="text-2xl text-semibold">product sinai agustus</h1>
@@ -281,7 +281,7 @@
                     </div>
                 </div>
                 <button
-                    class="bg-yellow-400 w-full  mt-5 py-2 rounded-xl text-white text-semibold hover:text-yellow-400 hover:bg-white duration-200">pilih
+                    class="group-hover:bg-white group-hover:text-yellow-400 bg-yellow-400 w-full  mt-5 py-2 rounded-xl text-white text-semibold hover:text-yellow-400 hover:bg-white duration-200">pilih
                     paket</button>
             </div>
         </div>
@@ -353,8 +353,10 @@
         {{-- ending information --}}
         <div class="w-full flex items-center justify-center text-center mt-20">
             <div class="ending-information p-0 lg:p-8 lg:w-fit rounded-xl">
-                <h1 class="text-sm lg:text-xl font-medium text-yellow-400 capitalize">Temukan informasi lebih</h1>
-                <h1 class="text-3xl font-semibold mt-4 max-lg:text-4xl">Dapatkan informasi terkait promo, diskon atau <span>informasi menarik lainnya dengan subscribe</span><span> ke email kami.</span></h1>
+                <div class="flex flex-col items-center ">
+                    <h1 class="text-sm lg:text-xl font-medium text-yellow-400 capitalize">Temukan informasi lebih</h1>
+                    <h1 class="text-3xl font-semibold mt-4 w-3/6 max-lg:w-full max-lg:text-2xl">Dapatkan informasi terkait promo, diskon atau <span>informasi menarik lainnya dengan subscribe</span><span> ke email kami.</span></h1>
+                </div>
                 <div class="mail mt-4 flex gap-4 justify-center">
                     <input type="text" class="rounded-xl" placeholder="Enter your email">
                     <button class="langganan p-2 px-4 rounded-xl text-white shadow-lg bg-yellow-600">Langganan</button>
