@@ -1,4 +1,6 @@
 import "./bootstrap";
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 
 const burger = document.getElementById("burger");
 const menu = document.getElementById("menu");
@@ -13,3 +15,5 @@ burger.addEventListener("click", () => {
         document.body.style.overflowY = "hidden";
     }
 });
+
+

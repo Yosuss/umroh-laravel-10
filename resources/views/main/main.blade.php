@@ -2,16 +2,15 @@
 @section('konten')
     <div class="pages w-full font-sans">
         {{-- navbar --}}
-        <div
-            class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
+        <div class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
             <div class="logo px-5 pt-8 pb-4 lg:pl-20 z-1 lg:w-3/6 w-full">
                 <img src="{{ asset('aset/sinaii.svg') }}" alt="" class=" w-6/12 lg:w-2/12">
             </div>
 
-            <div
-                class="section flex font-medium text-lg font-sans w-full justify-end pr-0 lg:pr-32">
+            <div class="section flex font-medium text-lg font-sans w-full justify-end pr-0 lg:pr-32">
                 <!-- Burger Button (visible only on small screens) -->
-                <div class="lg:hidden flex max-lg:items-center max-lg:py-2 justify-end max-lg:pr-4 max-lg:text-end max-lg:w-full">
+                <div
+                    class="lg:hidden flex max-lg:items-center max-lg:py-2 justify-end max-lg:pr-4 max-lg:text-end max-lg:w-full">
                     <button id="burger" class="p-2 focus:outline-none relative z-[999] flex flex-col justify-center">
                         <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200 mb-2"></span>
                         <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200"></span>
@@ -165,41 +164,154 @@
                     <img src="{{ asset('aset/tower.jpg') }}" alt="tower" class="rounded-xl size-full object-cover">
                 </div>
             </div>
-            <div class="dream-detail w-fit text-white">
-                <h1 class="text-sm lg:text-xl text-medium text-yellow-600 bg-yellow-50 w-fit px-4 py-2 rounded-full">Ingin
-                    umroh tapi
-                    terbentur biaya?</h1>
-                <h1 class="text-[1.7rem] lg:text-3xl font-semibold mt-4">Wujudkan impian tersebut bersama kami dalam nabung
-                    umrah</h1>
-                <h1 class="text-[1.7rem] lg:text-3xl font-semibold"></h1>
-                <h1 class="text-xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
-                <div class="requirement grid grid-rows-3 gap-0">
-                    <div class="require flex items-center gap-4 mt-6">
-                        <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                        <h1 class="text-lg">Menyiapkan KTP</h1>
+            {{-- <div class="dream-detail">
+                <div class="w-fit text-white">
+                    <h1 class="text-sm lg:text-xl text-medium text-yellow-600 bg-yellow-50 w-fit px-4 py-2 rounded-full">
+                        Ingin
+                        umroh tapi
+                        terbentur biaya?</h1>
+                    <h1 class="text-[1.7rem] lg:text-3xl font-semibold mt-4">Wujudkan impian tersebut bersama kami dalam
+                        nabung
+                        umrah</h1>
+                    <h1 class="text-[1.7rem] lg:text-3xl font-semibold"></h1>
+                    <h1 class="text-xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
+                    <div class="requirement grid grid-rows-3 gap-0">
+                        <div class="require flex items-center gap-4 mt-6">
+                            <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                            <h1 class="text-lg">Menyiapkan KTP</h1>
+                        </div>
+                        <div class="require flex items-center gap-4">
+                            <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                            <h1 class="text-lg">Mengisi formulir pendaftaran umroh</h1>
+                        </div>
+                        <div class="require flex items-center gap-4">
+                            <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                            <h1 class="text-lg">Mengisi formulir pembukaan rekening bank syarah ( BSI,BRI,Nagari syariah
+                                )</h1>
+                        </div>
                     </div>
-                    <div class="require flex items-center gap-4">
-                        <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                        <h1 class="text-lg">Mengisi formulir pendaftaran umroh</h1>
-                    </div>
-                    <div class="require flex items-center gap-4">
-                        <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                        <h1 class="text-lg">Mengisi formulir pembukaan rekening bank syarah ( BSI,BRI,Nagari syariah
-                            )</h1>
+                    <div class="grid grid-cols-2 justify-between">
+                        <div class="pagination mt-14 flex gap-2">
+                            <div class="w-2 h-2 bg-white rounded-full"></div>
+                            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                        </div>
+                        <div class="slide mt-10 flex gap-4 justify-end">
+                            <i class="bi bi-arrow-left-circle text-4xl text-white"></i>
+                            <i class="bi bi-arrow-right-circle-fill text-4xl text-white"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 justify-between">
-                    <div class="pagination mt-14 flex gap-2">
-                        <div class="w-2 h-2 bg-white rounded-full"></div>
-                        <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                        <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                    </div>
-                    <div class="slide mt-10 flex gap-4 justify-end">
-                        <i class="bi bi-arrow-left-circle text-4xl text-white"></i>
-                        <i class="bi bi-arrow-right-circle-fill text-4xl text-white"></i>
-                    </div>
+            </div> --}}
+
+            {{-- Swiper --}}
+            <div class="flex flex-col">
+                
+                <div class="w-fit text-white">
+                    <h1 class="text-sm lg:text-xl text-medium text-yellow-600 bg-yellow-50 w-fit px-4 py-2 rounded-full">
+                        Ingin
+                        umroh tapi
+                        terbentur biaya?</h1>
+                    <h1 class="text-[1.7rem] lg:text-3xl font-semibold mt-4">Wujudkan impian tersebut bersama kami
+                        dalam
+                        nabung
+                        umrah</h1>
+
+                    <h1 class="text-[1.7rem] lg:text-3xl font-semibold"></h1>
+                    <h1 class="text-xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
                 </div>
+                <div class="">
+                    <div class="swiper-container overflow-hidden">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="w-fit text-white">
+                                    <div class="requirement grid grid-rows-3 gap-0">
+                                        <div class="require flex items-center gap-4 mt-6">
+                                            <i
+                                                class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="text-lg">Menyiapkan KTP</h1>
+                                        </div>
+                                        <div class="require flex items-center gap-4">
+                                            <i
+                                                class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="text-lg">Mengisi formulir pendaftaran umroh</h1>
+                                        </div>
+                                        <div class="require flex items-center gap-4">
+                                            <i
+                                                class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="text-lg">Mengisi formulir pembukaan rekening bank syarah (
+                                                BSI,BRI,Nagari
+                                                syariah
+                                                )</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="w-fit text-white">
+                                    <div class="requirement grid grid-rows-3 gap-0">
+                                        <div class="require flex items-center gap-4 mt-6">
+                                            <i
+                                                class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="text-lg">Menyiapkan KTP</h1>
+                                        </div>
+                                        <div class="require flex items-center gap-4">
+                                            <i
+                                                class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="text-lg">Mengisi formulir pendaftaran umroh</h1>
+                                        </div>
+                                        <div class="require flex items-center gap-4">
+                                            <i
+                                                class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="text-lg">Mengisi formulir pembukaan rekening bank syarah (
+                                                BSI,BRI,Nagari
+                                                syariah
+                                                )</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="w-fit text-white">
+                                    <div class="requirement grid grid-rows-3 gap-0">
+                                        <div class="require flex items-center gap-4 mt-6">
+                                            <i
+                                                class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="text-lg">Menyiapkan KTP</h1>
+                                        </div>
+                                        <div class="require flex items-center gap-4">
+                                            <i
+                                                class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="text-lg">Mengisi formulir pendaftaran umroh</h1>
+                                        </div>
+                                        <div class="require flex items-center gap-4">
+                                            <i
+                                                class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="text-lg">Mengisi formulir pembukaan rekening bank syarah (
+                                                BSI,BRI,Nagari
+                                                syariah
+                                                )</h1>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex w-full justify-start lg:justify-end">
+                            <div class="swiper-pagination">
+                            </div>
+                            <div class="slide mt-10 flex gap-4 items-end">
+                                <i class="button-prev bi bi-arrow-left-circle text-4xl text-white"></i>
+                                <i class="button-next bi bi-arrow-right-circle-fill text-4xl text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
         {{-- dream-page end --}}
 
@@ -218,16 +330,20 @@
                         <h1 class="font-bold my-5 text-lg uppercase">rp <span class="capitalize font-bold text-3xl">35,5
                                 juta</span>
                         </h1>
-                        <h1 class="tracking-[0.07rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                        <h1 class="tracking-[0.07rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem
                             dignissimos
                             sequi esse.</h1>
                     </div>
                     <div class="benefit w-full grid gap-4">
                         <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> hotel bintang 4</h1>
-                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> perlengkapan (gratis)</h1>
-                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> 13 hari perjalanan</h1>
+                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> perlengkapan (gratis)
+                        </h1>
+                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> 13 hari perjalanan
+                        </h1>
                         <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> dapat 2x jum'at</h1>
-                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> free thaif & kereta gantung</h1>
+                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> free thaif & kereta
+                            gantung</h1>
                     </div>
                 </div>
                 <button
@@ -243,16 +359,19 @@
                         <h1 class="font-bold my-5 text-lg uppercase">rp <span class="capitalize font-bold text-3xl">35,5
                                 juta</span>
                         </h1>
-                        <h1 class="tracking-[0.07rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                        <h1 class="tracking-[0.07rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem
                             dignissimos
                             sequi esse.</h1>
                     </div>
                     <div class="benefit w-full grid gap-4">
                         <h1 class="capitalize text-lg"><i class="bi bi-check2 text-blue-400"></i> hotel bintang 4</h1>
-                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-blue-400"></i> perlengkapan (gratis)</h1>
+                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-blue-400"></i> perlengkapan (gratis)
+                        </h1>
                         <h1 class="capitalize text-lg"><i class="bi bi-check2 text-blue-400"></i> 13 hari perjalanan</h1>
                         <h1 class="capitalize text-lg"><i class="bi bi-check2 text-blue-400"></i> dapat 2x jum'at</h1>
-                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-blue-400"></i> free thaif & kereta gantung</h1>
+                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-blue-400"></i> free thaif & kereta
+                            gantung</h1>
                     </div>
                 </div>
                 <button
@@ -268,16 +387,20 @@
                         <h1 class="font-bold my-5 text-lg uppercase">rp <span class="capitalize font-bold text-3xl">35,5
                                 juta</span>
                         </h1>
-                        <h1 class="tracking-[0.07rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                        <h1 class="tracking-[0.07rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem
                             dignissimos
                             sequi esse.</h1>
                     </div>
                     <div class="benefit w-full grid gap-4">
                         <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> hotel bintang 4</h1>
-                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> perlengkapan (gratis)</h1>
-                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> 13 hari perjalanan</h1>
+                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> perlengkapan (gratis)
+                        </h1>
+                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> 13 hari perjalanan
+                        </h1>
                         <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> dapat 2x jum'at</h1>
-                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> free thaif & kereta gantung</h1>
+                        <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> free thaif & kereta
+                            gantung</h1>
                     </div>
                 </div>
                 <button
@@ -291,7 +414,9 @@
         <div class="testimonial mt-20 lg:mx-0 lg:pt-10 p-5 lg:px-20 lg:pb-2 bg-blue-800 ">
             <div class="grid grid-cols-1 lg:grid-cols-2 justify-between">
                 <div class="text-white">
-                    <h1 class="text-sm lg:text-2xl text-medium capitalize bg-white text-blue-800 w-fit py-[0.6rem] px-6 max-lg:mt-4 rounded-full">Testimoni</h1>
+                    <h1
+                        class="text-sm lg:text-2xl text-medium capitalize bg-white text-blue-800 w-fit py-[0.6rem] px-6 max-lg:mt-4 rounded-full">
+                        Testimoni</h1>
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-4">Gimana perasaan mereka</h1>
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-2 mb-6">dengan sinai Umroh?</h1>
                 </div>
@@ -355,7 +480,9 @@
             <div class="ending-information p-0 lg:p-8 lg:w-fit rounded-xl">
                 <div class="flex flex-col items-center ">
                     <h1 class="text-sm lg:text-xl font-medium text-yellow-600 capitalize">Temukan informasi lebih</h1>
-                    <h1 class="text-4xl font-semibold mt-4 w-3/6 max-lg:w-full max-lg:text-2xl">Dapatkan informasi terkait promo, diskon atau <span>informasi menarik lainnya dengan subscribe</span><span> ke email kami.</span></h1>
+                    <h1 class="text-4xl font-semibold mt-4 w-3/6 max-lg:w-full max-lg:text-2xl">Dapatkan informasi terkait
+                        promo, diskon atau <span>informasi menarik lainnya dengan subscribe</span><span> ke email
+                            kami.</span></h1>
                 </div>
                 <div class="mail mt-4 flex gap-4 justify-center">
                     <input type="text" class="rounded-xl" placeholder="Enter your email">
@@ -373,12 +500,15 @@
                     <div class="grid grid-cols-3 mt-8 w-6/6 lg:w-5/6 justify-center gap-1">
                         <h1 class="capitalize text-lg">beranda <span class="max-lg:ml-2 ml-10">/</span></h1>
                         <h1 class="capitalize text-lg">layanan <span class="max-lg:ml-2 ml-10">/</span></h1>
-                        <h1 class="capitalize text-lg">tentang<span class="capitalize ml-2">kami <span class="max-lg:ml-0 ml-10">/</span></span></h1>
+                        <h1 class="capitalize text-lg">tentang<span class="capitalize ml-2">kami <span
+                                    class="max-lg:ml-0 ml-10">/</span></span></h1>
                         <h1 class="capitalize text-lg">testimonial <span class="max-lg:ml-2 ml-10">/</span></h1>
-                        <h1 class="capitalize text-lg">hubungi<span class="capitalize ml-2">kami <span class="max-lg:ml-0 ml-10">/</span></span></h1>
+                        <h1 class="capitalize text-lg">hubungi<span class="capitalize ml-2">kami <span
+                                    class="max-lg:ml-0 ml-10">/</span></span></h1>
                     </div>
                     <div class="mt-24 w-8/12 max-lg:w-full max-lg:mb-10">
-                        <h1 class="text-4xl max-lg:text-2xl font-bold">Book your trip in minute,get full Control for much longer.</h1>
+                        <h1 class="text-4xl max-lg:text-2xl font-bold">Book your trip in minute,get full Control for much
+                            longer.</h1>
                     </div>
                 </div>
                 <div class="flex flex-2 mt-5 lg:mt-0 w-full">
@@ -405,6 +535,44 @@
             </div>
         </div>
         {{-- footer end --}}
-
     </div>
+
+    {{-- Swiper --}}
+    {{-- <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3">
+            </div>
+        </div> --}}
+    <!-- Add Pagination -->
+    {{-- <div class="swiper-pagination"></div> --}}
+    <!-- Add Navigation -->
+    {{-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> --}}
+    {{-- </div> --}}
+
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.slide .button-next',
+                prevEl: '.slide .button-prev',
+            },
+            autoplay: {
+                delay: 30000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 @endsection
