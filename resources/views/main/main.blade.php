@@ -422,14 +422,166 @@
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-4">Gimana perasaan mereka</h1>
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-2 mb-6">dengan sinai Umroh?</h1>
                 </div>
-                <div class="flex gap-4 lg:text-start justify-end max-lg:justify-start mb-6">
-                    <i class="bi bi-arrow-left-circle text-4xl text-white"></i>
-                    <i class="bi bi-arrow-right-circle-fill text-4xl text-white"></i>
+                <div class="slide-2 flex gap-4 lg:text-start justify-end max-lg:justify-start mb-6">
+                    <i class="button-prev-2 bi bi-arrow-left-circle text-4xl text-white"></i>
+                    <i class="button-next-2 bi bi-arrow-right-circle-fill text-4xl text-white"></i>
                 </div>
             </div>
 
-            <div class="testimoni-detail grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 lg:mb-20">
-                <div class="values bg-white rounded-xl px-10 lg:mt-5 max-lg:mb-5">
+            <div class="swiper-container-2 w-full overflow-hidden">
+                <div class="swiper-wrapper flex items-center w-full gap-8">
+                    <div class="swiper-slide">
+                        <div class="testimoni-detail flex gap-2 lg:gap-6 lg:mb-20">
+                            <div class="values bg-white rounded-xl px-10 lg:mt-5 lg:mb-0">
+                                <div class="value flex pt-5 pb-2 gap-2 items-center">
+                                    <div class="w-10 h-10 bg-black rounded-full"></div>
+                                    <div class="">
+                                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                                        <h1 class="capitalize max-lg:text-xm text-md font-light">Pengusaha sawit</h1>
+                                    </div>
+                                </div>
+                                <div class="value pb-5 lg:pb-20 gap-2">
+                                    <h1 class="text-xl">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh
+                                        murah cepet,
+                                        tour guide nya baikk
+                                        bnget, sukses terus Sinai Umrah. </h1>
+                                </div>
+                            </div>
+                            <div class="values bg-white rounded-xl px-10 lg:mt-5 max-md:hidden">
+                                <div class="value flex pt-5 pb-2 max gap-2 items-center">
+                                    <div class="w-10 h-10 bg-black rounded-full"></div>
+                                    <div class="">
+                                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                                        <h1 class="capitalize text-md font-light">Pengusaha sawit</h1>
+                                    </div>
+                                </div>
+                                <div class="value pb-5 lg:pb-20 gap-2">
+                                    <h1 class="text-xl">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh
+                                        murah cepet,
+                                        tour guide nya baikk
+                                        bnget, sukses terus Sinai Umrah. </h1>
+                                </div>
+                            </div>
+                            <div class="values bg-white rounded-xl px-10 lg:mt-5 max-lg:hidden">
+                                <div class="value flex pt-5 pb-2 gap-2 items-center">
+                                    <div class="w-10 h-10 bg-black rounded-full"></div>
+                                    <div class="">
+                                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                                        <h1 class="capitalize text-md font-light">Pengusaha sawit</h1>
+                                    </div>
+                                </div>
+                                <div class="value pb-5 lg:pb-20 gap-2">
+                                    <h1 class="text-xl">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh
+                                        murah cepet,
+                                        tour guide nya baikk
+                                        bnget, sukses terus Sinai Umrah. </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimoni-detail flex gap-2 lg:gap-6 lg:mb-20">
+                            <div class="values bg-white rounded-xl px-10 lg:mt-5 lg:mb-0">
+                                <div class="value flex pt-5 pb-2 gap-2 items-center">
+                                    <div class="w-10 h-10 bg-black rounded-full"></div>
+                                    <div class="">
+                                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                                        <h1 class="capitalize max-lg:text-xm text-md font-light">Pengusaha sawit</h1>
+                                    </div>
+                                </div>
+                                <div class="value pb-5 lg:pb-20 gap-2">
+                                    <h1 class="text-xl">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh
+                                        murah cepet,
+                                        tour guide nya baikk
+                                        bnget, sukses terus Sinai Umrah. </h1>
+                                </div>
+                            </div>
+                            <div class="values bg-white rounded-xl px-10 lg:mt-5 max-md:hidden">
+                                <div class="value flex pt-5 pb-2 max gap-2 items-center">
+                                    <div class="w-10 h-10 bg-black rounded-full"></div>
+                                    <div class="">
+                                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                                        <h1 class="capitalize text-md font-light">Pengusaha sawit</h1>
+                                    </div>
+                                </div>
+                                <div class="value pb-5 lg:pb-20 gap-2">
+                                    <h1 class="text-xl">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh
+                                        murah cepet,
+                                        tour guide nya baikk
+                                        bnget, sukses terus Sinai Umrah. </h1>
+                                </div>
+                            </div>
+                            <div class="values bg-white rounded-xl px-10 lg:mt-5 max-lg:hidden">
+                                <div class="value flex pt-5 pb-2 gap-2 items-center">
+                                    <div class="w-10 h-10 bg-black rounded-full"></div>
+                                    <div class="">
+                                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                                        <h1 class="capitalize text-md font-light">Pengusaha sawit</h1>
+                                    </div>
+                                </div>
+                                <div class="value pb-5 lg:pb-20 gap-2">
+                                    <h1 class="text-xl">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh
+                                        murah cepet,
+                                        tour guide nya baikk
+                                        bnget, sukses terus Sinai Umrah. </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimoni-detail flex gap-2 lg:gap-6 lg:mb-20">
+                            <div class="values bg-white rounded-xl px-10 lg:mt-5 lg:mb-0">
+                                <div class="value flex pt-5 pb-2 gap-2 items-center">
+                                    <div class="w-10 h-10 bg-black rounded-full"></div>
+                                    <div class="">
+                                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                                        <h1 class="capitalize max-lg:text-xm text-md font-light">Pengusaha sawit</h1>
+                                    </div>
+                                </div>
+                                <div class="value pb-5 lg:pb-20 gap-2">
+                                    <h1 class="text-xl">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh
+                                        murah cepet,
+                                        tour guide nya baikk
+                                        bnget, sukses terus Sinai Umrah. </h1>
+                                </div>
+                            </div>
+                            <div class="values bg-white rounded-xl px-10 lg:mt-5 max-md:hidden">
+                                <div class="value flex pt-5 pb-2 max gap-2 items-center">
+                                    <div class="w-10 h-10 bg-black rounded-full"></div>
+                                    <div class="">
+                                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                                        <h1 class="capitalize text-md font-light">Pengusaha sawit</h1>
+                                    </div>
+                                </div>
+                                <div class="value pb-5 lg:pb-20 gap-2">
+                                    <h1 class="text-xl">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh
+                                        murah cepet,
+                                        tour guide nya baikk
+                                        bnget, sukses terus Sinai Umrah. </h1>
+                                </div>
+                            </div>
+                            <div class="values bg-white rounded-xl px-10 lg:mt-5 max-lg:hidden">
+                                <div class="value flex pt-5 pb-2 gap-2 items-center">
+                                    <div class="w-10 h-10 bg-black rounded-full"></div>
+                                    <div class="">
+                                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                                        <h1 class="capitalize text-md font-light">Pengusaha sawit</h1>
+                                    </div>
+                                </div>
+                                <div class="value pb-5 lg:pb-20 gap-2">
+                                    <h1 class="text-xl">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh
+                                        murah cepet,
+                                        tour guide nya baikk
+                                        bnget, sukses terus Sinai Umrah. </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{-- <div class="testimoni-detail grid grid-cols-1 max-lg:md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6 lg:mb-20">
+                <div class="values bg-white rounded-xl px-10 lg:mt-5 lg:mb-0">
                     <div class="value flex pt-5 pb-2 gap-2 items-center">
                         <div class="w-10 h-10 bg-black rounded-full"></div>
                         <div class="">
@@ -437,15 +589,14 @@
                             <h1 class="capitalize max-lg:text-xm text-md font-light">Pengusaha sawit</h1>
                         </div>
                     </div>
-                    <div class="value pb-5 lg:pb-20 gap-2 max-lg:pb-32">
+                    <div class="value pb-5 lg:pb-20 gap-2">
                         <h1 class="text-xl">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet,
                             tour guide nya baikk
                             bnget, sukses terus Sinai Umrah. </h1>
                     </div>
                 </div>
-
-                <div class="values bg-white rounded-xl px-10 lg:mt-5 max-lg:hidden max-md:hidden">
-                    <div class="value flex pt-5 pb-2 gap-2 items-center">
+                <div class="values bg-white rounded-xl px-10 lg:mt-5 max-md:hidden">
+                    <div class="value flex pt-5 pb-2 max gap-2 items-center">
                         <div class="w-10 h-10 bg-black rounded-full"></div>
                         <div class="">
                             <h1 class="capitalize text-lg font-semibold">anugrah</h1>
@@ -458,7 +609,6 @@
                             bnget, sukses terus Sinai Umrah. </h1>
                     </div>
                 </div>
-
                 <div class="values bg-white rounded-xl px-10 lg:mt-5 max-lg:hidden">
                     <div class="value flex pt-5 pb-2 gap-2 items-center">
                         <div class="w-10 h-10 bg-black rounded-full"></div>
@@ -473,7 +623,9 @@
                             bnget, sukses terus Sinai Umrah. </h1>
                     </div>
                 </div>
-            </div>
+            </div> --}}
+
+            {{-- grid grid-cols-1 max-lg:md:grid-cols-2 lg:grid-cols-3 --}}
         </div>
         {{-- testimoni end --}}
 
@@ -561,7 +713,7 @@
     {{-- </div> --}}
 
     <script>
-        const swiper = new Swiper('.swiper-container', {
+        new Swiper('.swiper-container', {
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
@@ -576,6 +728,23 @@
                 disableOnInteraction: false,
             },
         });
+
+        const swiper = new Swiper('.swiper-container-2', {
+            loop: true,
+            // pagination: {
+            //     el: '.swiper-pagination-2',
+            //     clickable: true,
+            // },
+            navigation: {
+                nextEl: '.slide-2 .button-next-2',
+                prevEl: '.slide-2 .button-prev-2',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+        console.log(swiper)
 
         const burger = document.getElementById("burger");
         const menu = document.getElementById("menu");
