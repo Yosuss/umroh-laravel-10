@@ -80,14 +80,14 @@
         <div class="about-me capitalize text-lg py-10 px-4 lg:p-20 bg-blue-800 w-full">
             <h1 class="text-sm lg:text-xl text-medium text-blue-800 w-fit py-2 px-4 rounded-3xl bg-white">tentang kami.</h1>
             <div class="detail grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6 text-white">
-                <h1 class="text-3xl max-lg:w-3/4 font-semibold mb-4 mt-4 w-full lg:w-8/12">Siapa sih Sinai Umroh Indarung Padang itu?
+                <h1 class="text-4xl max-lg:w-3/4 font-semibold mb-4 mt-4 w-full lg:w-8/12">Siapa sih Sinai Umroh Indarung Padang itu?
                 </h1>
                 <h1 class="text-xl justify-end">Sinai Umrah adalah penyedia resmi visa Umrah, fokus pada pelayanan
                     berkualitas, kenyamanan jamaah, dan keamanan dana ibadah. Dengan pengalaman lebih dari 8 tahun dan
                     anggota IATA, ASITA, serta KESTHURI, kami siap wujudkan perjalanan ibadah yang aman dan berkesan.</h1>
             </div>
 
-            <div class="items grid grid-cols-1 lg:grid-cols-3 justify-center gap-0 lg:gap-8 mt-10">
+            <div class="items grid grid-cols-1 lg:grid-cols-3 justify-center gap-4 lg:gap-8 mt-10">
                 <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center">
                     <img src="{{ asset('aset/mail.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Travel dengan
@@ -111,7 +111,7 @@
                 </div>
             </div>
 
-            <div class="items grid grid-cols-1 lg:grid-cols-2 justify-center gap-0 lg:gap-8 lg:mt-5 px-0 lg:px-60">
+            <div class="items grid grid-cols-1 lg:grid-cols-2 justify-center gap-4 lg:gap-8 lg:mt-5 mt-4 px-0 lg:px-60">
                 <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center">
                     <img src="{{ asset('aset/mailc.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Legalitas Operasional
@@ -284,36 +284,44 @@
             </div>
 
             <div class="testimoni-detail grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 lg:mb-20">
-                <div class="values bg-white rounded-xl">
-                    <div class="value flex px-5 pt-5 pb-2 gap-2 items-center">
+                <div class="values bg-white rounded-xl px-10 lg:mt-5">
+                    <div class="value flex pt-5 pb-2 gap-2 items-center">
                         <div class="w-10 h-10 bg-black rounded-full"></div>
-                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                        <div class="">
+                            <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                            <h1 class="capitalize text-md font-light">Pengusaha sawit</h1>
+                        </div>
                     </div>
-                    <div class="value px-5 pb-5 lg:pb-20 gap-2">
-                        <h1 class="pl-4 text-2xl">"</h1>
-                        <h1 class="">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet, tour guide nya baikk
+                    <div class="value pb-5 lg:pb-20 gap-2">
+                        <h1 class="text-xl">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet, tour guide nya baikk
                             bnget, sukses terus Sinai Umrah. </h1>
                     </div>
                 </div>
-                <div class="values bg-white rounded-xl max-lg:hidden">
-                    <div class="value flex px-5 pt-5 pb-2 gap-2 items-center">
+                
+                <div class="values bg-white rounded-xl px-10 lg:mt-5">
+                    <div class="value flex pt-5 pb-2 gap-2 items-center">
                         <div class="w-10 h-10 bg-black rounded-full"></div>
-                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                        <div class="">
+                            <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                            <h1 class="capitalize text-md font-light">Pengusaha sawit</h1>
+                        </div>
                     </div>
-                    <div class="value px-5 pb-5 lg:pb-20 gap-2">
-                        <h1 class="pl-4 text-2xl">"</h1>
-                        <h1>Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet, tour guide nya baikk
+                    <div class="value pb-5 lg:pb-20 gap-2">
+                        <h1 class="text-xl">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet, tour guide nya baikk
                             bnget, sukses terus Sinai Umrah. </h1>
                     </div>
                 </div>
-                <div class="values bg-white rounded-xl max-lg:hidden">
-                    <div class="value flex px-5 pt-5 pb-2 gap-2 items-center">
+
+                <div class="values bg-white rounded-xl px-10 lg:mt-5">
+                    <div class="value flex pt-5 pb-2 gap-2 items-center">
                         <div class="w-10 h-10 bg-black rounded-full"></div>
-                        <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                        <div class="">
+                            <h1 class="capitalize text-lg font-semibold">anugrah</h1>
+                            <h1 class="capitalize text-md font-light">Pengusaha sawit</h1>
+                        </div>
                     </div>
-                    <div class="value px-5 pb-20 gap-2">
-                        <h1 class="pl-4 text-2xl">"</h1>
-                        <h1>Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet, tour guide nya baikk
+                    <div class="value pb-5 lg:pb-20 gap-2">
+                        <h1 class="text-xl">Alhamdullilah, bisa umroh pakai jasa ini, worth it banget, udh murah cepet, tour guide nya baikk
                             bnget, sukses terus Sinai Umrah. </h1>
                     </div>
                 </div>
@@ -337,11 +345,11 @@
         {{-- ending information end --}}
 
         {{-- footer --}}
-        <div class="footer bg-black">
-            <div class=" mt-20 grid grid-cols-1 lg:grid-cols-2 bg-black text-white px-5 lg:px-20 py-10">
+        <div class="footer bg-[#25222C]">
+            <div class=" mt-20 grid grid-cols-1 lg:grid-cols-2 text-white px-5 lg:px-20 py-10">
                 <div class="katalog grid">
                     <h1 class="text-sm font-light uppercase">katalog</h1>
-                    <div class="grid grid-cols-6 mt-4 w-full lg:w-4/6 justify-center gap-1">
+                    <div class="grid grid-cols-6 mt-8 w-full lg:w-4/6 justify-center gap-1">
                         <h1 class="capitalize text-lg">beranda</h1>
                         <h1 class="text-center">/</h1>
                         <h1 class="capitalize text-lg">layanan</h1>
@@ -352,29 +360,31 @@
                         <h1 class="text-center">/</h1>
                         <h1 class="capitalize text-lg">hubungi<span class="capitalize ml-2">kami</span></h1>
                     </div>
-                    <div class="mt-32 w-8/12">
-                        <h1 class="text-3xl font-bold">Book your trip in minute,get full Control for much longer.</h1>
+                    <div class="mt-24 w-8/12">
+                        <h1 class="text-4xl font-bold">Book your trip in minute,get full Control for much longer.</h1>
                     </div>
                 </div>
                 <div class="flex flex-2 mt-5 lg:mt-0 justify-between w-full">
                     <div class="contact">
                         <h1 class="text-sm font-light uppercase">kontak</h1>
-                        <h1 class="capitalize text-lg mt-4 text-yellow-400">+62 892 161 572</h1>
+                        <h1 class="capitalize text-lg mt-8 text-yellow-400">+62 892 161 572</h1>
                         <h1 class="capitalize text-lg font-light">hello@sinaiumrah.com</h1>
-                        <h1 class="capitalize text-lg font-light mt-32">alamat perusahaan</h1>
+                        <h1 class="capitalize text-lg font-light mt-44">alamat perusahaan</h1>
                     </div>
                     <div class="folow-me">
                         <h1 class="text-sm font-light uppercase">ikuti kami</h1>
-                        <h1 class="capitalize text-lg mt-4">whatsapp</h1>
+                        <h1 class="capitalize text-lg mt-8">whatsapp</h1>
                         <h1 class="capitalize text-lg">instagram</h1>
-                        <h1 class="capitalize text-lg font-light mt-32">^</h1>
+                        <div class="capitalize text-lg font-light text-yellow-400 mt-44">
+                            <i class="bi bi-arrow-up"></i>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="copyright grid grid-cols-3 text-center max-md:mx-6  py-10 text-white">
-                <h1 class="text-sm font-light uppercase ">@2024</h1>
-                <h1 class="text-sm font-light uppercase ">@2024</h1>
-                <h1 class="text-sm font-light uppercase">@2024</h1>
+                <h1 class="text-sm font-light uppercase ">@2024-Copyright</h1>
+                <h1 class="text-sm font-light uppercase ">privacy</h1>
+                <h1 class="text-sm font-light uppercase">All right reserved</h1>
             </div>
         </div>
         {{-- footer end --}}
