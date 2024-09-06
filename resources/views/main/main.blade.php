@@ -4,14 +4,14 @@
         {{-- navbar --}}
         <div
             class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
-            <div class="logo p-10 lg:pl-20 z-1 lg:w-3/6 w-5/6">
+            <div class="logo px-5 pt-8 pb-4 lg:pl-20 z-1 lg:w-3/6 w-full">
                 <img src="{{ asset('aset/sinaii.svg') }}" alt="" class=" w-6/12 lg:w-2/12">
             </div>
 
             <div
                 class="section flex font-medium text-lg font-sans w-full justify-end pr-0 lg:pr-32">
                 <!-- Burger Button (visible only on small screens) -->
-                <div class="lg:hidden flex max-lg:items-center justify-center max-lg:text-end max-lg:w-full">
+                <div class="lg:hidden flex max-lg:items-center max-lg:py-2 justify-end max-lg:pr-4 max-lg:text-end max-lg:w-full">
                     <button id="burger" class="p-2 focus:outline-none relative z-[999] flex flex-col justify-center">
                         <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200 mb-2"></span>
                         <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200"></span>
@@ -85,7 +85,7 @@
                 <h1 class="text-4xl max-lg:w-3/4 font-semibold mb-4 mt-4 w-full lg:w-8/12">Siapa sih Sinai Umroh Indarung
                     Padang itu?
                 </h1>
-                <h1 class="text-xl justify-end">Sinai Umrah adalah penyedia resmi visa Umrah, fokus pada pelayanan
+                <h1 class="text-xl text-justify">Sinai Umrah adalah penyedia resmi visa Umrah, fokus pada pelayanan
                     berkualitas, kenyamanan jamaah, dan keamanan dana ibadah. Dengan pengalaman lebih dari 8 tahun dan
                     anggota IATA, ASITA, serta KESTHURI, kami siap wujudkan perjalanan ibadah yang aman dan berkesan.</h1>
             </div>
@@ -134,13 +134,13 @@
         {{-- about me end --}}
 
         {{-- dokumentation --}}
-        <div class="dokumentation px-10 lg:px-20 my-20 py-2 lg:py-10 w-full text-center">
+        <div class="dokumentation px-10 lg:px-20 my-20 py-2 lg:py-0 w-full text-center">
             <h1 class="text-sm lg:text-xl mx-auto text-yellow-600 bg-yellow-100 w-fit px-4 py-2 rounded-full">Kenangan Suci
                 dalam Setiap Jejak?</h1>
             <h1 class="text-2xl lg:text-4xl font-semibold mt-2">Setiap foto <span class="text-yellow-600">bercerita</span>,
                 setiap
                 senyuman penuh <span class="text-blue-800">syukur</span>.</h1>
-            <h1 class="text-2xl lg:text-4xl font-semibold mt-2 mb-6 lg:mb-12">Yuk, jelajahi galeri kami!</h1>
+            <h1 class="text-2xl lg:text-4xl font-semibold mt-2 mb-6 lg:mb-12 max-lg:w-full">Yuk, jelajahi galeri kami!</h1>
             <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
                 <div class="w-full">
                     <img src="{{ asset('aset/dc1.svg') }}" alt="tower" class="mb-2 lg:mb-6 w-full">
@@ -166,25 +166,25 @@
                 </div>
             </div>
             <div class="dream-detail w-fit text-white">
-                <h1 class="text-sm lg:text-xl text-medium text-yellow-600 bg-yellow-100 w-fit px-4 py-2 rounded-full">Ingin
+                <h1 class="text-sm lg:text-xl text-medium text-yellow-600 bg-yellow-50 w-fit px-4 py-2 rounded-full">Ingin
                     umroh tapi
                     terbentur biaya?</h1>
                 <h1 class="text-[1.7rem] lg:text-3xl font-semibold mt-4">Wujudkan impian tersebut bersama kami dalam nabung
                     umrah</h1>
                 <h1 class="text-[1.7rem] lg:text-3xl font-semibold"></h1>
                 <h1 class="text-xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
-                <div class="requirement grid grid-rows-3 gap-2">
+                <div class="requirement grid grid-rows-3 gap-0">
                     <div class="require flex items-center gap-4 mt-6">
                         <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                        <h1 class="text-xl">Menyiapkan KTP</h1>
+                        <h1 class="text-lg">Menyiapkan KTP</h1>
                     </div>
                     <div class="require flex items-center gap-4">
                         <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                        <h1 class="text-xl">Mengisi formulir pendaftaran umroh</h1>
+                        <h1 class="text-lg">Mengisi formulir pendaftaran umroh</h1>
                     </div>
                     <div class="require flex items-center gap-4">
                         <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                        <h1 class="text-xl w-8/12">Mengisi formulir pembukaan rekening bank syarah ( BSI,BRI,Nagari syariah
+                        <h1 class="text-lg">Mengisi formulir pembukaan rekening bank syarah ( BSI,BRI,Nagari syariah
                             )</h1>
                     </div>
                 </div>
