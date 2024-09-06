@@ -298,9 +298,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex w-full justify-start lg:justify-end">
-                            <div class="swiper-pagination">
-                            </div>
+                        <div class="flex w-full relative justify-between">
+                            <div class="swiper-pagination w-fit"></div>
                             <div class="slide mt-10 flex gap-4 items-end">
                                 <i class="button-prev bi bi-arrow-left-circle text-4xl text-white"></i>
                                 <i class="button-next bi bi-arrow-right-circle-fill text-4xl text-white"></i>
