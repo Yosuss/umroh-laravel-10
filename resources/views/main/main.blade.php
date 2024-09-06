@@ -4,14 +4,14 @@
         {{-- navbar --}}
         <div
             class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
-            <div class="logo p-10 lg:pl-20 z-1 max-lg:w-3/6 w-2/6">
+            <div class="logo p-10 lg:pl-20 z-1 lg:w-3/6 w-5/6">
                 <img src="{{ asset('aset/sinaii.svg') }}" alt="" class=" w-6/12 lg:w-2/12">
             </div>
 
             <div
-                class="section flex font-medium text-lg font-sans">
+                class="section flex font-medium text-lg font-sans w-full justify-end pr-0 lg:pr-32">
                 <!-- Burger Button (visible only on small screens) -->
-                <div class="lg:hidden max-lg:text-end max-lg:w-full">
+                <div class="lg:hidden flex max-lg:items-center justify-center max-lg:text-end max-lg:w-full">
                     <button id="burger" class="p-2 focus:outline-none relative z-[999] flex flex-col justify-center">
                         <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200 mb-2"></span>
                         <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200"></span>
@@ -19,12 +19,12 @@
                 </div>
 
                 <!-- Menu items -->
-                <div id="menu" class="hidden w-4/6 lg:flex text-center">
+                <div id="menu" class="hidden w-4/6 lg:flex text-end justify-end items-center gap-4 ">
                     <h1>beranda</h1>
                     <h1>layanan</h1>
                     <h1>tentang kami</h1>
                     <h1>testimonial</h1>
-                    <h1>hubungi<span class="">kami</span></h1>
+                    <h1>hubungi<span class=""> kami</span></h1>
                 </div>
 
                 <!-- Dropdown for mobile -->
@@ -354,8 +354,8 @@
         <div class="w-full flex items-center justify-center text-center mt-20">
             <div class="ending-information p-0 lg:p-8 lg:w-fit rounded-xl">
                 <div class="flex flex-col items-center ">
-                    <h1 class="text-sm lg:text-xl font-medium text-yellow-400 capitalize">Temukan informasi lebih</h1>
-                    <h1 class="text-3xl font-semibold mt-4 w-3/6 max-lg:w-full max-lg:text-2xl">Dapatkan informasi terkait promo, diskon atau <span>informasi menarik lainnya dengan subscribe</span><span> ke email kami.</span></h1>
+                    <h1 class="text-sm lg:text-xl font-medium text-yellow-600 capitalize">Temukan informasi lebih</h1>
+                    <h1 class="text-4xl font-semibold mt-4 w-3/6 max-lg:w-full max-lg:text-2xl">Dapatkan informasi terkait promo, diskon atau <span>informasi menarik lainnya dengan subscribe</span><span> ke email kami.</span></h1>
                 </div>
                 <div class="mail mt-4 flex gap-4 justify-center">
                     <input type="text" class="rounded-xl" placeholder="Enter your email">
@@ -368,17 +368,17 @@
         {{-- footer --}}
         <div class="footer bg-[#25222C]">
             <div class=" mt-20 grid grid-cols-1 lg:grid-cols-2 text-white px-5 lg:px-20 py-10">
-                <div class="katalog grid">
+                <div class="katalog flex flex-col">
                     <h1 class="text-sm font-light uppercase">katalog</h1>
-                    <div class="grid grid-cols-3 mt-8 w-5/6 lg:w-5/6 justify-center gap-1">
+                    <div class="grid grid-cols-3 mt-8 w-6/6 lg:w-5/6 justify-center gap-1">
                         <h1 class="capitalize text-lg">beranda <span class="max-lg:ml-2 ml-10">/</span></h1>
                         <h1 class="capitalize text-lg">layanan <span class="max-lg:ml-2 ml-10">/</span></h1>
-                        <h1 class="capitalize text-lg">tentang<span class="capitalize ml-2">kami <span class="max-lg:ml-2 ml-10">/</span></span></h1>
+                        <h1 class="capitalize text-lg">tentang<span class="capitalize ml-2">kami <span class="max-lg:ml-0 ml-10">/</span></span></h1>
                         <h1 class="capitalize text-lg">testimonial <span class="max-lg:ml-2 ml-10">/</span></h1>
-                        <h1 class="capitalize text-lg">hubungi<span class="capitalize ml-2">kami <span class="max-lg:ml-2 ml-10">/</span></span></h1>
+                        <h1 class="capitalize text-lg">hubungi<span class="capitalize ml-2">kami <span class="max-lg:ml-0 ml-10">/</span></span></h1>
                     </div>
                     <div class="mt-24 w-8/12 max-lg:w-full max-lg:mb-10">
-                        <h1 class="text-4xl font-bold">Book your trip in minute,get full Control for much longer.</h1>
+                        <h1 class="text-4xl max-lg:text-2xl font-bold">Book your trip in minute,get full Control for much longer.</h1>
                     </div>
                 </div>
                 <div class="flex flex-2 mt-5 lg:mt-0 w-full">
