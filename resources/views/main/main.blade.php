@@ -11,10 +11,10 @@
                 <!-- Burger Button (visible only on small screens) -->
                 <div
                     class="lg:hidden flex max-lg:items-center max-lg:py-2 justify-end max-lg:pr-4 max-lg:text-end max-lg:w-full">
-                    <button id="burger" class="p-2 focus:outline-none relative z-[999] flex flex-col justify-center">
+                    <div id="burger" class="p-2 focus:outline-none relative z-[999] flex flex-col justify-center">
                         <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200 mb-2"></span>
                         <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200"></span>
-                    </button>
+                    </div>
                 </div>
 
                 <!-- Menu items -->
@@ -575,6 +575,21 @@
                 delay: 30000,
                 disableOnInteraction: false,
             },
+        });
+
+        const burger = document.getElementById("burger");
+        const menu = document.getElementById("menu");
+        const dropdown = document.getElementById("dropdown");
+
+        burger.addEventListener("click", () => {
+            console.log(burger, dropdown, menu)
+            dropdown.classList.toggle("hidden");
+
+            if (dropdown.classList.contains("hidden")) {
+                document.body.style.overflowY = "";
+            } else {
+                document.body.style.overflowY = "hidden";
+            }
         });
     </script>
 @endsection
