@@ -291,23 +291,23 @@
         <div class="testimonial mt-20 lg:mx-0 lg:pt-10 p-5 lg:px-20 lg:pb-2 bg-blue-800 ">
             <div class="grid grid-cols-1 lg:grid-cols-2 justify-between">
                 <div class="text-white">
-                    <h1 class="text-sm lg:text-xl text-medium capitalize">Testimoni</h1>
+                    <h1 class="text-sm lg:text-xl text-medium capitalize bg-white text-blue-800 w-fit py-[0.6rem] px-6 max-lg:mt-4 rounded-full">Testimoni</h1>
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-4">Gimana perasaan mereka</h1>
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-2 mb-6">dengan sinai Umroh?</h1>
                 </div>
-                <div class="flex gap-4 items-start lg:items-end justify-end mb-6">
+                <div class="flex gap-4 lg:text-start justify-end max-lg:justify-start mb-6">
                     <i class="bi bi-arrow-left-circle text-4xl text-white"></i>
                     <i class="bi bi-arrow-right-circle-fill text-4xl text-white"></i>
                 </div>
             </div>
 
             <div class="testimoni-detail grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 lg:mb-20">
-                <div class="values bg-white rounded-xl px-10 lg:mt-5">
+                <div class="values bg-white rounded-xl px-10 lg:mt-5 max-lg:mb-5">
                     <div class="value flex pt-5 pb-2 gap-2 items-center">
                         <div class="w-10 h-10 bg-black rounded-full"></div>
                         <div class="">
                             <h1 class="capitalize text-lg font-semibold">anugrah</h1>
-                            <h1 class="capitalize text-md font-light">Pengusaha sawit</h1>
+                            <h1 class="capitalize max-lg:text-xm text-md font-light">Pengusaha sawit</h1>
                         </div>
                     </div>
                     <div class="value pb-5 lg:pb-20 gap-2 max-lg:pb-32">
@@ -370,9 +370,9 @@
             <div class=" mt-20 grid grid-cols-1 lg:grid-cols-2 text-white px-5 lg:px-20 py-10">
                 <div class="katalog grid">
                     <h1 class="text-sm font-light uppercase">katalog</h1>
-                    <div class="grid grid-cols-6 mt-8 w-full lg:w-4/6 justify-center gap-1">
+                    <div class="grid grid-cols-6 mt-8 w-6/6 lg:w-4/6 justify-center gap-1">
                         <h1 class="capitalize text-lg">beranda</h1>
-                        <h1 class="text-center">/</h1>
+                        <h1 class="text-center max-lg:ml-20">/</h1>
                         <h1 class="capitalize text-lg">layanan</h1>
                         <h1 class="text-center">/</h1>
                         <h1 class="capitalize text-lg">tentang<span class="capitalize ml-2">kami</span></h1>
@@ -381,22 +381,22 @@
                         <h1 class="text-center">/</h1>
                         <h1 class="capitalize text-lg">hubungi<span class="capitalize ml-2">kami</span></h1>
                     </div>
-                    <div class="mt-24 w-8/12">
+                    <div class="mt-24 w-8/12 max-lg:w-full max-lg:mb-10">
                         <h1 class="text-4xl font-bold">Book your trip in minute,get full Control for much longer.</h1>
                     </div>
                 </div>
-                <div class="flex flex-2 mt-5 lg:mt-0 justify-between w-full">
+                <div class="flex flex-2 mt-5 lg:mt-0 w-full">
                     <div class="contact">
                         <h1 class="text-sm font-light uppercase">kontak</h1>
                         <h1 class="capitalize text-lg mt-8 text-yellow-400">+62 892 161 572</h1>
                         <h1 class="capitalize text-lg font-light">hello@sinaiumrah.com</h1>
-                        <h1 class="capitalize text-lg font-light mt-44">alamat perusahaan</h1>
+                        <h1 class="capitalize text-lg font-light mt-44 max-lg:mt-24">alamat perusahaan</h1>
                     </div>
-                    <div class="folow-me">
+                    <div class="folow-me text-end max-lg:text-center max-lg:ml-10 w-full">
                         <h1 class="text-sm font-light uppercase">ikuti kami</h1>
                         <h1 class="capitalize text-lg mt-8">whatsapp</h1>
                         <h1 class="capitalize text-lg">instagram</h1>
-                        <div class="capitalize text-lg font-light text-yellow-400 mt-44">
+                        <div class="capitalize text-lg font-light text-yellow-400 mt-44 max-lg:mt-24 max-lg:text-end">
                             <i class="bi bi-arrow-up"></i>
                         </div>
                     </div>
