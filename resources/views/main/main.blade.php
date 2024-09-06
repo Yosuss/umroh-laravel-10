@@ -91,21 +91,21 @@
             </div>
 
             <div class="items grid grid-cols-1 lg:grid-cols-3 justify-center gap-4 lg:gap-8 mt-10">
-                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center">
+                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center rounded-xl">
                     <img src="{{ asset('aset/mail.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Travel dengan
                         ber-izin resmi</h1>
                     <h1 class="mt-2">Sinai & Amanah Travel, resmi di bawah Kemenag RI (PPIU No. 292/2020), menjamin
                         keberangkatan setiap jamaah.</h1>
                 </div>
-                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center">
+                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center rounded-xl">
                     <img src="{{ asset('aset/person.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Member Resmi IATA,
                         ASITA & Kesthuri</h1>
                     <h1 class="mt-2">Sinai & Amanah Travel adalah anggota resmi IATA, ASITA, dan KESTHURI, menjamin
                         layanan umrah dan haji yang berkualitas.</h1>
                 </div>
-                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center">
+                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center rounded-xl">
                     <img src="{{ asset('aset/personpc.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Terakreditasi secara
                         Nasional</h1>
@@ -115,14 +115,14 @@
             </div>
 
             <div class="items grid grid-cols-1 lg:grid-cols-2 justify-center gap-4 lg:gap-8 lg:mt-5 mt-4 px-0 lg:px-60">
-                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center">
+                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center rounded-xl">
                     <img src="{{ asset('aset/mailc.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Legalitas Operasional
                         Kantor Cabang</h1>
                     <h1 class="mt-2">Setiap kantor cabang dilengkapi SK resmi dari kantor pusat, izin Kemenag setempat,
                         dan legalitas dari IATA, ASITA, & AMPHURI.</h1>
                 </div>
-                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center">
+                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center rounded-xl">
                     <img src="{{ asset('aset/protect.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Sistem umroh yang
                         aman & terpercaya</h1>
@@ -291,7 +291,7 @@
         <div class="testimonial mt-20 lg:mx-0 lg:pt-10 p-5 lg:px-20 lg:pb-2 bg-blue-800 ">
             <div class="grid grid-cols-1 lg:grid-cols-2 justify-between">
                 <div class="text-white">
-                    <h1 class="text-sm lg:text-xl text-medium capitalize bg-white text-blue-800 w-fit py-[0.6rem] px-6 max-lg:mt-4 rounded-full">Testimoni</h1>
+                    <h1 class="text-sm lg:text-2xl text-medium capitalize bg-white text-blue-800 w-fit py-[0.6rem] px-6 max-lg:mt-4 rounded-full">Testimoni</h1>
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-4">Gimana perasaan mereka</h1>
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-2 mb-6">dengan sinai Umroh?</h1>
                 </div>
@@ -354,9 +354,7 @@
         <div class="w-full flex items-center justify-center text-center mt-20">
             <div class="ending-information p-0 lg:p-8 lg:w-fit rounded-xl">
                 <h1 class="text-sm lg:text-xl font-medium text-yellow-400 capitalize">Temukan informasi lebih</h1>
-                <h1 class="text-3xl font-semibold mt-4">Dapatkan informasi terkait promo, diskon atau</h1>
-                <h1 class="text-3xl font-semibold mt-4">informasi menarik lainnya dengan subscribe</h1>
-                <h1 class="text-3xl font-semibold mt-4">ke email kami.</h1>
+                <h1 class="text-3xl font-semibold mt-4 max-lg:text-4xl">Dapatkan informasi terkait promo, diskon atau <span>informasi menarik lainnya dengan subscribe</span> \<span> ke email kami.</span></h1>
                 <div class="mail mt-4 flex gap-4 justify-center">
                     <input type="text" class="rounded-xl" placeholder="Enter your email">
                     <button class="langganan p-2 px-4 rounded-xl text-white shadow-lg bg-yellow-600">Langganan</button>
@@ -370,16 +368,12 @@
             <div class=" mt-20 grid grid-cols-1 lg:grid-cols-2 text-white px-5 lg:px-20 py-10">
                 <div class="katalog grid">
                     <h1 class="text-sm font-light uppercase">katalog</h1>
-                    <div class="grid grid-cols-6 mt-8 w-6/6 lg:w-4/6 justify-center gap-1">
-                        <h1 class="capitalize text-lg">beranda</h1>
-                        <h1 class="text-center max-lg:ml-20">/</h1>
-                        <h1 class="capitalize text-lg">layanan</h1>
-                        <h1 class="text-center">/</h1>
-                        <h1 class="capitalize text-lg">tentang<span class="capitalize ml-2">kami</span></h1>
-                        <h1 class="text-center">/</h1>
-                        <h1 class="capitalize text-lg">testimonial</h1>
-                        <h1 class="text-center">/</h1>
-                        <h1 class="capitalize text-lg">hubungi<span class="capitalize ml-2">kami</span></h1>
+                    <div class="grid grid-cols-3 mt-8 w-5/6 lg:w-5/6 justify-center gap-1">
+                        <h1 class="capitalize text-lg">beranda <span class="max-lg:ml-2 ml-10">/</span></h1>
+                        <h1 class="capitalize text-lg">layanan <span class="max-lg:ml-2 ml-10">/</span></h1>
+                        <h1 class="capitalize text-lg">tentang<span class="capitalize ml-2">kami <span class="max-lg:ml-2 ml-10">/</span></span></h1>
+                        <h1 class="capitalize text-lg">testimonial <span class="max-lg:ml-2 ml-10">/</span></h1>
+                        <h1 class="capitalize text-lg">hubungi<span class="capitalize ml-2">kami <span class="max-lg:ml-2 ml-10">/</span></span></h1>
                     </div>
                     <div class="mt-24 w-8/12 max-lg:w-full max-lg:mb-10">
                         <h1 class="text-4xl font-bold">Book your trip in minute,get full Control for much longer.</h1>
