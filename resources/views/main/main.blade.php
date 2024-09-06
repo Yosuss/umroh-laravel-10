@@ -43,17 +43,16 @@
         {{-- regist-page --}}
         <div class="register flex flex-col-reverse lg:flex-row gap-2 mt-40 lg:mt-10 m-10 lg:mb-44 lg:m-20">
             <div class="info w-full ">
-                <h1 class="font-bold text-lg lg:text-2xl mb-5">Ahlan wa sahlan <span class="font-normal">di situs
-                        resmi</span></h1>
-                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-yellow-500 ">Mulai Umrohmu bersama</h1>
-                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-blue-800 ">Sinai Umroh cabang</h1>
-                <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-blue-800 ">Indarung Padang.</h1>
-                <h1 class="mt-8 text-lg font-light w-11/12">Halo calon jamaah umroh kami adalah mitra terpercaya untuk
-                    perjalanan
+                <h1 class="font-bold text-lg lg:text-2xl lg:ms-2 lg:-mb-4">Ahlan wa sahlan <span class="font-normal">di situs resmi</span></h1>
+                <h1 class="text-[1.8rem] lg:text-[3rem] xl:lg:text-[4rem] font-bold text-yellow-500 ">Mulai Umrohmu bersama</h1>
+                <h1 class="text-[1.8rem] lg:text-[3rem] xl:lg:text-[4rem] font-bold text-blue-800 ">Sinai Umroh cabang Indarung Padang.</h1>
+                {{-- <h1 class="text-[1.8rem] lg:text-[3rem] font-bold text-blue-800 "></h1> --}}
+                <h1 class="mt-8 lg:text-lg xl:text-2xl font-light w-11/12">Halo calon jamaah umroh kami adalah mitra terpercaya untuk
+                perjalanan
                     spiritual anda dengan pengalaman <span class="font-bold">8+ tahun</span> kami siap mendampingi ibdadah
                     umroh dan haji anda</h1>
                 <div class="button font-medium text-white mt-5 flex">
-                    <button class="bg-yellow-500 capitalize text-lg px-6 py-3 mr-4 rounded-3xl">daftar sekarang</button>
+                    <button class="bg-yellow-500 capitalize text-lg px-6 py-2 mr-4 rounded-3xl">daftar sekarang</button>
                     <button
                         class="border-2 inline-flex items-center gap-4 border-black capitalize text-lg px-6 pt-3 pb-4 text-black rounded-3xl">masuk
                         <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
@@ -300,7 +299,7 @@
                             </div>
                         </div>
                         <div class="flex w-full relative justify-between">
-                            <div class="w-fit relative right-0 left-0">
+                            <div class="w-fit relative right-0 left-0 flex">
                                 <div class="swiper-pagination text-white w-fit"></div>
                             </div>
                             <div class="slide mt-10 flex gap-4 items-end">

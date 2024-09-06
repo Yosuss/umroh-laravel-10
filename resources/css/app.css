@@ -5,7 +5,9 @@
 .mail .langganan {
     background-color: #e9b634;
 }
-
+* {
+    border: 1px solid black;
+}
 @media only screen and (min-width: 1920px){
     :root {
         font-size: 1.1vw;
