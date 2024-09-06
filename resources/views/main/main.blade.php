@@ -354,7 +354,7 @@
         <div class="w-full flex items-center justify-center text-center mt-20">
             <div class="ending-information p-0 lg:p-8 lg:w-fit rounded-xl">
                 <h1 class="text-sm lg:text-xl font-medium text-yellow-400 capitalize">Temukan informasi lebih</h1>
-                <h1 class="text-3xl font-semibold mt-4 max-lg:text-4xl">Dapatkan informasi terkait promo, diskon atau <span>informasi menarik lainnya dengan subscribe</span> \<span> ke email kami.</span></h1>
+                <h1 class="text-3xl font-semibold mt-4 max-lg:text-4xl">Dapatkan informasi terkait promo, diskon atau <span>informasi menarik lainnya dengan subscribe</span><span> ke email kami.</span></h1>
                 <div class="mail mt-4 flex gap-4 justify-center">
                     <input type="text" class="rounded-xl" placeholder="Enter your email">
                     <button class="langganan p-2 px-4 rounded-xl text-white shadow-lg bg-yellow-600">Langganan</button>
