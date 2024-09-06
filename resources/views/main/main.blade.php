@@ -139,7 +139,7 @@
             <h1 class="text-2xl lg:text-4xl font-semibold mt-2">Setiap foto <span class="text-yellow-600">bercerita</span>,
                 setiap
                 senyuman penuh <span class="text-blue-800">syukur</span>.</h1>
-            <h1 class="text-2xl lg:text-4xl font-semibold mt-2 mb-6 lg:mb-12 max-lg:w-full">Yuk, jelajahi galeri kami!</h1>
+            <h1 class="text-2xl lg:text-4xl font-semibold mt-2 mb-6 lg:mb-12 max-lg:w-full">Yuk, jelajahi galeri kami!📸</h1>
             <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
                 <div class="w-full">
                     <img src="{{ asset('aset/dc1.svg') }}" alt="tower" class="mb-2 lg:mb-6 w-full">
@@ -321,7 +321,7 @@
         <div class="packets mt-28 mx-10 lg:mx-60 text-center">
             <h1 class="text-sm lg:text-xl text-medium text-blue-800 semi-bodl">Paket perjalanan ibadah</h1>
             <h1 class="text-4xl font-semibold mt-2">Yuk, umroh bareng sinai Umrah Pilihlah paket yang nyaman, biar ibadah
-                main berkesan</h1>
+                main berkesan 🕋✨</h1>
         </div>
         <div class="packet grid grid-cols-1 lg:grid-cols-3 mt-6 px-2 lg:px-20 gap-8">
             <div
