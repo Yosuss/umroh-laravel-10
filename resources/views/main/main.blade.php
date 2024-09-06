@@ -41,7 +41,7 @@
         {{-- navbar end --}}
 
         {{-- regist-page --}}
-        <div class="register flex flex-col-reverse lg:flex-row gap-2 mt-40 lg:mt-10 m-10 lg:mb-44 lg:m-20">
+        <div class="register flex flex-col-reverse justify-center items-center lg:flex-row gap-2 mt-40 lg:mt-10 m-10 lg:mb-44 lg:m-20">
             <div class="info w-full ">
                 <h1 class="font-bold text-lg lg:text-2xl mb-5">Ahlan wa sahlan <span class="font-normal">di situs
                     resmi</span></h1>
@@ -300,10 +300,10 @@
                             </div>
                         </div>
                         <div class="flex w-full relative justify-between">
-                            <div class="w-fit relative right-0 left-0 flex">
-                                <div class="swiper-pagination text-white w-fit"></div>
+                            <div class="w-full flex">
+                                <div class="swiper-pagination text-white w-5/6 text-start z-1"></div>
                             </div>
-                            <div class="slide mt-10 flex gap-4 items-end">
+                            <div class="slide mt-10 flex gap-4 items-end z-10">
                                 <i class="button-prev bi bi-arrow-left-circle text-4xl text-white"></i>
                                 <i class="button-next bi bi-arrow-right-circle-fill text-4xl text-white"></i>
                             </div>
@@ -422,7 +422,7 @@
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-4">Gimana perasaan mereka</h1>
                     <h1 class="text-3xl lg:text-4xl font-semibold mt-2 mb-6">dengan sinai Umroh?</h1>
                 </div>
-                <div class="slide-2 flex gap-4 lg:text-start justify-end max-lg:justify-start mb-6">
+                <div class="slide-2 flex gap-4 items-end lg:text-start justify-end max-lg:justify-end mb-6">
                     <i class="button-prev-2 bi bi-arrow-left-circle text-4xl text-white"></i>
                     <i class="button-next-2 bi bi-arrow-right-circle-fill text-4xl text-white"></i>
                 </div>
