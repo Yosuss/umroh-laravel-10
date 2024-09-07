@@ -3,14 +3,16 @@
     <div class="tentang-kami w-full">
 
         <!-- Icon whatsapp -->
+        <a href="https://api.whatsapp.com/send/?phone=085659670362&text&type=phone_number&app_absent=0">
         <div class="fixed right-10 top-3/4 flex z-20">
             <div
-                class=" bg-white p-2 lg:p-4 rounded-xl w-fit shadow-lg text-lx lg:text-2xl flex flex-col justify-center text-center">
+                class=" bg-white p-2 lg:p-4 rounded-xl w-fit shadow-lg text-lx lg:text-xl flex flex-col justify-center text-center">
                 <h1 class="font-semibold">Cari info umroh?</h1>
-                <h1 class="text-lg lg:text-xl font-light lg:mt-2">Hubunngi Sinai aja!</h1>
+                <h1 class="text-lg font-light lg:mt-2">Hubunngi Sinai aja!</h1>
             </div>
-            <img src="{{ asset('aset/whatsapp.png') }}" alt="" class="w-20 lg:w-32">
-        </div>
+                <img src="{{ asset('aset/whatsapp.png') }}" alt="" class="w-20 lg:w-32">
+            </div>
+        </a>
 
         {{-- navbar --}}
         <div class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
