@@ -2,6 +2,15 @@
 @section('konten')
     <div class="tentang-kami w-full">
 
+<!-- Icon whatsapp -->
+<div class="fixed right-10 top-3/4 flex">
+    <div class=" bg-white p-4 rounded-xl w-fit shadow-lg text-2xl flex flex-col justify-center text-center">
+        <h1 class="font-semibold">Cari info umroh?</h1>
+        <h1 class="text-xl font-light mt-2">Hubunngi Sinai aja!</h1>
+    </div>
+    <img src="{{ asset('aset/whatsapp.png') }}" alt="" class="w-32">
+</div>  
+
         {{-- navbar --}}
         <div class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
             <div class="logo px-5 pt-8 pb-4 lg:pl-20 z-1 lg:w-3/6 w-full">
