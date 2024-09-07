@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\contactController;
 use App\Http\Controllers\mainController;
 use App\Http\Controllers\tentangKamiController;
 use App\Http\Controllers\testimoniController;
@@ -24,4 +25,5 @@ Route::prefix('/')->group(function () {
     Route::get('/',[mainController::class,'index']);
     Route::get('/tentang-kami',[tentangKamiController::class,'tentangkami']);
     Route::get('/testimoni',[testimoniController::class,'testimoni']);
+    Route::get('/contact',[contactController::class,'contact']);
 });
