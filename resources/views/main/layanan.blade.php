@@ -356,7 +356,7 @@
                     <div class="flex justify-center items-center relative w-full">
                         <div
                             class="img flex justify-center items-center z-10 bg-white lg:p-6 w-full rounded-xl mx-10 lg:mx-10">
-                            <img src="{{ asset('aset/mekah.png') }}" alt="tower" class="max-lg:py-6 rounded-3xl lg:w-full object-cover">
+                            <img src="{{ asset('aset/mekah.png') }}" alt="tower" class="max-lg:p-6 rounded-3xl lg:w-full object-cover">
                         </div>
                     </div>
 
