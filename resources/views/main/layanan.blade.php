@@ -355,9 +355,8 @@
                     class="flex max-lg:flex-col lg:w-8/12 mt-10 max-lg:mx-2 justify-center lg:justify-between items-center">
                     <div class="flex justify-center items-center relative w-full">
                         <div
-                            class="img flex justify-center items-center z-10 lg:p-5 bg-white max-lg:p-5 w-full rounded-xl lg:mx-10">
-                            {{-- <img src="{{ asset('aset/hero.svg') }}" alt="tower" class=" rounded-3xl lg:w-full object-cover"> --}}
-                            <div class="bg-gray-200 w-full lg:h-[30rem] z-10 h-80"></div>
+                            class="img flex justify-center items-center z-10 bg-white lg:p-6 w-full rounded-xl mx-10 lg:mx-10">
+                            <img src="{{ asset('aset/mekah.png') }}" alt="tower" class="max-lg:py-6 rounded-3xl lg:w-full object-cover">
                         </div>
                     </div>
 
