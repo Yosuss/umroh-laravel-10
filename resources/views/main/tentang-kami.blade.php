@@ -62,7 +62,7 @@
                     ibadah Anda penuh kenyamanan dan keberkahan.</h1>
                 <div class="flex lg:pt-32">
                     <img src="{{ asset('aset/play.svg') }}" alt="" class="w-[5rem]">
-                    <h1 class="flex justify-center items-center font-semibold text-2xl">play testimoni jama,ah</h1>
+                    <h1 class="flex justify-center items-center font-semibold text-2xl">play testimoni jama'ah</h1>
                 </div>
             </div>
         </div>
