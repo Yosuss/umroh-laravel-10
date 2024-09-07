@@ -4,7 +4,7 @@
         {{-- navbar --}}
         <div class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
             <div class="logo px-5 pt-8 pb-4 lg:pl-20 z-1 lg:w-3/6 w-full">
-                <img src="{{ asset('aset/sinaii.svg') }}" alt="" class=" w-6/12 lg:w-2/12">
+                <img src="{{ asset('aset/sinaii.svg') }}" alt="" class=" w-4/12 lg:w-2/12">
             </div>
 
             <div class="section flex font-medium text-lg font-sans w-full justify-end pr-0 lg:pr-32">
@@ -18,12 +18,13 @@
                 </div>
 
                 <!-- Menu items -->
-                <div id="menu" class="hidden w-4/6 lg:flex text-end justify-end items-center gap-4 ">
+                <div id="menu" class="hidden w-full lg:flex text-2xl font-semibold text-end justify-end items-center gap-12 ">
                     <h1>beranda</h1>
                     <h1>layanan</h1>
                     <h1>tentang kami</h1>
                     <h1>testimonial</h1>
                     <h1>hubungi<span class=""> kami</span></h1>
+                    <h1 class="">sign <span class=""> In</span></h1>
                 </div>
 
                 <!-- Dropdown for mobile -->
@@ -34,6 +35,7 @@
                         <h1 class="text-black text-4xl px-2 py-4">tentang kami</h1>
                         <h1 class="text-black text-4xl px-2 py-4">testimonial</h1>
                         <h1 class="text-black text-4xl px-2 py-4">hubungi kami</h1>
+                        <h1 class="text-black text-4xl px-2 py-4">sign In</h1>
                     </div>
                 </div>
             </div>
@@ -66,20 +68,13 @@
                 </div>
             </div>
             <div class="flex justify-center items-center size-full relative">
-                {{-- <div class="rounded-2xl bg-white p-4 absolute top-2 left-[-2rem]">
-                    <h1 class="font-bold text-xl">8+ years</h1>
-                    <h1 class="text-xl">experience</h1>
-                </div>
-                <img src="{{ asset('aset/mekah.jpg') }}" alt="mekah" class="rounded-2xl w-[30rem]">
-                <img src="{{ asset('aset/kakbah.jpg') }}" alt="kakbah"
-                    class="rounded-2xl absolute w-[15rem] bottom-2 right-[-2rem]"> --}}
                 <img src="{{ asset('aset/hero.svg') }}" alt="tower" class="rounded-3xl lg:w-full object-cover">
             </div>
         </div>
         {{-- regist-page end --}}
 
-        {{-- about me --}}
-        <div class="about-me capitalize text-lg py-10 px-4 lg:p-20 bg-blue-800 w-full">
+        {{-- about us --}}
+        <div class="about-us capitalize text-lg py-10 px-4 lg:p-20 bg-blue-800 w-full">
             <h1 class="text-sm lg:text-xl text-medium text-blue-800 w-fit py-2 px-4 rounded-3xl bg-white">tentang kami.</h1>
             <div class="detail grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-6 text-white">
                 <h1 class="text-4xl max-lg:w-3/4 font-semibold mb-4 mt-4 w-full lg:w-8/12">Siapa sih Sinai Umroh Indarung
@@ -131,7 +126,7 @@
                 </div>
             </div>
         </div>
-        {{-- about me end --}}
+        {{-- about us end --}}
 
         {{-- dokumentation --}}
         <div class="dokumentation px-10 lg:px-20 my-20 py-2 lg:py-0 w-full text-center">
@@ -166,45 +161,6 @@
                     <img src="{{ asset('aset/tower.jpg') }}" alt="tower" class="rounded-xl size-full object-cover">
                 </div>
             </div>
-            {{-- <div class="dream-detail">
-                <div class="w-fit text-white">
-                    <h1 class="text-sm lg:text-xl text-medium text-yellow-600 bg-yellow-50 w-fit px-4 py-2 rounded-full">
-                        Ingin
-                        umroh tapi
-                        terbentur biaya?</h1>
-                    <h1 class="text-[1.7rem] lg:text-3xl font-semibold mt-4">Wujudkan impian tersebut bersama kami dalam
-                        nabung
-                        umrah</h1>
-                    <h1 class="text-[1.7rem] lg:text-3xl font-semibold"></h1>
-                    <h1 class="text-xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
-                    <div class="requirement grid grid-rows-3 gap-0">
-                        <div class="require flex items-center gap-4 mt-6">
-                            <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                            <h1 class="text-lg">Menyiapkan KTP</h1>
-                        </div>
-                        <div class="require flex items-center gap-4">
-                            <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                            <h1 class="text-lg">Mengisi formulir pendaftaran umroh</h1>
-                        </div>
-                        <div class="require flex items-center gap-4">
-                            <i class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                            <h1 class="text-lg">Mengisi formulir pembukaan rekening bank syarah ( BSI,BRI,Nagari syariah
-                                )</h1>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-2 justify-between">
-                        <div class="pagination mt-14 flex gap-2">
-                            <div class="w-2 h-2 bg-white rounded-full"></div>
-                            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-                        </div>
-                        <div class="slide mt-10 flex gap-4 justify-end">
-                            <i class="bi bi-arrow-left-circle text-4xl text-white"></i>
-                            <i class="bi bi-arrow-right-circle-fill text-4xl text-white"></i>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
 
             {{-- Swiper --}}
             <div class="flex flex-col">
