@@ -18,23 +18,44 @@
                 </div>
 
                 <!-- Menu items -->
-                <div id="menu" class="hidden w-full lg:flex text-2xl font-semibold text-end justify-end items-center gap-12 ">
-                    <h1>beranda</h1>
-                    <h1>layanan</h1>
-                    <h1>tentang kami</h1>
-                    <h1>testimonial</h1>
-                    <h1>hubungi<span class=""> kami</span></h1>
+                <div id="menu"
+                    class="hidden w-full lg:flex text-2xl font-semibold text-end justify-end items-center gap-12 ">
+                    <a href="{{ url('/') }}">
+                        <h1>beranda</h1>
+                    </a>
+                    <a href="{{ url('/layanan') }}">
+                        <h1>layanan</h1>
+                    </a>
+                    <a href="{{ url('/tentang-kami') }}">
+                        <h1>tentang kami</h1>
+                    </a>
+                    <a href="{{ url('/testimoni') }}">
+                        <h1>testimonial</h1>
+                    </a>
+                    <a href="{{ url('/contact') }}">
+                        <h1>hubungi<span class=""> kami</span></h1>
+                    </a>
                     <h1 class="">sign <span class=""> In</span></h1>
                 </div>
 
                 <!-- Dropdown for mobile -->
                 <div id="dropdown" class="hidden bg-white top-0 left-0 w-full space-y-2 lg:mt-2 h-screen z-50 fixed">
                     <div class="absolute bottom-0 w-full">
-                        <h1 class="text-black text-4xl px-2 py-4">beranda</h1>
-                        <h1 class="text-black text-4xl px-2 py-4">layanan</h1>
-                        <h1 class="text-black text-4xl px-2 py-4">tentang kami</h1>
-                        <h1 class="text-black text-4xl px-2 py-4">testimonial</h1>
-                        <h1 class="text-black text-4xl px-2 py-4">hubungi kami</h1>
+                        <a href="{{ url('/') }}">
+                            <h1 class="text-black text-4xl px-2 py-4">beranda</h1>
+                        </a>
+                        <a href="{{ url('/') }}">
+                            <h1 class="text-black text-4xl px-2 py-4">layanan</h1>
+                        </a>
+                        <a href="{{ url('/') }}">
+                            <h1 class="text-black text-4xl px-2 py-4">tentang kami</h1>
+                        </a>
+                        <a href="{{ url('/') }}">
+                            <h1 class="text-black text-4xl px-2 py-4">testimonial</h1>
+                        </a>
+                        <a href="{{ url('/') }}">
+                            <h1 class="text-black text-4xl px-2 py-4">hubungi kami</h1>
+                        </a>
                         <h1 class="text-black text-4xl px-2 py-4">sign In</h1>
                     </div>
                 </div>
@@ -281,7 +302,7 @@
             <h1 class="text-4xl font-semibold mt-2">Yuk, umroh bareng sinai Umrah Pilihlah paket yang nyaman, biar ibadah
                 main berkesan 🕋✨</h1>
         </div>
-        <div class="packet grid grid-cols-1 lg:grid-cols-3 mt-6 px-2 lg:px-20 gap-8">
+        <div class="packet grid grid-cols-1 lg:grid-cols-3 mt-6 px-2 lg:px-96 gap-8">
             <div
                 class="packet-1 group rounded-3xl bg-yellow-50 text-left mt-4 p-8 gap-4 hover:text-white hover:bg-yellow-400 duration-200">
                 <div class="grid lg:grid-cols-1 grid-cols-2  gap-4">

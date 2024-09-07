@@ -21,22 +21,42 @@
                 <!-- Menu items -->
                 <div id="menu"
                     class="hidden w-full lg:flex text-2xl font-semibold text-end justify-end items-center gap-12 ">
-                    <h1>beranda</h1>
-                    <h1>layanan</h1>
-                    <h1>tentang kami</h1>
-                    <h1>testimonial</h1>
-                    <h1>hubungi<span class=""> kami</span></h1>
+                    <a href="{{ url('/') }}">
+                        <h1>beranda</h1>
+                    </a>
+                    <a href="{{ url('/layanan') }}">
+                        <h1>layanan</h1>
+                    </a>
+                    <a href="{{ url('/tentang-kami') }}">
+                        <h1>tentang kami</h1>
+                    </a>
+                    <a href="{{ url('/testimoni') }}">
+                        <h1>testimonial</h1>
+                    </a>
+                    <a href="{{ url('/contact') }}">
+                        <h1>hubungi<span class=""> kami</span></h1>
+                    </a>
                     <h1 class="">sign <span class=""> In</span></h1>
                 </div>
 
                 <!-- Dropdown for mobile -->
                 <div id="dropdown" class="hidden bg-white top-0 left-0 w-full space-y-2 lg:mt-2 h-screen z-50 fixed">
                     <div class="absolute bottom-0 w-full">
-                        <h1 class="text-black text-4xl px-2 py-4">beranda</h1>
-                        <h1 class="text-black text-4xl px-2 py-4">layanan</h1>
-                        <h1 class="text-black text-4xl px-2 py-4">tentang kami</h1>
-                        <h1 class="text-black text-4xl px-2 py-4">testimonial</h1>
-                        <h1 class="text-black text-4xl px-2 py-4">hubungi kami</h1>
+                        <a href="{{ url('/') }}">
+                            <h1 class="text-black text-4xl px-2 py-4">beranda</h1>
+                        </a>
+                        <a href="{{ url('/') }}">
+                            <h1 class="text-black text-4xl px-2 py-4">layanan</h1>
+                        </a>
+                        <a href="{{ url('/') }}">
+                            <h1 class="text-black text-4xl px-2 py-4">tentang kami</h1>
+                        </a>
+                        <a href="{{ url('/') }}">
+                            <h1 class="text-black text-4xl px-2 py-4">testimonial</h1>
+                        </a>
+                        <a href="{{ url('/') }}">
+                            <h1 class="text-black text-4xl px-2 py-4">hubungi kami</h1>
+                        </a>
                         <h1 class="text-black text-4xl px-2 py-4">sign In</h1>
                     </div>
                 </div>
@@ -49,7 +69,7 @@
         <div
             class="flex flex-col-reverse justify-center items-center lg:flex-row gap-2 mt-40 lg:mt-32 m-10 lg:mb-44 lg:m-20">
             <div class="flex justify-center items-center size-full relative">
-                <div class="img bg-gray-400 w-full h-80 lg:h-[40rem] rounded-xl max-lg:mb-20 lg:mx-10">
+                <div class="img bg-gray-200 w-full h-80 lg:h-[40rem] rounded-xl max-lg:mb-20 lg:mx-10">
                     {{-- <img src="{{ asset('aset/hero.svg') }}" alt="tower" class=" rounded-3xl lg:w-full object-cover"> --}}
                 </div>
             </div>
@@ -87,7 +107,7 @@
                 <div
                     class="img flex justify-center items-center lg:p-5 bg-white w-full h-80 lg:h-[36rem] rounded-xl mx-5 lg:mx-10">
                     {{-- <img src="{{ asset('aset/hero.svg') }}" alt="tower" class=" rounded-3xl lg:w-full object-cover"> --}}
-                    <div class="bg-gray-400 w-full lg:h-[34rem]"></div>
+                    <div class="bg-gray-200 w-full lg:h-[34rem]"></div>
                 </div>
             </div>
         </div>
@@ -105,7 +125,7 @@
                 <h1 class="lg:text-xl text-medium text-yellow-800 w-fit py-2 px-4 rounded-3xl bg-yellow-50">Misi Kami.
                 </h1>
                 
-                <div class="">
+                <div class="misi">
                     <div class="flex items-center gap-4 mt-6">
                         <i
                             class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
