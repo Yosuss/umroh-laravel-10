@@ -75,8 +75,10 @@
                 <h1 class="text-2xl lg:text-3xl font-light lg:mt-4 lg:w-6/12">Temukan layanan umrah terbaik kami, lihat
                     persyaratannya, dan daftar dengan mudah untuk memulai perjalanan ibadahmu bersama
                     Sinau Umrah.</h1>
-                <div class="flex gap-4 mt-5 lg:mt-10">
-                    <button class="bg-blue-800 text-white rounded-full px-6 py-2">Mulai daftar</button>
+                <div class="flex gap-4 mt-5 lg:mt-10 text-lg font-semibold">
+                    <button class="bg-blue-800 text-white rounded-full px-6 py-2">
+                        <a href="#form-container">Mulai daftar</a>
+                    </button>
                     <button
                         class="border-2 inline-flex text-center justify-center items-center gap-4 border-black capitalize text-lg px-6 pt-3 pb-4 text-black rounded-full">Lihat
                         persyaratan
@@ -204,74 +206,118 @@
                         </h1>
                     </div>
 
-                    <div class="syarat-value mt-4 flex">
+                    <div class="syarat-value mt-4 flex flex-wrap">
 
-                        <div class="syarat-pendaftaran bg-white text-start p-5 rounded-xl w-fit">
-                            <h1 class="text-2xl font-bold text-blue-800">syarat pendaftaran</h1>
-                            <div class="list-container lg:mr-10">
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light">Mengisi formulir pendaftaran</h1>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 w-full gap-8">
+                            <div class="flex flex-col gap-8">
+                                <div class="syarat-pendaftaran bg-white text-start p-5 rounded-xl">
+                                    <h1 class="text-2xl font-bold text-blue-800">syarat pendaftaran</h1>
+                                    <div class="list-container">
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light">Mengisi formulir pendaftaran</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light">KTP, KK, Buku Nikah, AKte</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light lg:w-1/2">Dokumen & Pelunasan diselesaikan
+                                                (Minimal 45 hari sebelum keberangkatan)</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light">DP Rp. 3.000.000</h1>
+                                        </div>
+        
+                                    </div>
                                 </div>
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light">KTP, KK, Buku Nikah, AKte</h1>
+                                <div class="harga bg-white text-start p-5 rounded-xl">
+                                    <h1 class="text-2xl font-bold text-yellow-800">Harga belum termasuk</h1>
+                                    <div class="list-container">
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-dash p-1 px-2 rounded-full bg-yellow-100 text-yellow-800"></i>
+                                            <h1 class="lg:text-lg font-light">Biaya suntik Meningitis</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-dash p-1 px-2 rounded-full bg-yellow-100 text-yellow-800"></i>
+                                            <h1 class="lg:text-lg font-light">Biaya pengurusan paspor</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-dash p-1 px-2 rounded-full bg-yellow-100 text-yellow-800"></i>
+                                            <h1 class="lg:text-lg font-light lg:w-1/2">Biaya transportasi domestik</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-dash p-1 px-2 rounded-full bg-yellow-100 text-yellow-800"></i>
+                                            <h1 class="lg:text-lg font-light">Surat Mahrom Rp. 350.000</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-dash p-1 px-2 rounded-full bg-yellow-100 text-yellow-800"></i>
+                                            <h1 class="lg:text-lg font-light">Kelebihan Bagasi</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-dash p-1 px-2 rounded-full bg-yellow-100 text-yellow-800"></i>
+                                            <h1 class="lg:text-lg font-light">Biaya sewaktu-waktu dapat berubah</h1>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light lg:w-1/2">Dokumen & Pelunasan diselesaikan
-                                        (Minimal 45 hari sebelum keberangkatan)</h1>
-                                </div>
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light">DP Rp. 3.000.000</h1>
-                                </div>
-
                             </div>
-                        </div>
-
-                        <div class="fasilitas bg-white text-start p-5 rounded-xl w-fit h-fit">
-                            <h1 class="text-2xl font-bold text-blue-800">syarat pendaftaran</h1>
-                            <div class="list-container lg:mr-10">
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light">Visa</h1>
+                            <div class="flex flex-col gap-8">
+                                <div class="fasilitas bg-white text-start p-5 rounded-xl">
+                                    <h1 class="text-2xl font-bold text-blue-800">fasilitas</h1>
+                                    <div class="list-container">
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light">Visa</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light">Pembimbing</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light lg:w-1/2">Tiket Pesawat (Pulang - Pergi)</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light">Hotel Mekkah & Madinah</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light">Makan 3x sehari</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light">City Tour</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light">Transportasi Ekslusif</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light">5 Liter air zam-zam</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light">Sertifikat Umrah</h1>
+                                        </div>
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light">Perlengkapan Umrah Asuransi</h1>
+                                        </div>
+        
+                                    </div>
                                 </div>
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light">Pembimbing</h1>
-                                </div>
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light lg:w-1/2">Tiket Pesawat (Pulang - Pergi)</h1>
-                                </div>
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light">Hotel Mekkah & Madinah</h1>
-                                </div>
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light">Makan 3x sehari</h1>
-                                </div>
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light">City Tour</h1>
-                                </div>
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light">Transportasi Ekslusif</h1>
-                                </div>
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light">5 Liter air zam-zam</h1>
-                                </div>
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light">Sertifikat Umrah</h1>
-                                </div>
-                                <div class="flex items-center gap-4 mt-2">
-                                    <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                    <h1 class="lg:text-lg font-light">Perlengkapan Umrah Asuransi</h1>
+                                <div class="syarat-keberangkatan bg-white text-start p-5 rounded-xl">
+                                    <h1 class="text-2xl font-bold text-blue-800">syarat keberangkatan</h1>
+                                    <div class="list-container">
+                                        <div class="flex items-center gap-4 mt-2">
+                                            <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
+                                            <h1 class="lg:text-lg font-light">Paspor (Minimal berlaku 7 bulan)</h1>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
@@ -280,7 +326,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-center w-full gap-2 items-center mt-20">
+                <div id="form-container" class="flex flex-col justify-center w-full gap-2 items-center mt-20">
                     <h1 class="lg:text-xl text-medium text-blue-800 w-fit py-2 px-4 rounded-3xl">Formulir Pendaftaran.
                     </h1>
                     <h1 class="text-[3rem] lg:text-[3.5rem] font-semibold lg:w-6/12">Raih Kesempatan Berangkat Umrah dengan
@@ -292,7 +338,7 @@
                 </div>
 
                 <div
-                    class="form-container bg-white flex max-lg:flex-col lg:w-8/12 mt-10 justify-center lg:justify-between items-center">
+                    class="bg-white flex max-lg:flex-col w-full lg:w-8/12 mt-10 justify-center lg:justify-between items-center">
                     <div class="flex justify-center items-center size-full relative w-full">
                         <div class="img flex justify-center items-center lg:p-5 bg-white w-full rounded-xl lg:mx-10">
                             {{-- <img src="{{ asset('aset/hero.svg') }}" alt="tower" class=" rounded-3xl lg:w-full object-cover"> --}}
