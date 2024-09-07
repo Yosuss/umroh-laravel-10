@@ -3,8 +3,9 @@
     <div class="tentang-kami w-full">
 
         <!-- Icon whatsapp -->
-        <div class="fixed right-10 top-3/4 flex">
-            <div class=" bg-white p-2 lg:p-4 rounded-xl w-fit shadow-lg text-lx lg:text-2xl flex flex-col justify-center text-center">
+        <div class="fixed right-10 top-3/4 flex z-20">
+            <div
+                class=" bg-white p-2 lg:p-4 rounded-xl w-fit shadow-lg text-lx lg:text-2xl flex flex-col justify-center text-center">
                 <h1 class="font-semibold">Cari info umroh?</h1>
                 <h1 class="text-lg lg:text-xl font-light lg:mt-2">Hubunngi Sinai aja!</h1>
             </div>
@@ -22,8 +23,8 @@
                 <div
                     class="lg:hidden flex max-lg:items-center max-lg:py-2 justify-end max-lg:pr-4 max-lg:text-end max-lg:w-full">
                     <div id="burger" class="p-2 focus:outline-none relative z-[999] flex flex-col justify-center">
-                        <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200 mb-2"></span>
-                        <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200"></span>
+                        <span id="line1" class=" left-0 w-8 h-[0.1rem] bg-black duration-200 mb-2"></span>
+                        <span id="line2" class="left-0 w-8 h-[0.1rem] bg-black duration-200"></span>
                     </div>
                 </div>
 
@@ -155,7 +156,8 @@
                                 <h1 class="capitalize text-lg"><i class="bi bi-check2 text-blue-400"></i> perlengkapan
                                     (gratis)
                                 </h1>
-                                <h1 class="capitalize text-lg"><i class="bi bi-check2 text-blue-400"></i> 13 hari perjalanan
+                                <h1 class="capitalize text-lg"><i class="bi bi-check2 text-blue-400"></i> 13 hari
+                                    perjalanan
                                 </h1>
                                 <h1 class="capitalize text-lg"><i class="bi bi-check2 text-blue-400"></i> dapat 2x jum'at
                                 </h1>
@@ -211,7 +213,8 @@
                     <div class="syarat-header flex flex-col text-white">
                         <h1 class="text-sm lg:text-xl font-semibold text-blue-800 w-fit py-2 px-4 rounded-3xl bg-white">
                             Persyaratan umrah.</h1>
-                        <h1 class="text-3xl lg:text-5xl font-semibold my-4 w-full text-start lg:w-7/12">Berikut syarat-syarat Dokumen
+                        <h1 class="text-3xl lg:text-5xl font-semibold my-4 w-full text-start lg:w-7/12">Berikut
+                            syarat-syarat Dokumen
                             Keberangkatan Umrah
                             yang harus dilengkapi 🕋
                         </h1>
@@ -351,9 +354,10 @@
                 <div
                     class="flex max-lg:flex-col lg:w-8/12 mt-10 max-lg:mx-2 justify-center lg:justify-between items-center">
                     <div class="flex justify-center items-center relative w-full">
-                        <div class="img flex justify-center items-center lg:p-5 bg-white max-lg:p-5 w-full rounded-xl lg:mx-10">
+                        <div
+                            class="img flex justify-center items-center z-10 lg:p-5 bg-white max-lg:p-5 w-full rounded-xl lg:mx-10">
                             {{-- <img src="{{ asset('aset/hero.svg') }}" alt="tower" class=" rounded-3xl lg:w-full object-cover"> --}}
-                            <div class="bg-gray-200 w-full lg:h-[30rem] h-80"></div>
+                            <div class="bg-gray-200 w-full lg:h-[30rem] z-10 h-80"></div>
                         </div>
                     </div>
 
@@ -365,16 +369,19 @@
                             <input type="number" class="text-lg rounded-lg py-4 w-full" placeholder="Nomor Telp/WA">
                             <input type="date" class="text-lg rounded-lg py-4 w-full"
                                 placeholder="Tanggal keberangkatan">
-                            <div class="text-lg rounded-lg py-4 w-full border-[0.08rem] bg-white border-gray-500 text-gray-500 text-start">
-                                    <button id="paket" class="px-4">Paket umroh</button>
-                                    <div id="dropdown-paket"
-                                        class="hidden w-full items-center">
-                                        <div class="absolute z-50 flex flex-col items-center backdrop-blur-lg gap-1 mt-5">
-                                            <h1 class="text-xl px-4 py-2 border-2 bg-white border-gray-500 rounded-lg">Paket 1</h1>
-                                            <h1 class="text-xl px-4 py-2 border-2 bg-white border-gray-500 rounded-lg">Paket 2</h1>
-                                            <h1 class="text-xl px-4 py-2 border-2 bg-white border-gray-500 rounded-lg">Paket 3</h1>
-                                        </div>
+                            <div
+                                class="text-lg rounded-lg py-4 w-full border-[0.08rem] bg-white border-gray-500 text-gray-500 text-start">
+                                <button id="paket" class="px-4">Paket umroh</button>
+                                <div id="dropdown-paket" class="hidden w-full items-center">
+                                    <div class="absolute z-50 flex flex-col items-center backdrop-blur-lg gap-1 mt-5">
+                                        <h1 class="text-xl px-4 py-2 border-2 bg-white border-gray-500 rounded-lg">Paket 1
+                                        </h1>
+                                        <h1 class="text-xl px-4 py-2 border-2 bg-white border-gray-500 rounded-lg">Paket 2
+                                        </h1>
+                                        <h1 class="text-xl px-4 py-2 border-2 bg-white border-gray-500 rounded-lg">Paket 3
+                                        </h1>
                                     </div>
+                                </div>
                             </div>
                             <input type="text" class="text-lg rounded-lg py-4 w-full" placeholder="Jumlah jama’ah">
                         </div>
@@ -441,15 +448,20 @@
         const dropdown = document.getElementById("dropdown");
         const paket = document.getElementById("paket");
         const dp = document.getElementById("dropdown-paket");
+        const l1 = document.getElementById("line1");
+        const l2 = document.getElementById("line2");
 
         burger.addEventListener("click", () => {
-            // console.log(burger, dropdown, menu)
             dropdown.classList.toggle("hidden");
 
             if (dropdown.classList.contains("hidden")) {
                 document.body.style.overflowY = "";
+                line1.style.transform = 'translateX(0) rotate(0deg)';
+                line2.style.transform = 'translateX(0) rotate(0deg)'; 
             } else {
                 document.body.style.overflowY = "hidden";
+                line1.style.transform = 'translateX(-50%) rotate(-45deg)';
+                line2.style.transform = 'translateX(-50%) rotate(45deg)';
             }
         });
 

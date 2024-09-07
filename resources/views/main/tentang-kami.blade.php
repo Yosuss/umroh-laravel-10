@@ -13,8 +13,8 @@
                 <div
                     class="lg:hidden flex max-lg:items-center max-lg:py-2 justify-end max-lg:pr-4 max-lg:text-end max-lg:w-full">
                     <div id="burger" class="p-2 focus:outline-none relative z-[999] flex flex-col justify-center">
-                        <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200 mb-2"></span>
-                        <span class="line left-0 w-8 h-[0.1rem] bg-black duration-200"></span>
+                        <span id="line1" class=" left-0 w-8 h-[0.1rem] bg-black duration-200 mb-2"></span>
+                        <span id="line2" class="left-0 w-8 h-[0.1rem] bg-black duration-200"></span>
                     </div>
                 </div>
 
@@ -25,10 +25,10 @@
                         <h1 class="">beranda</h1>
                     </a>
                     <a href="{{ url('/layanan') }}">
-                        <h1 class="">layanan</h1>
+                        <h1 class="font-bold">layanan</h1>
                     </a>
                     <a href="{{ url('/tentang-kami') }}">
-                        <h1 class="font-bold">tentang kami</h1>
+                        <h1 class="">tentang kami</h1>
                     </a>
                     <a href="{{ url('/testimoni') }}">
                         <h1 class="">testimonial</h1>
@@ -207,15 +207,20 @@
         const burger = document.getElementById("burger");
         const menu = document.getElementById("menu");
         const dropdown = document.getElementById("dropdown");
+        const l1 = document.getElementById("line1");
+        const l2 = document.getElementById("line2");
 
         burger.addEventListener("click", () => {
-            console.log(burger, dropdown, menu)
             dropdown.classList.toggle("hidden");
 
             if (dropdown.classList.contains("hidden")) {
                 document.body.style.overflowY = "";
+                line1.style.transform = 'translateX(0) rotate(0deg)';
+                line2.style.transform = 'translateX(0) rotate(0deg)'; 
             } else {
                 document.body.style.overflowY = "hidden";
+                line1.style.transform = 'translateX(-50%) rotate(-45deg)';
+                line2.style.transform = 'translateX(-50%) rotate(45deg)';
             }
         });
     </script>
