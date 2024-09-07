@@ -25,13 +25,13 @@
                         <h1 class="">beranda</h1>
                     </a>
                     <a href="{{ url('/layanan') }}">
-                        <h1 class="font-bold">layanan</h1>
+                        <h1 class="">layanan</h1>
                     </a>
                     <a href="{{ url('/tentang-kami') }}">
                         <h1 class="">tentang kami</h1>
                     </a>
                     <a href="{{ url('/testimoni') }}">
-                        <h1 class="">testimonial</h1>
+                        <h1 class="font-bold">testimonial</h1>
                     </a>
                     <a href="{{ url('/contact') }}">
                         <h1 class="">hubungi<span class=""> kami</span></h1>
@@ -218,7 +218,7 @@
                 <span class="bg-white border-2 border-blue-800 text-blue-800 py-2 px-4 rounded-lg">4</span>
                 <span class="bg-white border-2 border-blue-800 text-blue-800 py-2 px-4 rounded-lg">5</span>
                 <span class="bg-white border-2 border-blue-800 text-blue-800 py-2 px-4 rounded-lg">6</span>
-                <span class="bg-blue-800 text-white py-2 px-4 rounded-lg">Perv</span>
+                <span class="bg-blue-800 text-white py-2 px-4 rounded-lg">Next</span>
             </div>
         </div>
         {{-- testimoni end --}}

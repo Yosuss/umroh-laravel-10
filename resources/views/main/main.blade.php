@@ -21,10 +21,10 @@
                 <div id="menu"
                     class="hidden w-full lg:flex font-normal text-2xl text-end justify-end items-center gap-12 ">
                     <a href="{{ url('/') }}">
-                        <h1 class="">beranda</h1>
+                        <h1 class="font-bold">beranda</h1>
                     </a>
                     <a href="{{ url('/layanan') }}">
-                        <h1 class="font-bold">layanan</h1>
+                        <h1 class="">layanan</h1>
                     </a>
                     <a href="{{ url('/tentang-kami') }}">
                         <h1 class="">tentang kami</h1>
@@ -229,50 +229,39 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="w-fit text-white">
-                                    <h1 class="text-xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
+                                    <h1 class="text-xl mt-4 font-semibold">2. Melakukan akad tabungan</h1>
                                     <div class="requirement grid grid-rows-3 gap-0">
                                         <div class="require flex items-center gap-4 mt-6">
                                             <i
                                                 class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                            <h1 class="text-lg">Menyiapkan KTP</h1>
+                                            <h1 class="text-lg">Menyertakan DP minimal Rp. 500.000 saat mendaftar</h1>
                                         </div>
                                         <div class="require flex items-center gap-4">
                                             <i
                                                 class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                            <h1 class="text-lg">Mengisi formulir pendaftaran umroh</h1>
+                                            <h1 class="text-lg">Saldo awal Rp. 100.000</h1>
                                         </div>
                                         <div class="require flex items-center gap-4">
                                             <i
                                                 class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                            <h1 class="text-lg">Mengisi formulir pembukaan rekening bank syarah (
-                                                BSI,BRI,Nagari
-                                                syariah
-                                                )</h1>
+                                            <h1 class="text-lg">Saldo awal Rp. 400.000 (Di kantor Sinai)</h1>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="w-fit text-white">
-                                    <h1 class="text-xl mt-4 font-semibold">1 mengisi formulir pendaftaran umroh</h1>
+                                    <h1 class="text-xl mt-4 font-semibold">3. Pembuatan Rekening Bank Terkait</h1>
                                     <div class="requirement grid grid-rows-3 gap-0">
                                         <div class="require flex items-center gap-4 mt-6">
                                             <i
                                                 class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                            <h1 class="text-lg">Menyiapkan KTP</h1>
+                                            <h1 class="text-lg">Berkas jama'ah  dikirim ke kantor pusat</h1>
                                         </div>
                                         <div class="require flex items-center gap-4">
                                             <i
                                                 class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                            <h1 class="text-lg">Mengisi formulir pendaftaran umroh</h1>
-                                        </div>
-                                        <div class="require flex items-center gap-4">
-                                            <i
-                                                class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                            <h1 class="text-lg">Mengisi formulir pembukaan rekening bank syarah (
-                                                BSI,BRI,Nagari
-                                                syariah
-                                                )</h1>
+                                            <h1 class="text-lg">Nantinya di teruskan ke pihak bank sebagau persyaratan Open rekening atas nama Jama'ah</h1>
                                         </div>
                                     </div>
                                 </div>
@@ -685,7 +674,7 @@
                 prevEl: '.slide .button-prev',
             },
             autoplay: {
-                delay: 30000,
+                delay: 3000,
                 disableOnInteraction: false,
             },
         });

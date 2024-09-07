@@ -25,7 +25,7 @@
                         <h1 class="">beranda</h1>
                     </a>
                     <a href="{{ url('/layanan') }}">
-                        <h1 class="font-bold">layanan</h1>
+                        <h1 class="">layanan</h1>
                     </a>
                     <a href="{{ url('/tentang-kami') }}">
                         <h1 class="">tentang kami</h1>
@@ -34,7 +34,7 @@
                         <h1 class="">testimonial</h1>
                     </a>
                     <a href="{{ url('/contact') }}">
-                        <h1 class="">hubungi<span class=""> kami</span></h1>
+                        <h1 class="font-bold">hubungi<span class=""> kami</span></h1>
                     </a>
                     <h1 class="">sign <span class=""> In</span></h1>
                 </div>
@@ -75,18 +75,18 @@
                 </div>
             </div>
             <div
-                class="form-container bg-white flex max-lg:flex-col lg:w-full max-lg:mx-4 px-10 lg:px-0 mt-10 lg:gap-10 justify-center lg:justify-between items-center">
-                <div class="form flex flex-col gap-2 m-6 w-full lg:w-6/12 lg:mr-52">
-                    <h1 class="text-3xl lg:mb-2 font-semibold">Hubungi Kami.</h1>
-                    <input type="text" class="text-2xl rounded-lg w-full" placeholder="Email">
-                    <input type="text" class="text-2xl rounded-lg w-full" placeholder="Nama">
-                    <input type="text" class="text-2xl rounded-lg w-full pb-10" placeholder="Subjek">
-                    <button class="capitalize px-4 py-2 text-white bg-yellow-600 rounded-lg w-full">kirim</button>
+                class="form-container bg-white flex max-lg:flex-col lg:w-full max-lg:mx-4 px-10 lg:px-0 mt-10 lg:gap-4 justify-center lg:justify-between items-center">
+                <div class="form flex flex-col gap-6 m-6 w-full lg:w-6/12 lg:mr-10">
+                    <h1 class="text-3xl lg:mb-5 font-semibold">Hubungi Kami.</h1>
+                    <input type="text" class="text-2xl rounded-lg lg:py-4 w-full" placeholder="Email">
+                    <input type="text" class="text-2xl rounded-lg lg:py-4 w-full" placeholder="Nama">
+                    <input type="text" class="text-2xl rounded-lg lg:py-4 w-full pb-10 lg:pb-20" placeholder="Subjek">
+                    <button class="capitalize px-4 lg:py-4 py-2 shadow-lg text-white bg-yellow-600 rounded-lg w-full">kirim</button>
                 </div>
                 <div class="map m-6 lg:w-1/2">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d361174.16989107773!2d99.93070517341222!3d-0.9885416667089373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b95b314aa827%3A0x1131cf3ebcab80ff!2sSinai%20Umrah%20%26%20Haji%20Plus%20kantor%20pusat!5e0!3m2!1sid!2sid!4v1725696160390!5m2!1sid!2sid"
-                        width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade" class="rounded-lg max-lg:hidden"></iframe>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d361174.16989107773!2d99.93070517341222!3d-0.9885416667089373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b95b314aa827%3A0x1131cf3ebcab80ff!2sSinai%20Umrah%20%26%20Haji%20Plus%20kantor%20pusat!5e0!3m2!1sid!2sid!4v1725696160390!5m2!1sid!2sid"
