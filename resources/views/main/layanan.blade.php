@@ -2,14 +2,14 @@
 @section('konten')
     <div class="tentang-kami w-full">
 
-<!-- Icon whatsapp -->
-<div class="fixed right-10 top-3/4 flex">
-    <div class=" bg-white p-4 rounded-xl w-fit shadow-lg text-2xl flex flex-col justify-center text-center">
-        <h1 class="font-semibold">Cari info umroh?</h1>
-        <h1 class="text-xl font-light mt-2">Hubunngi Sinai aja!</h1>
-    </div>
-    <img src="{{ asset('aset/whatsapp.png') }}" alt="" class="w-32">
-</div>  
+        <!-- Icon whatsapp -->
+        <div class="fixed right-10 top-3/4 flex">
+            <div class=" bg-white p-2 lg:p-4 rounded-xl w-fit shadow-lg text-lx lg:text-2xl flex flex-col justify-center text-center">
+                <h1 class="font-semibold">Cari info umroh?</h1>
+                <h1 class="text-lg lg:text-xl font-light lg:mt-2">Hubunngi Sinai aja!</h1>
+            </div>
+            <img src="{{ asset('aset/whatsapp.png') }}" alt="" class="w-20 lg:w-32">
+        </div>
 
         {{-- navbar --}}
         <div class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
@@ -54,16 +54,16 @@
                         <a href="{{ url('/') }}">
                             <h1 class="text-black text-4xl px-2 py-4">beranda</h1>
                         </a>
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/layanan') }}">
                             <h1 class="text-black text-4xl px-2 py-4">layanan</h1>
                         </a>
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/tentang-kami') }}">
                             <h1 class="text-black text-4xl px-2 py-4">tentang kami</h1>
                         </a>
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/testimoni') }}">
                             <h1 class="text-black text-4xl px-2 py-4">testimonial</h1>
                         </a>
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/contact') }}">
                             <h1 class="text-black text-4xl px-2 py-4">hubungi kami</h1>
                         </a>
                         <h1 class="text-black text-4xl px-2 py-4">sign In</h1>
@@ -75,8 +75,8 @@
 
         {{-- layanan --}}
         <div class="layanan-header flex flex-col w-full justify-center items-center max-lg:mt-44">
-            <div class="flex flex-col justify-center w-full gap-2 lg:m-20 mx-4 text-center items-center">
-                <h1 class="lg:text-xl text-medium text-blue-800 w-fit py-2 px-4 rounded-3xl">Layanan & Pendaftaran
+            <div class="flex flex-col justify-center w-full gap-2 lg:m-20 mx-4 max-lg:px-2 text-center items-center">
+                <h1 class="lg:text-xl text-2xl text-blue-800 w-fit py-2 px-4 rounded-3xl">Layanan & Pendaftaran
                 </h1>
                 <h1 class="text-[3rem] lg:text-[3.5rem] font-semibold lg:w-5/12">Layanan Terbaik, Syarat Mudah, Pendaftaran
                     Cepat ✨
@@ -184,7 +184,8 @@
                                     sequi esse.</h1>
                             </div>
                             <div class="benefit w-full grid gap-4">
-                                <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> hotel bintang 4
+                                <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> hotel bintang
+                                    4
                                 </h1>
                                 <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> perlengkapan
                                     (gratis)
@@ -192,7 +193,8 @@
                                 <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> 13 hari
                                     perjalanan
                                 </h1>
-                                <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> dapat 2x jum'at
+                                <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> dapat 2x
+                                    jum'at
                                 </h1>
                                 <h1 class="capitalize text-lg"><i class="bi bi-check2 text-yellow-400"></i> free thaif &
                                     kereta
@@ -209,7 +211,7 @@
                     <div class="syarat-header flex flex-col text-white">
                         <h1 class="text-sm lg:text-xl font-semibold text-blue-800 w-fit py-2 px-4 rounded-3xl bg-white">
                             Persyaratan umrah.</h1>
-                        <h1 class="text-5xl font-semibold my-4 w-full text-start lg:w-7/12">Berikut syarat-syarat Dokumen
+                        <h1 class="text-3xl lg:text-5xl font-semibold my-4 w-full text-start lg:w-7/12">Berikut syarat-syarat Dokumen
                             Keberangkatan Umrah
                             yang harus dilengkapi 🕋
                         </h1>
@@ -239,7 +241,7 @@
                                             <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
                                             <h1 class="lg:text-lg font-light">DP Rp. 3.000.000</h1>
                                         </div>
-        
+
                                     </div>
                                 </div>
                                 <div class="harga bg-white text-start p-5 rounded-xl">
@@ -316,7 +318,7 @@
                                             <i class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
                                             <h1 class="lg:text-lg font-light">Perlengkapan Umrah Asuransi</h1>
                                         </div>
-        
+
                                     </div>
                                 </div>
                                 <div class="syarat-keberangkatan bg-white text-start p-5 rounded-xl">
@@ -336,7 +338,7 @@
                 </div>
 
                 <div id="form-container" class="flex flex-col justify-center w-full gap-2 items-center mt-20">
-                    <h1 class="lg:text-xl text-medium text-blue-800 w-fit py-2 px-4 rounded-3xl">Formulir Pendaftaran.
+                    <h1 class="lg:text-xl text-2xl text-blue-800 w-fit py-2 px-4 rounded-3xl">Formulir Pendaftaran.
                     </h1>
                     <h1 class="text-[3rem] lg:text-[3.5rem] font-semibold lg:w-6/12">Raih Kesempatan Berangkat Umrah dengan
                         Mudah! 📋
@@ -347,33 +349,43 @@
                 </div>
 
                 <div
-                    class="bg-white flex max-lg:flex-col w-full lg:w-8/12 mt-10 justify-center lg:justify-between items-center">
-                    <div class="flex justify-center items-center size-full relative w-full">
-                        <div class="img flex justify-center items-center lg:p-5 bg-white w-full rounded-xl lg:mx-10">
+                    class="flex max-lg:flex-col lg:w-8/12 mt-10 max-lg:mx-2 justify-center lg:justify-between items-center">
+                    <div class="flex justify-center items-center relative w-full">
+                        <div class="img flex justify-center items-center lg:p-5 bg-white max-lg:p-5 w-full rounded-xl lg:mx-10">
                             {{-- <img src="{{ asset('aset/hero.svg') }}" alt="tower" class=" rounded-3xl lg:w-full object-cover"> --}}
-                            <div class="bg-gray-200 w-full lg:h-[30rem]"></div>
+                            <div class="bg-gray-200 w-full lg:h-[30rem] h-80"></div>
                         </div>
                     </div>
 
-                    <div class="form flex flex-col gap-2 mx-2 w-full lg:mr-10">
-                        <h1 class="text-3xl lg:mb-2 font-semibold text-start">Ayoo, daftar disini!.</h1>
-                        <input type="text" class="text-2xl rounded-lg py-4 w-full" placeholder="Nama lengkap">
-                        <input type="text" class="text-2xl rounded-lg py-4 w-full pb-20" placeholder="Alamat rumah">
-                        <div class="gap-2 grid grid-cols-1 lg:grid-cols-2">
-                            <input type="text" class="text-2xl rounded-lg py-4 w-full" placeholder="Nomor Telp/WA">
-                            <input type="text" class="text-2xl rounded-lg py-4 w-full"
+                    <div class="form flex flex-col gap-2 mx-2 w-full lg:mr-10 max-lg:px-5 max-lg:mt-5">
+                        <h1 class="text-xl lg:text-3xl lg:mb-2 font-semibold text-start">Ayoo, daftar disini!.</h1>
+                        <input type="text" class="text-lg rounded-lg py-4 w-full" placeholder="Nama lengkap">
+                        <input type="text" class="text-lg rounded-lg py-4 w-full pb-20" placeholder="Alamat rumah">
+                        <div class="gap-2 grid grid-cols-2">
+                            <input type="number" class="text-lg rounded-lg py-4 w-full" placeholder="Nomor Telp/WA">
+                            <input type="date" class="text-lg rounded-lg py-4 w-full"
                                 placeholder="Tanggal keberangkatan">
-                            <input type="text" class="text-2xl rounded-lg py-4 w-full" placeholder="Paket umrah">
-                            <input type="text" class="text-2xl rounded-lg py-4 w-full" placeholder="Jumlah jama’ah">
+                            <div class="text-lg rounded-lg py-4 w-full border-[0.08rem] bg-white border-gray-500 text-gray-500 text-start">
+                                    <button id="paket" class="px-4">Paket umroh</button>
+                                    <div id="dropdown-paket"
+                                        class="hidden w-full items-center">
+                                        <div class="absolute z-50 flex flex-col items-center backdrop-blur-lg gap-1 mt-5">
+                                            <h1 class="text-xl px-4 py-2 border-2 bg-white border-gray-500 rounded-lg">Paket 1</h1>
+                                            <h1 class="text-xl px-4 py-2 border-2 bg-white border-gray-500 rounded-lg">Paket 2</h1>
+                                            <h1 class="text-xl px-4 py-2 border-2 bg-white border-gray-500 rounded-lg">Paket 3</h1>
+                                        </div>
+                                    </div>
+                            </div>
+                            <input type="text" class="text-lg rounded-lg py-4 w-full" placeholder="Jumlah jama’ah">
                         </div>
-                        <button class="capitalize px-4 mt-2 text-white bg-yellow-600 rounded-lg py-4 w-full">kirim</button>
+                        <button
+                            class="capitalize text-2xl px-4 mt-2 text-white bg-yellow-600 shadow-lg rounded-lg py-4 w-full">kirim</button>
                     </div>
                 </div>
 
 
             </div>
         </div>
-
         {{-- layanan end --}}
 
         {{-- footer --}}
@@ -427,12 +439,24 @@
         const burger = document.getElementById("burger");
         const menu = document.getElementById("menu");
         const dropdown = document.getElementById("dropdown");
+        const paket = document.getElementById("paket");
+        const dp = document.getElementById("dropdown-paket");
 
         burger.addEventListener("click", () => {
-            console.log(burger, dropdown, menu)
+            // console.log(burger, dropdown, menu)
             dropdown.classList.toggle("hidden");
 
             if (dropdown.classList.contains("hidden")) {
+                document.body.style.overflowY = "";
+            } else {
+                document.body.style.overflowY = "hidden";
+            }
+        });
+
+        paket.addEventListener("click", () => {
+            dp.classList.toggle("hidden");
+
+            if (dp.classList.contains("hidden")) {
                 document.body.style.overflowY = "";
             } else {
                 document.body.style.overflowY = "hidden";

@@ -45,16 +45,16 @@
                         <a href="{{ url('/') }}">
                             <h1 class="text-black text-4xl px-2 py-4">beranda</h1>
                         </a>
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/layanan') }}">
                             <h1 class="text-black text-4xl px-2 py-4">layanan</h1>
                         </a>
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/tentang-kami') }}">
                             <h1 class="text-black text-4xl px-2 py-4">tentang kami</h1>
                         </a>
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/testimoni') }}">
                             <h1 class="text-black text-4xl px-2 py-4">testimonial</h1>
                         </a>
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/contact') }}">
                             <h1 class="text-black text-4xl px-2 py-4">hubungi kami</h1>
                         </a>
                         <h1 class="text-black text-4xl px-2 py-4">sign In</h1>

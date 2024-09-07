@@ -45,16 +45,16 @@
                         <a href="{{ url('/') }}">
                             <h1 class="text-black text-4xl px-2 py-4">beranda</h1>
                         </a>
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/layanan') }}">
                             <h1 class="text-black text-4xl px-2 py-4">layanan</h1>
                         </a>
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/tentang-kami') }}">
                             <h1 class="text-black text-4xl px-2 py-4">tentang kami</h1>
                         </a>
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/testimoni') }}">
                             <h1 class="text-black text-4xl px-2 py-4">testimonial</h1>
                         </a>
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/contact') }}">
                             <h1 class="text-black text-4xl px-2 py-4">hubungi kami</h1>
                         </a>
                         <h1 class="text-black text-4xl px-2 py-4">sign In</h1>
@@ -74,7 +74,8 @@
                         dari paket yang paling cocok hingga detail perjalanan yang akan membuatmu merasa lebih siap.</h1>
                 </div>
             </div>
-            <div class="form-container bg-white flex max-lg:flex-col lg:w-full max-lg:mx-4 px-10 lg:px-0 mt-10 lg:gap-10 justify-center lg:justify-between items-center">
+            <div
+                class="form-container bg-white flex max-lg:flex-col lg:w-full max-lg:mx-4 px-10 lg:px-0 mt-10 lg:gap-10 justify-center lg:justify-between items-center">
                 <div class="form flex flex-col gap-2 m-6 w-full lg:w-6/12 lg:mr-52">
                     <h1 class="text-3xl lg:mb-2 font-semibold">Hubungi Kami.</h1>
                     <input type="text" class="text-2xl rounded-lg w-full" placeholder="Email">
@@ -84,12 +85,12 @@
                 </div>
                 <div class="map m-6 lg:w-1/2">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.265428656888!2d106.95414807482915!3d-6.228694993759419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c89a57526f1%3A0xa850dc0a366b403c!2sSMK%20NEGERI%201%20KOTA%20BEKASI!5e0!3m2!1sid!2sid!4v1725679840076!5m2!1sid!2sid"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d361174.16989107773!2d99.93070517341222!3d-0.9885416667089373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b95b314aa827%3A0x1131cf3ebcab80ff!2sSinai%20Umrah%20%26%20Haji%20Plus%20kantor%20pusat!5e0!3m2!1sid!2sid!4v1725696160390!5m2!1sid!2sid"
                         width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade" class="rounded-lg max-lg:hidden"></iframe>
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.265428656888!2d106.95414807482915!3d-6.228694993759419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c89a57526f1%3A0xa850dc0a366b403c!2sSMK%20NEGERI%201%20KOTA%20BEKASI!5e0!3m2!1sid!2sid!4v1725679840076!5m2!1sid!2sid"
-                        width="480" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d361174.16989107773!2d99.93070517341222!3d-0.9885416667089373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b95b314aa827%3A0x1131cf3ebcab80ff!2sSinai%20Umrah%20%26%20Haji%20Plus%20kantor%20pusat!5e0!3m2!1sid!2sid!4v1725696160390!5m2!1sid!2sid"
+                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade" class="rounded-lg lg:hidden"></iframe>
                 </div>
             </div>
