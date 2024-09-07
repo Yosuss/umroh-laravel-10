@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\mainController;
 use App\Http\Controllers\tentangKamiController;
+use App\Http\Controllers\testimoniController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,4 +23,5 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('/')->group(function () {
     Route::get('/',[mainController::class,'index']);
     Route::get('/tentang-kami',[tentangKamiController::class,'tentangkami']);
+    Route::get('/testimoni',[testimoniController::class,'testimoni']);
 });

@@ -108,27 +108,27 @@
                 <div class="">
                     <div class="flex items-center gap-4 mt-6">
                         <i
-                            class="bi bi-check2 p-1 px-2 rounded-full bg-purple-100 text-purple-800"></i>
+                            class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
                         <h1 class="lg:text-2xl text-xl">Menyediakan Layanan Berkualitas</h1>
                     </div>
                     <div class="flex items-center gap-4 mt-4">
                         <i
-                            class="bi bi-check2 p-1 px-2 rounded-full bg-purple-100 text-purple-800"></i>
+                            class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
                         <h1 class="lg:text-2xl text-xl">Menjamin Keamanan dan Kenyamanan</h1>
                     </div>
                     <div class="flex items-center gap-4 mt-4">
                         <i
-                            class="bi bi-check2 p-1 px-2 rounded-full bg-purple-100 text-purple-800"></i>
+                            class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
                         <h1 class="lg:text-2xl text-xl">Mengutamakan Kepuasan Jamaah</h1>
                     </div>
                     <div class="flex items-center gap-4 mt-4">
                         <i
-                            class="bi bi-check2 p-1 px-2 rounded-full bg-purple-100 text-purple-800"></i>
+                            class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
                         <h1 class="lg:text-2xl text-xl">Meningkatkan Mutu Pelayanan</h1>
                     </div>
                     <div class="flex items-center gap-4 mt-4">
                         <i
-                            class="bi bi-check2 p-1 px-2 rounded-full bg-purple-100 text-purple-800"></i>
+                            class="bi bi-check2 p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
                         <h1 class="lg:text-2xl text-xl">Meningkatkan Mutu Pelayanan</h1>
                     </div>
                 </div>
