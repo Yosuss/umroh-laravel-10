@@ -19,21 +19,21 @@
 
                 <!-- Menu items -->
                 <div id="menu"
-                    class="hidden w-full lg:flex text-2xl font-semibold text-end justify-end items-center gap-12 ">
+                    class="hidden w-full lg:flex font-normal text-2xl text-end justify-end items-center gap-12 ">
                     <a href="{{ url('/') }}">
-                        <h1>beranda</h1>
+                        <h1 class="font-bold">beranda</h1>
                     </a>
                     <a href="{{ url('/layanan') }}">
-                        <h1>layanan</h1>
+                        <h1 class="">layanan</h1>
                     </a>
                     <a href="{{ url('/tentang-kami') }}">
-                        <h1>tentang kami</h1>
+                        <h1 class="">tentang kami</h1>
                     </a>
                     <a href="{{ url('/testimoni') }}">
-                        <h1>testimonial</h1>
+                        <h1 class="">testimonial</h1>
                     </a>
                     <a href="{{ url('/contact') }}">
-                        <h1>hubungi<span class=""> kami</span></h1>
+                        <h1 class="">hubungi<span class=""> kami</span></h1>
                     </a>
                     <h1 class="">sign <span class=""> In</span></h1>
                 </div>
