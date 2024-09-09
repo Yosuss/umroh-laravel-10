@@ -49,24 +49,16 @@
                 @if ($paginator->onFirstPage())
                     <span aria-disabled="true" aria-label="{{ __('pagination.previous') }}">
                         <span
-                            class="relative inline-flex items-center px-2 py-2 text-sm font-medium text-blue-800 bg-white border border-gray-300 cursor-default rounded-lg-md leading-5"
+                            class="relative inline-flex items-center px-4 py-2  text-blue-800 bg-blue-100 border  cursor-pointer rounded-lg"
                             aria-hidden="true">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            Prev
                         </span>
                     </span>
                 @else
                     <a href="{{ $paginator->previousPageUrl() }}" rel="prev"
-                        class="relative inline-flex items-center px-2 py-2 text-sm font-medium text-blue-800 bg-white border border-gray-300 cursor-default rounded-lg-md leading-5"
+                        class="relative inline-flex items-center px-4 py-2  text-blue-800 bg-blue-100 border cursor-pointer rounded-lg"
                         aria-label="{{ __('pagination.previous') }}">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                                clip-rule="evenodd" />
-                        </svg>
+                        Prev
                     </a>
                 @endif
 
@@ -82,7 +74,7 @@
                     {{-- Array Of Links --}}
                     @if (is_array($element))
                         @foreach ($element as $page => $url)
-                            {{-- @if ($page <= 3) --}}
+                            @if ($page <= 3)
                                 @if ($page == $paginator->currentPage())
                                     <span aria-current="page">
                                         <span
@@ -95,12 +87,30 @@
                                         {{ $page }}
                                     </a>
                                 @endif
-                            {{-- @endif --}}
+                            @endif
 
                             {{-- @if ($page == 4)
                                 <span
-                                    class="relative inline-flex items-center bg-white border-2 border-blue-800 text-blue-800 py-2 px-4 rounded-lg">{{}}</span>
+                                    class="relative inline-flex items-center bg-white border-2 border-blue-800 text-blue-800 py-2 px-4 rounded-lg">...</span>
                             @endif --}}
+
+                            {{-- Display last 3 pages --}}
+                            @if ($page > ($paginator->lastPage() - 3))
+                                @if ($page == $paginator->currentPage())
+                                    <span aria-current="page">
+                                        <span
+                                            class="relative inline-flex items-center bg-blue-800 text-white py-2 px-4 rounded-lg ">{{ $page }}</span>
+                                    </span>
+                                @else
+                                    <a href="{{ $url }}"
+                                        class="relative inline-flex items-center bg-white border-2 border-blue-800 text-blue-800 py-2 px-4 rounded-lg"
+                                        aria-label="{{ __('Go to page :page', ['page' => $page]) }}">
+                                        {{ $page }}
+                                    </a>
+                                @endif
+                            @endif
+
+
 
                         @endforeach
                     @endif
@@ -111,21 +121,13 @@
                     <a href="{{ $paginator->nextPageUrl() }}" rel="next"
                         class="relative inline-flex items-center bg-blue-800 text-white py-2 px-4 rounded-lg"
                         aria-label="{{ __('pagination.next') }}">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                clip-rule="evenodd" />
-                        </svg>
+                        Next
                     </a>
                 @else
                     <span aria-disabled="true" aria-label="{{ __('pagination.next') }}">
                         <span class="relative inline-flex items-center bg-blue-800 text-white py-2 px-4 rounded-lg"
                             aria-hidden="true">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                            Next
                         </span>
                     </span>
                 @endif
