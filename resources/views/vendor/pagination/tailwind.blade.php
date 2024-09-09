@@ -49,7 +49,7 @@
                 @if ($paginator->onFirstPage())
                     <span aria-disabled="true" aria-label="{{ __('pagination.previous') }}">
                         <span
-                            class="relative inline-flex items-center px-4 py-2  text-blue-800 bg-blue-100 border  cursor-pointer rounded-lg"
+                            class="relative inline-flex items-center px-4 py-2  text-blue-800 bg-blue-100 border  cursor-default rounded-lg"
                             aria-hidden="true">
                             Prev
                         </span>
