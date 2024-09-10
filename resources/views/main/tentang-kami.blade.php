@@ -4,17 +4,17 @@
 
         <!-- Icon whatsapp -->
         {{-- <a href="https://api.whatsapp.com/send/?phone=085659670362&text&type=phone_number&app_absent=0"> --}}
-        <a href="+62 813-6320-9449">
-            <div class="fixed right-10 bottom-10 lg:bottom-[15rem] flex z-20">
-                <div
-                    class=" bg-white p-2 lg:p-4 rounded-xl w-fit shadow-lg text-lx lg:text-xl flex flex-col justify-center text-center">
-                    <h1 class="font-semibold">Cari info umroh?</h1>
-                    <h1 class="text-lg font-light lg:mt-2">Hubunngi Sinai aja!</h1>
+            <a href="https://api.whatsapp.com/send/?phone=6281363209449&text&type=phone_number&app_absent=0">
+                <div class="fixed right-10 bottom-10 lg:bottom-[15rem] flex z-20">
+                    <div
+                        class=" bg-white p-2 lg:p-4 rounded-xl w-fit shadow-lg text-lx lg:text-xl flex flex-col justify-center text-center">
+                        <h1 class="font-semibold">Cari info umroh?</h1>
+                        <h1 class="text-lg font-light lg:mt-2">Hubunngi Sinai aja!</h1>
+                    </div>
+                    <img src="{{ asset('aset/whatsapp.png') }}" alt="" class="w-20 lg:w-32">
                 </div>
-                <img src="{{ asset('aset/whatsapp.png') }}" alt="" class="w-20 lg:w-32">
-            </div>
-        </a>
-
+            </a>
+    
         {{-- navbar --}}
         <div class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
             <div class="logo px-5 pt-8 pb-4 lg:pl-20 z-1 lg:w-3/6 w-full">
@@ -34,22 +34,28 @@
                 <!-- Menu items -->
                 <div id="menu"
                     class="hidden w-full lg:flex font-normal text-2xl text-end justify-end items-center gap-12 ">
-                    <a href="{{ url('/') }}">
-                        <h1 class="font-bold">beranda</h1>
+                    <a href="{{ url('/') }}" class="flex gap-2">
+                        <i class="bi bi-house"></i>
+                        <h1 class="">beranda</h1>
                     </a>
-                    <a href="{{ url('/layanan') }}">
+                    <a href="{{ url('/layanan') }}" class="flex gap-2">
+                        <i class="bi bi-gear"></i>
                         <h1 class="">layanan</h1>
                     </a>
-                    <a href="{{ url('/tentang-kami') }}">
-                        <h1 class="">tentang kami</h1>
+                    <a href="{{ url('/tentang-kami') }}" class="flex gap-2">
+                        <i class="bi bi-person"></i>
+                        <h1 class="font-bold">tentang kami</h1>
                     </a>
-                    <a href="{{ url('/testimoni') }}">
+                    <a href="{{ url('/testimoni') }}" class="flex gap-2">
+                        <i class="bi bi-chat-square-dots"></i>
                         <h1 class="">testimonial</h1>
                     </a>
-                    <a href="{{ url('/contact') }}">
+                    <a href="{{ url('/contact') }}" class="flex gap-2">
+                        <i class="bi bi-telephone"></i>
                         <h1 class="">hubungi<span class=""> kami</span></h1>
                     </a>
-                    <a href="{{ url('/login') }}">
+                    <a href="{{ url('/login') }}" class="flex gap-2">
+                        <i class="bi bi-key"></i>
                         <h1 class="">sign <span class=""> In</span></h1>
                     </a>
                 </div>
