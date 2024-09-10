@@ -35,7 +35,7 @@
                 <div id="menu"
                     class="hidden w-full lg:flex font-normal text-2xl text-end justify-end items-center gap-12 ">
                     <a href="{{ url('/') }}">
-                        <h1 class="">beranda</h1>
+                        <h1 class="font-bold">beranda</h1>
                     </a>
                     <a href="{{ url('/layanan') }}">
                         <h1 class="">layanan</h1>
@@ -44,12 +44,14 @@
                         <h1 class="">tentang kami</h1>
                     </a>
                     <a href="{{ url('/testimoni') }}">
-                        <h1 class="font-bold">testimonial</h1>
+                        <h1 class="">testimonial</h1>
                     </a>
                     <a href="{{ url('/contact') }}">
                         <h1 class="">hubungi<span class=""> kami</span></h1>
                     </a>
-                    <h1 class="">sign <span class=""> In</span></h1>
+                    <a href="{{ url('/login') }}">
+                        <h1 class="">sign <span class=""> In</span></h1>
+                    </a>
                 </div>
 
                 <!-- Dropdown for mobile -->
@@ -70,7 +72,9 @@
                         <a href="{{ url('/contact') }}">
                             <h1 class="text-black text-4xl px-2 py-4">hubungi kami</h1>
                         </a>
-                        <h1 class="text-black text-4xl px-2 py-4">sign In</h1>
+                        <a href="{{ url('/login') }}">
+                            <h1 class="text-black text-4xl px-2 py-4">sign In</h1>
+                        </a>
                     </div>
                 </div>
             </div>

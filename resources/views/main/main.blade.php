@@ -49,7 +49,9 @@
                     <a href="{{ url('/contact') }}">
                         <h1 class="">hubungi<span class=""> kami</span></h1>
                     </a>
-                    <h1 class="">sign <span class=""> In</span></h1>
+                    <a href="{{ url('/login') }}">
+                        <h1 class="">sign <span class=""> In</span></h1>
+                    </a>
                 </div>
 
                 <!-- Dropdown for mobile -->
@@ -70,7 +72,9 @@
                         <a href="{{ url('/contact') }}">
                             <h1 class="text-black text-4xl px-2 py-4">hubungi kami</h1>
                         </a>
-                        <h1 class="text-black text-4xl px-2 py-4">sign In</h1>
+                        <a href="{{ url('/login') }}">
+                            <h1 class="text-black text-4xl px-2 py-4">sign In</h1>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -139,7 +143,8 @@
                     <img src="{{ asset('aset/personpc.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Terakreditasi secara
                         Nasional</h1>
-                    <h1 class="mt-2">Komite Akreditasi Nasional (KAN) adalah lembaga non-struktural yang bertanggung jawab
+                    <h1 class="mt-2">Komite Akreditasi Nasional (KAN) adalah lembaga non-struktural yang bertanggung
+                        jawab
                         atas akreditasi penilaian kesesuaian.</h1>
                 </div>
             </div>

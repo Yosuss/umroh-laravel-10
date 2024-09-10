@@ -32,4 +32,6 @@ Route::prefix('/')->group(function () {
     Route::post('/contact',[contactController::class,'tambah'])->name('tambah');
     Route::get('/layanan',[layananController::class,'layanan']);
     Route::post('/layanan',[layananController::class,'tambah'])->name('tambah');
+
+    
 });
