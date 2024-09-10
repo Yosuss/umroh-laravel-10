@@ -2,6 +2,19 @@
 @section('konten')
     <div class="tentang-kami w-full">
 
+        <!-- Icon whatsapp -->
+        {{-- <a href="https://api.whatsapp.com/send/?phone=085659670362&text&type=phone_number&app_absent=0"> --}}
+        <a href="+62 813-6320-9449">
+            <div class="fixed right-10 bottom-10 lg:bottom-[15rem] flex z-20">
+                <div
+                    class=" bg-white p-2 lg:p-4 rounded-xl w-fit shadow-lg text-lx lg:text-xl flex flex-col justify-center text-center">
+                    <h1 class="font-semibold">Cari info umroh?</h1>
+                    <h1 class="text-lg font-light lg:mt-2">Hubunngi Sinai aja!</h1>
+                </div>
+                <img src="{{ asset('aset/whatsapp.png') }}" alt="" class="w-20 lg:w-32">
+            </div>
+        </a>
+
         {{-- navbar --}}
         <div class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
             <div class="logo px-5 pt-8 pb-4 lg:pl-20 z-1 lg:w-3/6 w-full">
@@ -153,7 +166,7 @@
             </div>
         </div>
         {{-- visi misi end  --}}
-
+        
         {{-- footer --}}
         <div class="footer bg-[#25222C]">
             <div class=" mt-20 grid grid-cols-1 lg:grid-cols-2 text-white px-5 lg:px-20 py-10">
@@ -177,6 +190,7 @@
                     <div class="contact">
                         <h1 class="text-sm font-light uppercase">kontak</h1>
                         <h1 class="capitalize text-lg mt-8 text-yellow-400">+62 892 161 572</h1>
+                        <h1 class="capitalize text-lg text-yellow-400">+62 813 6320 9449</h1>
                         <h1 class="capitalize text-lg font-light">hello@sinaiumrah.com</h1>
                         <h1 class="capitalize text-lg font-light mt-44 max-lg:mt-24">alamat perusahaan</h1>
                     </div>

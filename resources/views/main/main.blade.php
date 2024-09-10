@@ -1,6 +1,20 @@
 @extends('template.layout')
 @section('konten')
     <div class="pages w-full font-sans">
+
+        <!-- Icon whatsapp -->
+        {{-- <a href="https://api.whatsapp.com/send/?phone=085659670362&text&type=phone_number&app_absent=0"> --}}
+        <a href="+62 813-6320-9449">
+            <div class="fixed right-10 bottom-10 lg:bottom-[15rem] flex z-20">
+                <div
+                    class=" bg-white p-2 lg:p-4 rounded-xl w-fit shadow-lg text-lx lg:text-xl flex flex-col justify-center text-center">
+                    <h1 class="font-semibold">Cari info umroh?</h1>
+                    <h1 class="text-lg font-light lg:mt-2">Hubunngi Sinai aja!</h1>
+                </div>
+                <img src="{{ asset('aset/whatsapp.png') }}" alt="" class="w-20 lg:w-32">
+            </div>
+        </a>
+
         {{-- navbar --}}
         <div class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
             <div class="logo px-5 pt-8 pb-4 lg:pl-20 z-1 lg:w-3/6 w-full">
@@ -131,14 +145,16 @@
             </div>
 
             <div class="items grid grid-cols-1 lg:grid-cols-2 justify-center gap-4 lg:gap-8 lg:mt-5 mt-4 px-0 lg:px-60">
-                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center rounded-xl">
+                <div
+                    class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center rounded-xl">
                     <img src="{{ asset('aset/mailc.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Legalitas Operasional
                         Kantor Cabang</h1>
                     <h1 class="mt-2">Setiap kantor cabang dilengkapi SK resmi dari kantor pusat, izin Kemenag setempat,
                         dan legalitas dari IATA, ASITA, & AMPHURI.</h1>
                 </div>
-                <div class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center rounded-xl">
+                <div
+                    class="flex flex-col items-start lg:items-center bg-white p-8 lg:rounded-lg lg:text-center rounded-xl">
                     <img src="{{ asset('aset/protect.svg') }}" alt="tower" class="">
                     <h1 class="mt-2 text-xl font-bold">Sistem umroh yang
                         aman & terpercaya</h1>
@@ -153,7 +169,8 @@
         <div class="dokumentation px-10 lg:px-20 my-20 py-2 lg:py-0 w-full text-center">
             <h1 class="text-sm lg:text-xl mx-auto text-yellow-600 bg-yellow-100 w-fit px-4 py-2 rounded-full">Kenangan Suci
                 dalam Setiap Jejak?</h1>
-            <h1 class="text-2xl lg:text-4xl font-semibold mt-2">Setiap foto <span class="text-yellow-600">bercerita</span>,
+            <h1 class="text-2xl lg:text-4xl font-semibold mt-2">Setiap foto <span
+                    class="text-yellow-600">bercerita</span>,
                 setiap
                 senyuman penuh <span class="text-blue-800">syukur</span>.</h1>
             <h1 class="text-2xl lg:text-4xl font-semibold mt-2 mb-6 lg:mb-12 max-lg:w-full">Yuk, jelajahi galeri kami!📸
@@ -256,12 +273,13 @@
                                         <div class="require flex items-center gap-4 mt-6">
                                             <i
                                                 class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                            <h1 class="text-lg">Berkas jama'ah  dikirim ke kantor pusat</h1>
+                                            <h1 class="text-lg">Berkas jama'ah dikirim ke kantor pusat</h1>
                                         </div>
                                         <div class="require flex items-center gap-4">
                                             <i
                                                 class="bi bi-check2 text-md lg:text-xl p-1 px-2 rounded-full bg-blue-100 text-blue-800"></i>
-                                            <h1 class="text-lg">Nantinya di teruskan ke pihak bank sebagau persyaratan Open rekening atas nama Jama'ah</h1>
+                                            <h1 class="text-lg">Nantinya di teruskan ke pihak bank sebagau persyaratan Open
+                                                rekening atas nama Jama'ah</h1>
                                         </div>
                                     </div>
                                 </div>
@@ -609,9 +627,11 @@
                 <div class="mail mt-4 flex gap-4 justify-center">
                     <div class="flex items-center border-2 bg-white rounded-xl p-2">
                         <i class="bi bi-envelope text-gray-500 mr-2"></i>
-                        <input type="text" class="border-0 p-2 px-4 rounded-xl flex-grow outline-none" placeholder="Enter your email">
+                        <input type="text" class="border-0 p-2 px-4 rounded-xl flex-grow outline-none"
+                            placeholder="Enter your email">
                     </div>
-                    <button class="langganan text-md p-0 px-4 rounded-xl text-white shadow-lg bg-yellow-600">Langganan</button>
+                    <button
+                        class="langganan text-md p-0 px-4 rounded-xl text-white shadow-lg bg-yellow-600">Langganan</button>
                 </div>
             </div>
         </div>
@@ -640,6 +660,7 @@
                     <div class="contact">
                         <h1 class="text-sm font-light uppercase">kontak</h1>
                         <h1 class="capitalize text-lg mt-8 text-yellow-400">+62 892 161 572</h1>
+                        <h1 class="capitalize text-lg text-yellow-400">+62 813 6320 9449</h1>
                         <h1 class="capitalize text-lg font-light">hello@sinaiumrah.com</h1>
                         <h1 class="capitalize text-lg font-light mt-44 max-lg:mt-24">alamat perusahaan</h1>
                     </div>
@@ -708,7 +729,7 @@
             if (dropdown.classList.contains("hidden")) {
                 document.body.style.overflowY = "";
                 line1.style.transform = 'translateX(0) rotate(0deg)';
-                line2.style.transform = 'translateX(0) rotate(0deg)'; 
+                line2.style.transform = 'translateX(0) rotate(0deg)';
             } else {
                 document.body.style.overflowY = "hidden";
                 line1.style.transform = 'translateX(-50%) rotate(-45deg)';

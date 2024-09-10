@@ -2,6 +2,19 @@
 @section('konten')
     <div class="tentang-kami w-full">
 
+        <!-- Icon whatsapp -->
+        {{-- <a href="https://api.whatsapp.com/send/?phone=085659670362&text&type=phone_number&app_absent=0"> --}}
+        <a href="+62 813-6320-9449">
+            <div class="fixed right-10 bottom-10 lg:bottom-[15rem] flex z-20">
+                <div
+                    class=" bg-white p-2 lg:p-4 rounded-xl w-fit shadow-lg text-lx lg:text-xl flex flex-col justify-center text-center">
+                    <h1 class="font-semibold">Cari info umroh?</h1>
+                    <h1 class="text-lg font-light lg:mt-2">Hubunngi Sinai aja!</h1>
+                </div>
+                <img src="{{ asset('aset/whatsapp.png') }}" alt="" class="w-20 lg:w-32">
+            </div>
+        </a>
+
         {{-- navbar --}}
         <div class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
             <div class="logo px-5 pt-8 pb-4 lg:pl-20 z-1 lg:w-3/6 w-full">
@@ -74,14 +87,18 @@
                         dari paket yang paling cocok hingga detail perjalanan yang akan membuatmu merasa lebih siap.</h1>
                 </div>
             </div>
-            <div
+
+            <form action="{{ route('tambah') }}" method="POST"
                 class="form-container bg-white flex max-lg:flex-col lg:w-full max-lg:mx-4 px-10 lg:px-0 mt-10 lg:gap-4 justify-center lg:justify-between items-center">
+                @csrf
                 <div class="form flex flex-col gap-6 m-6 w-full lg:w-6/12 lg:mr-10">
                     <h1 class="text-3xl lg:mb-5 font-semibold">Hubungi Kami.</h1>
-                    <input type="text" class="text-2xl rounded-lg lg:py-4 w-full" placeholder="Email">
-                    <input type="text" class="text-2xl rounded-lg lg:py-4 w-full" placeholder="Nama">
-                    <input type="text" class="text-2xl rounded-lg lg:py-4 w-full pb-10 lg:pb-20" placeholder="Subjek">
-                    <button class="capitalize px-4 lg:py-4 py-2 shadow-lg text-white bg-yellow-600 rounded-lg w-full">kirim</button>
+                    <input type="text" name="email" class="text-2xl rounded-lg lg:py-4 w-full" placeholder="Email">
+                    <input type="text" name="name" class="text-2xl rounded-lg lg:py-4 w-full" placeholder="Nama">
+                    <input type="text" name="subject" class="text-2xl rounded-lg lg:py-4 w-full pb-10 lg:pb-20"
+                        placeholder="Subjek">
+                    <button type="submit"
+                        class="capitalize px-4 lg:py-4 py-2 shadow-lg text-white bg-yellow-600 rounded-lg w-full">kirim</button>
                 </div>
                 <div class="map m-6 lg:w-1/2">
                     <iframe
@@ -93,7 +110,8 @@
                         width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade" class="rounded-lg lg:hidden"></iframe>
                 </div>
-            </div>
+            </form>
+
         </div>
         {{-- contact end --}}
 
@@ -120,6 +138,7 @@
                     <div class="contact">
                         <h1 class="text-sm font-light uppercase">kontak</h1>
                         <h1 class="capitalize text-lg mt-8 text-yellow-400">+62 892 161 572</h1>
+                        <h1 class="capitalize text-lg text-yellow-400">+62 813 6320 9449</h1>
                         <h1 class="capitalize text-lg font-light">hello@sinaiumrah.com</h1>
                         <h1 class="capitalize text-lg font-light mt-44 max-lg:mt-24">alamat perusahaan</h1>
                     </div>
@@ -157,7 +176,7 @@
             if (dropdown.classList.contains("hidden")) {
                 document.body.style.overflowY = "";
                 line1.style.transform = 'translateX(0) rotate(0deg)';
-                line2.style.transform = 'translateX(0) rotate(0deg)'; 
+                line2.style.transform = 'translateX(0) rotate(0deg)';
             } else {
                 document.body.style.overflowY = "hidden";
                 line1.style.transform = 'translateX(-50%) rotate(-45deg)';

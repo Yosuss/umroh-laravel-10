@@ -3,8 +3,9 @@
     <div class="tentang-kami w-full">
 
         <!-- Icon whatsapp -->
-        <a href="https://api.whatsapp.com/send/?phone=085659670362&text&type=phone_number&app_absent=0">
-        <div class="fixed right-10 top-3/4 flex z-20">
+        {{-- <a href="https://api.whatsapp.com/send/?phone=085659670362&text&type=phone_number&app_absent=0"> --}}
+        <a href="+62 813-6320-9449">
+        <div class="fixed right-10 bottom-10 lg:bottom-[15rem] flex z-20">
             <div
                 class=" bg-white p-2 lg:p-4 rounded-xl w-fit shadow-lg text-lx lg:text-xl flex flex-col justify-center text-center">
                 <h1 class="font-semibold">Cari info umroh?</h1>
@@ -362,13 +363,14 @@
                         </div>
                     </div>
 
-                    <div class="form flex flex-col gap-2 mx-2 w-full lg:mr-10 max-lg:px-5 max-lg:mt-5">
+                    <form action="{{route('tambah')}}" method="POST" class="form flex flex-col gap-2 mx-2 w-full lg:mr-10 max-lg:px-5 max-lg:mt-5">
+                        @csrf
                         <h1 class="text-xl lg:text-3xl lg:mb-2 font-semibold text-start">Ayoo, daftar disini!.</h1>
-                        <input type="text" class="text-lg rounded-lg py-4 w-full" placeholder="Nama lengkap">
-                        <input type="text" class="text-lg rounded-lg py-4 w-full pb-20" placeholder="Alamat rumah">
+                        <input type="text" name="nama" class="text-lg rounded-lg py-4 w-full" placeholder="Nama lengkap">
+                        <input type="text" name="alamat" class="text-lg rounded-lg py-4 w-full pb-20" placeholder="Alamat rumah">
                         <div class="gap-2 grid grid-cols-2">
-                            <input type="number" class="text-lg rounded-lg py-4 w-full" placeholder="Nomor Telp/WA">
-                            <input type="date" class="text-lg rounded-lg py-4 w-full"
+                            <input type="number" name="no" class="text-lg rounded-lg py-4 w-full" placeholder="Nomor Telp/WA">
+                            <input type="date" name="date" class="text-lg rounded-lg py-4 w-full"
                                 placeholder="Tanggal keberangkatan">
                             <div
                                 class="text-lg rounded-lg py-4 w-full border-[0.08rem] bg-white border-gray-500 text-gray-500 text-start">
@@ -384,11 +386,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="text" class="text-lg rounded-lg py-4 w-full" placeholder="Jumlah jama’ah">
+                            <input type="text" name="jumlah" class="text-lg rounded-lg py-4 w-full" placeholder="Jumlah jama’ah">
                         </div>
                         <button
-                            class="capitalize text-2xl px-4 mt-2 text-white bg-yellow-600 shadow-lg rounded-lg py-4 w-full">kirim</button>
-                    </div>
+                            type="submit" class="capitalize text-2xl px-4 mt-2 text-white bg-yellow-600 shadow-lg rounded-lg py-4 w-full">kirim</button>
+                    </form>
                 </div>
 
 
@@ -419,6 +421,7 @@
                     <div class="contact">
                         <h1 class="text-sm font-light uppercase">kontak</h1>
                         <h1 class="capitalize text-lg mt-8 text-yellow-400">+62 892 161 572</h1>
+                        <h1 class="capitalize text-lg text-yellow-400">+62 813 6320 9449</h1>
                         <h1 class="capitalize text-lg font-light">hello@sinaiumrah.com</h1>
                         <h1 class="capitalize text-lg font-light mt-44 max-lg:mt-24">alamat perusahaan</h1>
                     </div>

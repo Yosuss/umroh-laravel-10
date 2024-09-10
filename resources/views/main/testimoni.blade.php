@@ -2,6 +2,19 @@
 @section('konten')
     <div class="tentang-kami w-full">
 
+        <!-- Icon whatsapp -->
+        {{-- <a href="https://api.whatsapp.com/send/?phone=085659670362&text&type=phone_number&app_absent=0"> --}}
+        <a href="+62 813-6320-9449">
+            <div class="fixed right-10 bottom-10 lg:bottom-[15rem] flex z-20">
+                <div
+                    class=" bg-white p-2 lg:p-4 rounded-xl w-fit shadow-lg text-lx lg:text-xl flex flex-col justify-center text-center">
+                    <h1 class="font-semibold">Cari info umroh?</h1>
+                    <h1 class="text-lg font-light lg:mt-2">Hubunngi Sinai aja!</h1>
+                </div>
+                <img src="{{ asset('aset/whatsapp.png') }}" alt="" class="w-20 lg:w-32">
+            </div>
+        </a>
+
         {{-- navbar --}}
         <div class="navbar z-50 top-0 backdrop-blur-lg w-full gap-1 capitalize text-lg flex fixed lg:relative">
             <div class="logo px-5 pt-8 pb-4 lg:pl-20 z-1 lg:w-3/6 w-full">
@@ -73,55 +86,55 @@
                     mempercayakan perjalanan ibadahnya kepada kami. Setiap testimonial adalah bukti dedikasi kami dalam
                     memberikan pelayanan terbaik.</h1>
             </div>
-            
+
             <div class="testimoni lg:grid lg:mx-20 hidden grid-cols-3 gap-2 lg:gap-8">
                 @foreach ($data_desktop as $item)
-                <div class="values bg-blue-50 rounded-xl max-lg:pb-20 lg:mx-0 mx-4 px-10 mt-5 lg:mt-0">
-                    <div class="value flex pt-5 pb-2 gap-2 items-center">
-                        <div class="w-10 h-10 bg-black rounded-full"></div>
-                        <div class="">
-                            <h1 class="capitalize text-lg font-semibold">{{$item->nama}}</h1>
-                            <h1 class="capitalize max-lg:text-xm text-md font-light">{{$item->job}}</h1>
+                    <div class="values bg-blue-50 rounded-xl max-lg:pb-20 lg:mx-0 mx-4 px-10 mt-5 lg:mt-0">
+                        <div class="value flex pt-5 pb-2 gap-2 items-center">
+                            <div class="w-10 h-10 bg-black rounded-full"></div>
+                            <div class="">
+                                <h1 class="capitalize text-lg font-semibold">{{ $item->nama }}</h1>
+                                <h1 class="capitalize max-lg:text-xm text-md font-light">{{ $item->job }}</h1>
+                            </div>
+                        </div>
+                        <div class="value pb-5 lg:pb-20 gap-2">
+                            <h1 class="text-xl">{{ $item->testimoni }}</h1>
                         </div>
                     </div>
-                    <div class="value pb-5 lg:pb-20 gap-2">
-                        <h1 class="text-xl">{{$item->testimoni}}</h1>
-                    </div>
-                </div>
                 @endforeach
             </div>
-            
+
             <div class="testimoni max-md:hidden lg:hidden lg:mx-20 grid grid-cols-2 gap-2 lg:gap-8">
                 @foreach ($data_tablet as $item)
-                <div class="values bg-blue-50 rounded-xl max-lg:pb-20 lg:mx-0 mx-4 px-10 mt-5 lg:mt-0">
-                    <div class="value flex pt-5 pb-2 gap-2 items-center">
-                        <div class="w-10 h-10 bg-black rounded-full"></div>
-                        <div class="">
-                            <h1 class="capitalize text-lg font-semibold">{{$item->nama}}</h1>
-                            <h1 class="capitalize max-lg:text-xm text-md font-light">{{$item->job}}</h1>
+                    <div class="values bg-blue-50 rounded-xl max-lg:pb-20 lg:mx-0 mx-4 px-10 mt-5 lg:mt-0">
+                        <div class="value flex pt-5 pb-2 gap-2 items-center">
+                            <div class="w-10 h-10 bg-black rounded-full"></div>
+                            <div class="">
+                                <h1 class="capitalize text-lg font-semibold">{{ $item->nama }}</h1>
+                                <h1 class="capitalize max-lg:text-xm text-md font-light">{{ $item->job }}</h1>
+                            </div>
+                        </div>
+                        <div class="value pb-5 lg:pb-20 gap-2">
+                            <h1 class="text-xl">{{ $item->testimoni }}</h1>
                         </div>
                     </div>
-                    <div class="value pb-5 lg:pb-20 gap-2">
-                        <h1 class="text-xl">{{$item->testimoni}}</h1>
-                    </div>
-                </div>
                 @endforeach
             </div>
 
             <div class="testimoni max-md:grid hidden lg:mx-20 grid-cols-1 gap-2 lg:gap-8">
                 @foreach ($data_mobile as $item)
-                <div class="values bg-blue-50 rounded-xl max-lg:pb-20 lg:mx-0 mx-4 px-10 mt-5 lg:mt-0">
-                    <div class="value flex pt-5 pb-2 gap-2 items-center">
-                        <div class="w-10 h-10 bg-black rounded-full"></div>
-                        <div class="">
-                            <h1 class="capitalize text-lg font-semibold">{{$item->nama}}</h1>
-                            <h1 class="capitalize max-lg:text-xm text-md font-light">{{$item->job}}</h1>
+                    <div class="values bg-blue-50 rounded-xl max-lg:pb-20 lg:mx-0 mx-4 px-10 mt-5 lg:mt-0">
+                        <div class="value flex pt-5 pb-2 gap-2 items-center">
+                            <div class="w-10 h-10 bg-black rounded-full"></div>
+                            <div class="">
+                                <h1 class="capitalize text-lg font-semibold">{{ $item->nama }}</h1>
+                                <h1 class="capitalize max-lg:text-xm text-md font-light">{{ $item->job }}</h1>
+                            </div>
+                        </div>
+                        <div class="value pb-5 lg:pb-20 gap-2">
+                            <h1 class="text-xl">{{ $item->testimoni }}</h1>
                         </div>
                     </div>
-                    <div class="value pb-5 lg:pb-20 gap-2">
-                        <h1 class="text-xl">{{$item->testimoni}}</h1>
-                    </div>
-                </div>
                 @endforeach
             </div>
 
@@ -130,13 +143,15 @@
             <div class="pagination lg:mx-20 mt-20 flex gap-2 justify-center items-center">
                 {{-- {{ @dd($data) }} --}}
                 <div class="max-lg:hidden">
-                    {{$data_desktop->links("vendor.pagination.tailwind")}}
+                    {{ $data_desktop->links('vendor.pagination.tailwind') }}
                 </div>
                 <div class="max-md:hidden lg:hidden ">
-                    {{$data_tablet->links("vendor.pagination.tailwind")}}
+                    {{ $data_desktop->links('vendor.pagination.tailwind') }}
+                    {{-- {{$data_tablet->links("vendor.pagination.tailwind")}} --}}
                 </div>
                 <div class="md:hidden">
-                    {{$data_mobile->links("vendor.pagination.tailwind")}}
+                    {{ $data_desktop->links('vendor.pagination.tailwind') }}
+                    {{-- {{$data_mobile->links("vendor.pagination.tailwind")}} --}}
                 </div>
 
                 {{-- <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-lg">Perv</span>
@@ -174,6 +189,7 @@
                     <div class="contact">
                         <h1 class="text-sm font-light uppercase">kontak</h1>
                         <h1 class="capitalize text-lg mt-8 text-yellow-400">+62 892 161 572</h1>
+                        <h1 class="capitalize text-lg text-yellow-400">+62 813 6320 9449</h1>
                         <h1 class="capitalize text-lg font-light">hello@sinaiumrah.com</h1>
                         <h1 class="capitalize text-lg font-light mt-44 max-lg:mt-24">alamat perusahaan</h1>
                     </div>

@@ -15,7 +15,7 @@ class TestimoniSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        foreach (range(1, 50) as $index) {
+        foreach (range(1, 54) as $index) {
             DB::table('testimoni')->insert([
                 'profile_img' => $faker->imageUrl(100, 100, 'people', true, 'Faker'), // URL gambar random
                 'nama'        => $faker->name,
