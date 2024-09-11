@@ -15,10 +15,15 @@ class loginController extends Controller
     public function login(Request $request){
         $username = $request->input('user');
         $password = $request->input('pass');
-        $request->validate([
+        $validasi =  $request->validate([
             'user' => 'required|string',
             'pass' => 'required|string',
         ]);        
+        
+        if (Auth::attempt($validasi)) {
+            $request->session()->regenerate();
+            return redirect()->intended('login');
+        }
 
         // Cek jika username adalah 'user' dan password adalah '200'
         if ($username === 'user' && $password === '200') {
