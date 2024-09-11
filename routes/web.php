@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\contactController;
+use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\galeriController;
 use App\Http\Controllers\layananController;
 use App\Http\Controllers\loginController;
@@ -26,6 +27,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/')->group(function () {
     Route::get('/',[mainController::class,'index']);
+    Route::get('/dashboard',[dashboardController::class,'index'])->middleware('Auth');
     Route::get('/login',[loginController::class,'index']);
     Route::post('/login',[loginController::class,'login'])->name('login');
 
