@@ -19,11 +19,6 @@ class loginController extends Controller
             'user' => 'required|string',
             'pass' => 'required|string',
         ]);        
-        
-        if (Auth::attempt($validasi)) {
-            $request->session()->regenerate();
-            return redirect()->intended('login');
-        }
 
         // Cek jika username adalah 'user' dan password adalah '200'
         if ($username === 'user' && $password === '200') {

@@ -13,15 +13,25 @@ class TestimoniSeeder extends Seeder
      */
     public function run(): void
     {
-        $faker = Faker::create();
+        // $faker = Faker::create();
 
-        foreach (range(1, 54) as $index) {
-            DB::table('testimoni')->insert([
-                'profile_img' => $faker->imageUrl(100, 100, 'people', true, 'Faker'), // URL gambar random
-                'nama'        => $faker->name,
-                'job'         => $faker->jobTitle,
-                'testimoni'   => $faker->sentence(10), // Kalimat random sepanjang 10 kata
-            ]);
-        }
+        // foreach (range(1, 54) as $index) {
+        //     DB::table('testimoni')->insert([
+        //         'profile_img' => $faker->imageUrl(100, 100, 'people', true, 'Faker'), // URL gambar random
+        //         'nama'        => $faker->name,
+        //         'job'         => $faker->jobTitle,
+        //         'testimoni'   => $faker->sentence(10), // Kalimat random sepanjang 10 kata
+        //     ]);
+        // }
+
+        $data = [
+            [            
+            'profile_img' => '',
+            'nama'        => "Ibu Jasmalinda",
+            'job'         => "Jama'ah Sinai Umroh",
+            'testimoni'   => "Aman Nyaman ",
+            ],
+        ];
+        DB::table('testimoni')->insert($data);
     }
 }
