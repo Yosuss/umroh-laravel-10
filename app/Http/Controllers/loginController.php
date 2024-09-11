@@ -10,22 +10,24 @@ class loginController extends Controller
     //
     public function index(){
         return view('main.login');
-        
-        $username = $request->input('username');
-        $password = $request->input('password');
+    }
+
+    public function login(Request $request){
+        $username = $request->input('user');
+        $password = $request->input('pass');
         $request->validate([
-            'username' => 'required|string',
-            'password' => 'required|string',
+            'user' => 'required|string',
+            'pass' => 'required|string',
         ]);        
 
         // Cek jika username adalah 'user' dan password adalah '200'
         if ($username === 'user' && $password === '200') {
             // Jika berhasil, redirect ke /main
-            return redirect('/main');
+            return redirect('/');
         } else {
             // Jika gagal, tetap di /login dengan pesan error
-            return redirect('/login')->withErrors(['login' => 'Username atau password salah.']);
+            // return redirect('/login')->withErrors(['login' => 'Username atau password salah.']);
+            return redirect('/login');
         }
-
     }
 }
