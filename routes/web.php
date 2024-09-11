@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\contactController;
+use App\Http\Controllers\galeriController;
 use App\Http\Controllers\layananController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\mainController;
@@ -30,6 +31,7 @@ Route::prefix('/')->group(function () {
 
     Route::get('/tentang-kami',[tentangKamiController::class,'tentangkami']);
     Route::get('/testimoni',[testimoniController::class,'testimoni']);
+    Route::get('/galeri',[galeriController::class,'galeri']);
     Route::get('/contact',[contactController::class,'contact']);
     Route::post('/contact',[contactController::class,'tambah'])->name('tambah');
     Route::get('/layanan',[layananController::class,'layanan']);

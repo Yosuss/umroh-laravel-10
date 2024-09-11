@@ -33,7 +33,7 @@
 
                 <!-- Menu items -->
                 <div id="menu"
-                    class="hidden w-full lg:flex font-normal text-2xl text-end justify-end items-center gap-12 ">
+                    class="hidden w-full lg:flex font-normal text-xl text-end justify-end items-center gap-12 ">
                     <a href="{{ url('/') }}" class="flex gap-2">
                         <i class="bi bi-house"></i>
                         <h1 class="font-bold">beranda</h1>
@@ -45,6 +45,10 @@
                     <a href="{{ url('/tentang-kami') }}" class="flex gap-2">
                         <i class="bi bi-person"></i>
                         <h1 class="">tentang kami</h1>
+                    </a>
+                    <a href="{{ url('/galeri') }}" class="flex gap-2">
+                        <i class="bi bi-chat-square-dots"></i>
+                        <h1 class="">galeri</h1>
                     </a>
                     <a href="{{ url('/testimoni') }}" class="flex gap-2">
                         <i class="bi bi-chat-square-dots"></i>
@@ -64,22 +68,25 @@
                 <div id="dropdown" class="hidden bg-white top-0 left-0 w-full space-y-2 lg:mt-2 h-screen z-50 fixed">
                     <div class="absolute bottom-0 w-full">
                         <a href="{{ url('/') }}">
-                            <h1 class="text-black text-4xl px-2 py-4">beranda</h1>
+                            <h1 class="text-black text-3xl px-2 py-4">beranda</h1>
                         </a>
                         <a href="{{ url('/layanan') }}">
-                            <h1 class="text-black text-4xl px-2 py-4">layanan</h1>
+                            <h1 class="text-black text-3xl px-2 py-4">layanan</h1>
                         </a>
                         <a href="{{ url('/tentang-kami') }}">
-                            <h1 class="text-black text-4xl px-2 py-4">tentang kami</h1>
+                            <h1 class="text-black text-3xl px-2 py-4">tentang kami</h1>
                         </a>
                         <a href="{{ url('/testimoni') }}">
-                            <h1 class="text-black text-4xl px-2 py-4">testimonial</h1>
+                            <h1 class="text-black text-3xl px-2 py-4">testimonial</h1>
                         </a>
                         <a href="{{ url('/contact') }}">
-                            <h1 class="text-black text-4xl px-2 py-4">hubungi kami</h1>
+                            <h1 class="text-black text-3xl px-2 py-4">hubungi kami</h1>
+                        </a>
+                        <a href="{{ url('/galeri') }}">
+                            <h1 class="text-black text-3xl px-2 py-4">galeri</h1>
                         </a>
                         <a href="{{ url('/login') }}">
-                            <h1 class="text-black text-4xl px-2 py-4">sign In</h1>
+                            <h1 class="text-black text-3xl px-2 py-4">sign In</h1>
                         </a>
                     </div>
                 </div>
