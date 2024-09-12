@@ -16,11 +16,21 @@ class kesanSeeder extends Seeder
         //
         $data = [
             [            
-            'nama'        => "Ibu Jasmalinda",
-            'desk'         => "Jama'ah Sinai Umroh",
-            'kesan'       => "Aman Nyaman ",
-            ],
-        ];
+                'nama'        => "Ibu Jasmalinda",
+                'desk'         => "sumatera barat",
+                'kesan'   => "alhamdulillah lancar & aman, nyaman dan karena tanpa transit jadi tidak capek",
+                ],
+                [            
+                'nama'        => "Ibu elis sumiarti",
+                'desk'         => "jama'ah Sinai",
+                'kesan'   => " masyaAllah sangat baik sekali karena tidak ada transit terlebih dahulu jadi tidak terlalu menguras tenaga. Travel Sinai is the best",
+                ],
+                [            
+                'nama'        => "Bapa sudirman syam",
+                'desk'         => "jama'ah Sinai",
+                'kesan'   => "perjalanan bersama sinai nyaman karena tidak ada transit jadi tidak ada rasa letih, apalagi untuk orang tua seperti saya",
+                ],
+            ];
         DB::table('kesan')->insert($data);
     }
 }

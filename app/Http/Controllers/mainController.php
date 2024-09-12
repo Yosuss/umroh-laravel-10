@@ -9,8 +9,7 @@ class mainController extends Controller
 {
     //
     public function index(){
-
-        $kesan = DB::table("kesan");
+        $kesan = DB::table("kesan")->get();
         return view('main.main',compact("kesan"));
     }
 }
