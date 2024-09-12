@@ -25,7 +25,7 @@
                             <div class="w-10 h-10 bg-black rounded-full"></div>
                             <div class="">
                                 <h1 class="capitalize text-lg font-semibold">{{ $item->nama }}</h1>
-                                <h1 class="capitalize max-lg:text-xm text-md font-light">{{ $item->job }}</h1>
+                                <h1 class="capitalize max-lg:text-xm text-md font-light">{{ $item->desk }}</h1>
                             </div>
                         </div>
                         <div class="value pb-5 lg:pb-20 gap-2">
@@ -42,7 +42,7 @@
                             <div class="w-10 h-10 bg-black rounded-full"></div>
                             <div class="">
                                 <h1 class="capitalize text-lg font-semibold">{{ $item->nama }}</h1>
-                                <h1 class="capitalize max-lg:text-xm text-md font-light">{{ $item->job }}</h1>
+                                <h1 class="capitalize max-lg:text-xm text-md font-light">{{ $item->desk }}</h1>
                             </div>
                         </div>
                         <div class="value pb-5 lg:pb-20 gap-2">
@@ -59,7 +59,7 @@
                             <div class="w-10 h-10 bg-black rounded-full"></div>
                             <div class="">
                                 <h1 class="capitalize text-lg font-semibold">{{ $item->nama }}</h1>
-                                <h1 class="capitalize max-lg:text-xm text-md font-light">{{ $item->job }}</h1>
+                                <h1 class="capitalize max-lg:text-xm text-md font-light">{{ $item->desk }}</h1>
                             </div>
                         </div>
                         <div class="value pb-5 lg:pb-20 gap-2">
