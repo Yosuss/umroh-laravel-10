@@ -352,9 +352,9 @@
             <div class="swiper-container-2 w-full overflow-hidden">
                 <div class="swiper-wrapper flex items-center w-full gap-0">
                     <div class="swiper-slide">
-                        <div class="testimoni-detail flex gap-2 lg:gap-6 lg:mb-20">
+                        <div class="testimoni-detail flex max-md:flex-col gap-2 lg:gap-6 lg:mb-20">
                             @foreach ($kesan as $item)
-                            <div class="values bg-white rounded-xl px-10 lg:mt-5 lg:mb-0">
+                            <div class="values bg-white rounded-xl px-4 lg:px-10 lg:mt-5 lg:mb-0">
                                 <div class="value flex pt-5 pb-2 gap-2 items-center">
                                     <div class="w-10 h-10 bg-black rounded-full"></div>
                                     <div class="">
@@ -363,12 +363,12 @@
                                     </div>
                                 </div>
                                 <div class="value pb-5 lg:pb-20 gap-2">
-                                    <h1 class="text-xl">{{$item->kesan}}</h1>
+                                    <h1 class="lg:text-xl text-lg">{{$item->kesan}}</h1>
                                 </div>
                             </div>
                             @endforeach
                         </div>
-                    </div>                        
+                    </div>                
                 </div>
             </div>
 
