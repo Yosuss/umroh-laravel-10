@@ -19,7 +19,7 @@
                 </div>
             </div>
 
-            <form action="{{ route('tambah') }}" method="POST"
+            <form action="{{ route('contact-tambah') }}" method="POST"
                 class="form-container bg-white flex max-lg:flex-col lg:w-full max-lg:mx-4 px-10 lg:px-0 mt-10 lg:gap-4 justify-center lg:justify-between items-center">
                 @csrf
                 <div class="form flex flex-col gap-6 m-6 w-full lg:w-6/12 lg:mr-10">

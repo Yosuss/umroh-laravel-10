@@ -10,7 +10,7 @@ class layananController extends Controller
     //
     public function layanan(){
         $daftar = DB::table("daftar");
-        return view('main.layanan');
+        return view('main.layanan',compact('daftar'));
     }
 
     public function tambah(Request $request){

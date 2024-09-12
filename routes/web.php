@@ -35,9 +35,9 @@ Route::prefix('/')->group(function () {
     Route::get('/galeri',[galeriController::class,'galeri']);
     Route::get('/testimoni',[testimoniController::class,'testimoni']);
     Route::get('/contact',[contactController::class,'contact']);
-    Route::post('/contact',[contactController::class,'tambah'])->name('tambah');
+    Route::post('/contact',[contactController::class,'tambah'])->name('contact-tambah');
     Route::get('/layanan',[layananController::class,'layanan']);
-    Route::post('/layanan',[layananController::class,'tambah'])->name('tambah');
+    Route::post('/layanan',[layananController::class,'tambah'])->name('layanan-tambah');
 
     
 });

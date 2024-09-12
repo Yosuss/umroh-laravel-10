@@ -296,7 +296,7 @@
                         </div>
                     </div>
 
-                    <form action="{{ route('tambah') }}" method="POST"
+                    <form action="{{ route('layanan-tambah') }}" method="POST"
                         class="form flex flex-col gap-2 mx-2 w-full lg:mr-10 max-lg:px-5 max-lg:mt-5">
                         @csrf
                         <h1 class="text-xl lg:text-3xl lg:mb-2 font-semibold text-start">Ayoo, daftar disini!.</h1>
