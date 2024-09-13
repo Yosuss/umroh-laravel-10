@@ -4,13 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class dashboardController extends Controller
 {
     //
     public function index()
     {
-        return view('admin.dashboard');
+        $testimoni = DB::table("testimoni")->get();
+        $kesan = DB::table("kesan")->get();
+        $contact = DB::table("contact")->get();
+        return view('admin.dashboard',compact('testimoni','kesan','contact'));
         // $log = $request->validate([
         //     'username' => ['required', 'string'],
         //     'password' => ['required', 'string'],
