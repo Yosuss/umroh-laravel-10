@@ -25,9 +25,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+Route::get('/dashboard',[dashboardController::class,'index']);
 Route::prefix('/')->group(function () {
     Route::get('/',[mainController::class,'index']);
-    Route::get('/dashboard',[dashboardController::class,'index'])->middleware('Auth');
     Route::get('/login',[loginController::class,'index']);
     Route::post('/login',[loginController::class,'login'])->name('login');
 
