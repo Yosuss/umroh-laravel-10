@@ -20,12 +20,27 @@ class loginController extends Controller
             'pass' => 'required|string',
         ]);        
 
-        // Cek jika username adalah 'user' dan password adalah '200'
         if ($username === 'user' && $password === '200') {
-            // Jika berhasil, redirect ke /main
+            // Jika berhasil, redirect ke /
             return redirect('/');
         } else {
-            // Jika gagal, tetap di /login dengan pesan error
+            // return redirect('/login')->withErrors(['login' => 'Username atau password salah.']);
+            return redirect('/login');
+        }
+    }
+    
+    public function login_dashboard(Request $request){
+        $username = $request->input('user');
+        $password = $request->input('pass');
+        $validasi =  $request->validate([
+            'user' => 'required|string',
+            'pass' => 'required|string',
+        ]);        
+
+        if ($username === 'admin' && $password === '200') {
+            // Jika berhasil, redirect ke /
+            return redirect('/dashboard');
+        } else {
             // return redirect('/login')->withErrors(['login' => 'Username atau password salah.']);
             return redirect('/login');
         }
