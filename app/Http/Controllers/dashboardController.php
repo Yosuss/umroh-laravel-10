@@ -11,24 +11,13 @@ class dashboardController extends Controller
     //
     public function index()
     {
-        $testimoni = DB::table("testimoni")->get();
-        $kesan = DB::table("kesan")->get();
+        $testimoni = DB::table("testimoni")->paginate(3);
         $contact = DB::table("contact")->get();
-        return view('admin.dashboard',compact('testimoni','kesan','contact'));
-        // $log = $request->validate([
-        //     'username' => ['required', 'string'],
-        //     'password' => ['required', 'string'],
-        // ]);
 
-        // // Cek apakah username dan password cocok
-        // if (Auth::attempt($log)) {
-        //     // Jika valid, redirect ke dashboard
-        //     return redirect()->intended('/dashboard');
-        // } else {
-        //     // Jika tidak valid, kembali ke /login dengan pesan error
-        //     return redirect('/login')->withErrors([
-        //         'loginError' => 'Username atau password salah.',
-        //     ]);
-        // }
+        $totalTestimoni = DB::table("testimoni")->count();
+        $totalPendaftar = DB::table('daftar')->count();
+        $totalContact = DB::table('contact')->count();
+
+        return view('admin.dashboard',compact('testimoni','contact', 'totalTestimoni', 'totalPendaftar', 'totalContact'));
     }
 }
