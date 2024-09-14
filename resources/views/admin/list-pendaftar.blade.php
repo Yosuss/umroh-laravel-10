@@ -26,14 +26,17 @@
                                     <td>{{ $item->no }}</td>
                                     <td>{{ $item->date }}</td>
                                     <td>{{ $item->jumlah }}</td>
-                                    <td>@include('component.btn-submit')</td>
                                     <td>
-                                        <form method="POST" action="{{ route('list-pendaftar-hapus', ['id' => $item->id_daftar]) }}">
+                                        <form action="{{ route('list-pendaftar.edit', ['id' => $item->id_daftar]) }}">
+                                            @include('component.btn-submit')
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form method="POST" action="{{ route('list-pendaftar.hapus', ['id' => $item->id_daftar]) }}">
                                             @method('DELETE')
                                             @csrf
                                             @include('component.btn-danger')                                
                                         </form>
-                
                                     </td>
                                 </tr>
                             @endforeach

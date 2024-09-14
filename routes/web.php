@@ -12,6 +12,7 @@ use App\Http\Controllers\mainController;
 use App\Http\Controllers\tentangKamiController;
 use App\Http\Controllers\testimoniController;
 use Illuminate\Support\Facades\Route;
+use PHPUnit\TextUI\Command\ListTestSuitesCommand;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,9 +46,15 @@ Route::prefix('/')->group(function () {
 });
 
 Route::prefix('/')->group(function(){
-
     Route::get('list-pendaftar', [ListPendaftarController::class, 'index'])->name('list-pendaftar');
-    Route::get('list-pendaftar-hapus', [ListPendaftarController::class, 'index'])->name('list-pendaftar');
+    Route::delete('list-pendaftar/{id}', [ListPendaftarController::class, 'hapus'])->name('list-pendaftar.hapus');
+    Route::put('list-pendaftar-edit/{id}', [ListPendaftarController::class, 'edit'])->name('list-pendaftar.edit');
+    
     Route::get('list-testimoni', [ListTestimoniController::class, 'index'])->name('list-testimoni');
+    Route::delete('list-testimoni/{id}', [ListTestimoniController::class, 'hapus'])->name('list-testimoni.hapus');
+    Route::put('list-testimoni-edit/{id}', [ListTestimoniController::class, 'edit'])->name('list-testimoni.edit');
+    
     Route::get('list-contact', [ListContactController::class, 'index'])->name('list-contact');
+    Route::delete('list-contact/{id}', [ListContactController::class, 'hapus'])->name('list-contact.hapus');
+    Route::put('list-contact-/{id}', [ListContactController::class, 'edit'])->name('list-contact.edit');
 });

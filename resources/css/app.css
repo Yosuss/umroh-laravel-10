@@ -7,10 +7,13 @@
 .mail .langganan {
     background-color: #e9b634;
 }
-* {
-    border: 1px solid black;
+.container-contact-form {
+    display: none;
 }
-@media only screen and (min-width: 1920px){
+.container-contact-form.active {
+    display: flex;
+}
+/* @media only screen and (min-width: 1920px){
     :root {
         font-size: 1.1vw;
     }
@@ -19,4 +22,4 @@
     :root {
         font-size: 1.1vw;
     }
-}
+} */

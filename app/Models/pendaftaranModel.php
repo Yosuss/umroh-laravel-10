@@ -11,4 +11,5 @@ class pendaftaranModel extends Model
     protected $table = 'daftar';
     protected $primaryKey = 'id_daftar';
     protected $fillable = ['nama','alamat','no','date','jumlah',];
+    public $timestamps = false;
 }
