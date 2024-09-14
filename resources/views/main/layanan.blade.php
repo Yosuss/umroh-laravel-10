@@ -3,7 +3,7 @@
     <div class="tentang-kami w-full">
 
         @include('component.whatsapp')
-        
+
         {{-- navbar --}}
         @include('component.navbar')
         {{-- navbar end --}}
@@ -297,37 +297,61 @@
                     </div>
 
                     <form action="{{ route('layanan-tambah') }}" method="POST"
-                        class="form flex flex-col gap-2 mx-2 w-full lg:mr-10 max-lg:px-5 max-lg:mt-5">
+                        class="form mt-5 grid grid-cols-2 gap-4 mx-2 w-full max-lg:px-5">
+                        <h1 class="text-xl col-span-2 lg:text-3xl lg:mb-2 font-semibold text-start">Ayoo, daftar disini!
+                        </h1>
                         @csrf
-                        <h1 class="text-xl lg:text-3xl lg:mb-2 font-semibold text-start">Ayoo, daftar disini!.</h1>
-                        <input type="text" name="nama" class="text-lg rounded-lg py-4 w-full"
-                            placeholder="Nama lengkap">
-                        <input type="text" name="alamat" class="text-lg rounded-lg py-4 w-full pb-20"
-                            placeholder="Alamat rumah">
-                        <div class="gap-2 grid grid-cols-2">
-                            <input type="number" name="no" class="text-lg rounded-lg py-4 w-full"
+
+                        <div class="col-span-1">
+                            <label for="nama" class="mb-1 block text-slate-700 text-lg text-start">Nama
+                                Lengkap</label>
+                            <input type="text" name="nama" class="text-lg rounded-lg py-2 w-full"
+                                placeholder="Nama lengkap">
+                        </div>
+
+                        <div class="col-span-1">
+                            <label for="nama" class="mb-1 block text-slate-700 text-lg text-start">No Whatsapp</label>
+                            <input type="number" name="no" class="text-lg rounded-lg py-2 w-full"
                                 placeholder="Nomor Telp/WA">
-                            <input type="date" name="date" class="text-lg rounded-lg py-4 w-full"
+                        </div>
+
+                        <div class="col-span-1">
+                            <label for="nama" class="mb-2 block text-slate-700 text-lg text-start">Tanggal
+                                Keberangkatan</label>
+                            <input type="date" name="date" class="text-lg rounded-lg py-2 w-full"
                                 placeholder="Tanggal keberangkatan">
-                            <div
-                                class="text-lg rounded-lg py-4 w-full border-[0.08rem] bg-white border-gray-500 text-gray-500 text-start">
-                                <button id="paket" class="px-4">Paket umroh</button>
-                                <div id="dropdown-paket" class="hidden w-full items-center">
-                                    <div class="absolute z-50 flex flex-col items-center backdrop-blur-lg gap-1 mt-5">
-                                        <h1 class="text-xl px-4 py-2 border-2 bg-white border-gray-500 rounded-lg">Paket 1
-                                        </h1>
-                                        <h1 class="text-xl px-4 py-2 border-2 bg-white border-gray-500 rounded-lg">Paket 2
-                                        </h1>
-                                        <h1 class="text-xl px-4 py-2 border-2 bg-white border-gray-500 rounded-lg">Paket 3
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                            <input type="text" name="jumlah" class="text-lg rounded-lg py-4 w-full"
+                        </div>
+
+                        <div class="col-span-1">
+                            <label for="nama" class="mb-2 block text-slate-700 text-lg text-start">Jumlah
+                                Jama'ah</label>
+                            <input type="text" name="jumlah" class="text-lg rounded-lg py-2 w-full"
                                 placeholder="Jumlah jama’ah">
                         </div>
-                        <button type="submit"
-                            class="capitalize text-2xl px-4 mt-2 text-white bg-yellow-600 shadow-lg rounded-lg py-4 w-full">kirim</button>
+
+                        <div class="col-span-2">
+                            <label for="nama" class="mb-2 block text-slate-700 text-lg text-start">Pilih Paket</label>
+                            <select name="paket_umroh" class="text-lg rounded-lg py-2 w-full">
+                                <option value="">-- Pilih Paket --</option>
+                                <option value="paket_1">Paket 1</option>
+                                <option value="paket_2">Paket 2</option>
+                                <option value="paket_3">Paket 3</option>
+                            </select>
+                        </div>
+
+                        <div class="col-span-2">
+                            <label for="nama" class="mb-2 block text-slate-700 text-lg text-start">Alamat
+                                Lengkap</label>
+                            <input type="text" name="alamat" class="text-lg rounded-lg py-2 w-full pb-20"
+                                placeholder="Alamat rumah">
+                        </div>
+
+                        <div class="col-span-2">
+                            <button type="submit"
+                                class="capitalize text-2xl px-4 mt-2 text-white bg-yellow-600 shadow-lg rounded-lg py-4 w-full">
+                                Daftar
+                            </button>
+                        </div>
                     </form>
                 </div>
 
