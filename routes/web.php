@@ -30,7 +30,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/dashboard',[dashboardController::class,'index'])->name('dashboard');
 Route::prefix('/')->group(function () {
-    Route::get('/',[mainController::class,'index']);
+    Route::get('/',[mainController::class,'index'])->name('main');
     Route::get('/login',[loginController::class,'index']);
     Route::post('/login',[loginController::class,'login'])->name('login');
     Route::post('/login',[loginController::class,'login_dashboard'])->name('login');
@@ -47,6 +47,7 @@ Route::prefix('/')->group(function () {
 Route::prefix('/')->group(function(){
 
     Route::get('list-pendaftar', [ListPendaftarController::class, 'index'])->name('list-pendaftar');
+    Route::get('list-pendaftar-hapus', [ListPendaftarController::class, 'index'])->name('list-pendaftar');
     Route::get('list-testimoni', [ListTestimoniController::class, 'index'])->name('list-testimoni');
     Route::get('list-contact', [ListContactController::class, 'index'])->name('list-contact');
 });

@@ -26,19 +26,16 @@ class TestimoniSeeder extends Seeder
 
         $data = [
             [            
-            'profile_img' => '',
             'nama'        => "Ibu Jasmalinda",
             'desk'         => "sumatera barat",
             'testimoni'   => "alhamdulillah lancar & aman, nyaman dan karena tanpa transit jadi tidak capek",
             ],
             [            
-            'profile_img' => '',
             'nama'        => "Ibu elis sumiarti",
             'desk'         => "jama'ah Sinai",
             'testimoni'   => " masyaAllah sangat baik sekali karena tidak ada transit terlebih dahulu jadi tidak terlalu menguras tenaga. Travel Sinai is the best",
             ],
             [            
-            'profile_img' => '',
             'nama'        => "Bapa sudirman syam",
             'desk'         => "jama'ah Sinai",
             'testimoni'   => "perjalanan bersama sinai nyaman karena tidak ada transit jadi tidak ada rasa letih, apalagi untuk orang tua seperti saya",

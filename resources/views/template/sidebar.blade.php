@@ -79,7 +79,9 @@
             <hr>
 
             <button class="btn btn-danger w-100">
-                Sign Out
+                <a href="{{ route('main') }}" class='text-white'>
+                    Sign Out
+                </a>
             </button>
         </ul>
     </div>

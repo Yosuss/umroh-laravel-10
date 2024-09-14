@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\pendaftaranModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -10,6 +11,7 @@ class layananController extends Controller
     //
     public function layanan(){
         $daftar = DB::table("daftar");
+        // $daftar = pendaftaranModel::all();
         return view('main.layanan',compact('daftar'));
     }
 

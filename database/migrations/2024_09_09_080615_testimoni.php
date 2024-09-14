@@ -14,7 +14,6 @@ return new class extends Migration
         //
         Schema::create('testimoni', function (Blueprint $table) {
             $table->id('id_testimoni');
-            $table->string('profile_img');
             $table->string('nama');
             $table->string('desk');
             $table->string('testimoni');

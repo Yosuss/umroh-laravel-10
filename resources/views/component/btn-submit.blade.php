@@ -1,0 +1,1 @@
+<button type="submit" class="btn btn-primary w-100  rounded-xl">edit</button>

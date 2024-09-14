@@ -20,4 +20,5 @@ class dashboardController extends Controller
 
         return view('admin.dashboard',compact('testimoni','contact', 'totalTestimoni', 'totalPendaftar', 'totalContact'));
     }
+
 }
