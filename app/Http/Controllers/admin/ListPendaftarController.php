@@ -25,9 +25,10 @@ class ListPendaftarController extends Controller
     }
     
     public function edit(Request $request,$id){
-        $daftar_edit = pendaftaranModel::findOrFail($id);
-        return view('admin.list-pendaftar-edit',compact('daftar_edit'));
-
+        $daftar = pendaftaranModel::findOrFail($id);
+        return view('admin.list-pendaftar',compact('daftar'));
+    }
+    public function update(Request $request,$id){
         $request->validate([
             'nama' => 'required',
             'alamat' => 'required',
@@ -36,13 +37,13 @@ class ListPendaftarController extends Controller
             'jumlah' => 'required|numeric',
         ]);
         
-        $daftar_edit = pendaftaranModel::findOrFail($id);
-        $daftar_edit->nama =$request->input('nama') ;
-        $daftar_edit->alamat =$request->input('alamat') ;
-        $daftar_edit->no =$request->input('no') ;
-        $daftar_edit->date =$request->input('date') ;
-        $daftar_edit->jumlah =$request->input('jumlah') ;
-        $daftar_edit->save();
+        $daftar = pendaftaranModel::findOrFail($id);
+        $daftar->nama =$request->input('nama') ;
+        $daftar->alamat =$request->input('alamat') ;
+        $daftar->no =$request->input('no') ;
+        $daftar->date =$request->input('date') ;
+        $daftar->jumlah =$request->input('jumlah') ;
+        $daftar->save();
 
         try {
             pendaftaranModel::where('id_daftar',$id)->delete();
@@ -50,6 +51,5 @@ class ListPendaftarController extends Controller
         } catch (\Exception $e) {
             return to_route('liist-pendaftar')->withErrors('gagal hapus');
         }
-        // return to_route('list-pendaftar')->with('berhasil');
     }
 }

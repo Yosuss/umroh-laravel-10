@@ -24,20 +24,22 @@ class ListTestimoniController extends Controller
     }
 
     public function edit(Request $request,$id){
-        $testimoni_edit = testimoniModel::findOrFail($id);
-        return view('admin.list-testimoni-edit',compact('testimoni_edit'));
+        $testimoni = testimoniModel::findOrFail($id);
+        return view('admin.list-testimoni',compact('testimoni'));
+    }
 
+    public function update(Request $request,$id){
         $request->validate([
             'nama' => 'required',
             'desk' => 'required',
             'testimoni' => 'required',
         ]);
         
-        $testimoni_edit = testimoniModel::findOrFail($id);
-        $testimoni_edit->alamat = $request->input('nama');
-        $testimoni_edit->nama = $request->input('desk');
-        $testimoni_edit->nama = $request->input('testimoni');
-        $testimoni_edit->save();
+        $testimoni = testimoniModel::findOrFail($id);
+        $testimoni->alamat = $request->input('nama');
+        $testimoni->nama = $request->input('desk');
+        $testimoni->nama = $request->input('testimoni');
+        $testimoni->save();
 
         try {
             testimoniModel::where('id_testimoni',$id)->delete();
@@ -45,6 +47,5 @@ class ListTestimoniController extends Controller
         } catch (\Exception $e) {
             return to_route('liist-pentestimoni')->withErrors('gagal hapus');
         }
-        // return to_route('list-pentestimoni')->with('berhasil');
     }
 }
