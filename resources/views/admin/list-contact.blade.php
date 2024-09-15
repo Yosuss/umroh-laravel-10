@@ -29,7 +29,7 @@
                                             Edit
                                         </button>
                                     </form>
-                                    <!--login form Modal -->
+                                    <!--form Modal -->
                                     <div class="modal fade" id="editModal{{ $item->id_contact }}" tabindex="-1"
                                         role="dialog" aria-labelledby="editModalLabel{{ $item->id_contact }}"
                                         aria-hidden="true">
@@ -82,7 +82,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    <!--login form Modal end-->
+                                    <!--form Modal end-->
                                 </td>
                                 <td>
                                     <form method="POST"
