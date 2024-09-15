@@ -28,11 +28,15 @@
                                 <td>{{ $item->jumlah }}</td>
                                 <td>
                                     <form action="{{ route('list-pendaftar.edit', ['id' => $item->id_daftar]) }}">
-                                        @include('component.btn-submit')
+                                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                            data-bs-target="#editModal{{ $item->id_daftar }}">
+                                            Edit
+                                        </button>
                                     </form>
                                     <!--login form Modal -->
-                                    <div class="modal fade text-left" id="inlineForm {{'id' => $item->id_daftar}}" tabindex="-1" role="dialog"
-                                        aria-labelledby="myModalLabel33" aria-hidden="true">
+                                    <div class="modal fade" id="editModal{{ $item->id_daftar }}" tabindex="-1"
+                                        role="dialog" aria-labelledby="editModalLabel{{ $item->id_daftar }}"
+                                        aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
                                             role="document">
                                             <div class="modal-content">
