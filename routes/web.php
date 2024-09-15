@@ -59,4 +59,5 @@ Route::prefix('/')->group(function(){
     Route::get('list-contact', [ListContactController::class, 'index'])->name('list-contact');
     Route::delete('list-contact/{id}', [ListContactController::class, 'hapus'])->name('list-contact.hapus');
     Route::put('list-contact-edit/{id}', [ListContactController::class, 'edit'])->name('list-contact.edit');
+    Route::put('list-contact-update/{id}', [ListContactController::class, 'update'])->name('list-contact.update');
 });

@@ -11,5 +11,5 @@ class testimoniModel extends Model
     protected $table = 'testimoni';
     protected $primaryKey = 'id_testimoni';
     protected $fillable = ['nama', 'desk', 'testimoni'];
-
+    public $timestamps = false;
 }

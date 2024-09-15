@@ -11,41 +11,43 @@ class ListTestimoniController extends Controller
     public function index()
     {
         $testimoni = testimoniModel::paginate(5);
-        return view('admin.list-testimoni',compact('testimoni'));
+        return view('admin.list-testimoni', compact('testimoni'));
     }
 
-    public function hapus($id){
+    public function hapus($id)
+    {
         try {
-            testimoniModel::where('id_testimoni',$id)->delete();
+            testimoniModel::where('id_testimoni', $id)->delete();
             return to_route('list-testimoni');
         } catch (\Exception $e) {
             return to_route('liist-testimoni')->withErrors('gagal hapus');
         }
     }
 
-    public function edit(Request $request,$id){
+    public function edit(Request $request, $id)
+    {
         $testimoni = testimoniModel::findOrFail($id);
-        return view('admin.list-testimoni',compact('testimoni'));
+        return view('admin.list-testimoni', compact('testimoni'));
     }
 
-    public function update(Request $request,$id){
+    public function update(Request $request, $id)
+    {
         $request->validate([
             'nama' => 'required',
             'desk' => 'required',
             'testimoni' => 'required',
         ]);
-        
-        $testimoni = testimoniModel::findOrFail($id);
-        $testimoni->alamat = $request->input('nama');
-        $testimoni->nama = $request->input('desk');
-        $testimoni->nama = $request->input('testimoni');
-        $testimoni->save();
 
+        $testimoni = testimoniModel::findOrFail($id);
         try {
-            testimoniModel::where('id_testimoni',$id)->delete();
-            return to_route('list-pentestimoni');
+            $testimoni->nama = $request->input('nama');
+            $testimoni->desk = $request->input('desk');
+            $testimoni->testimoni = $request->input('testimoni');
+
+            $testimoni->save();
+            return redirect()->route('list-testimoni');
         } catch (\Exception $e) {
-            return to_route('liist-pentestimoni')->withErrors('gagal hapus');
+            return redirect()->route('list-testimoni')->withErrors('Gagal mengupdate data: ' . $e->getMessage());
         }
-    }
+            }
 }
