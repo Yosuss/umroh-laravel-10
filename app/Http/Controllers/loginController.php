@@ -27,9 +27,16 @@ class loginController extends Controller
             return redirect()->intended('dashboard');
         }
         return back()->withErrors([
-            'name' => 'The provided credentials do not match our records.',
+            'name' => 'username atau password kamu salah, silahkan coba lagi',
         ]);
     }
 
-    public function login_dashboard(Request $request) {}
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect()->route('login')
+            ->withSuccess('You have logged out successfully!');;
+    }
 }
