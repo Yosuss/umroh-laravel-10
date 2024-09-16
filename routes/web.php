@@ -29,7 +29,7 @@ use PHPUnit\TextUI\Command\ListTestSuitesCommand;
 //     return view('welcome');
 // });
 
-Route::get('/dashboard',[dashboardController::class,'index'])->middleware(['auth','admin'])->name('dashboard');
+Route::get('/dashboard',[dashboardController::class,'index'])->middleware('admin')->name('dashboard');
 Route::prefix('/')->group(function () {
     Route::get('/',[mainController::class,'index'])->name('main');
     Route::get('/login',[loginController::class,'index']);

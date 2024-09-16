@@ -17,10 +17,12 @@ class isAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::user() &&  Auth::user()->isAdmin == true) {
-            return $next($request);
+        // Cek apakah pengguna sudah login
+        if (!Auth::check()) {
+            // Jika belum login, redirect ke halaman login
+            return redirect('/login');
         }
-
-        return back()->with('error', 'Opps, You\'re not Admin');
+        // Jika sudah login, lanjutkan ke request berikutnya
+        return $next($request);
     }
 }

@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\DB;
 
 class dashboardController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('admin');
+    }
+
     //
     public function index()
     {
@@ -18,7 +23,6 @@ class dashboardController extends Controller
         $totalPendaftar = DB::table('daftar')->count();
         $totalContact = DB::table('contact')->count();
 
-        return view('admin.dashboard',compact('testimoni','contact', 'totalTestimoni', 'totalPendaftar', 'totalContact'));
+        return view('admin.dashboard', compact('testimoni', 'contact', 'totalTestimoni', 'totalPendaftar', 'totalContact'));
     }
-
 }
