@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('no');
             $table->timestamp('date');
             $table->string('jumlah');
+            $table->string('paket_umroh');
         });
     }
 

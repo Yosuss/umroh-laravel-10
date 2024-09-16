@@ -330,8 +330,8 @@
                         </div>
 
                         <div class="col-span-2">
-                            <label for="nama" class="mb-2 block text-slate-700 text-lg text-start">Pilih Paket</label>
-                            <select name="paket_umroh" class="text-lg rounded-lg py-2 w-full">
+                            <label for="paket_umroh" class="mb-2 block text-slate-700 text-lg text-start">Pilih Paket</label>
+                            <select name="paket_umroh" id="paket_umroh" class="text-lg rounded-lg py-2 w-full">
                                 <option value="">-- Pilih Paket --</option>
                                 <option value="paket_1">Paket 1</option>
                                 <option value="paket_2">Paket 2</option>

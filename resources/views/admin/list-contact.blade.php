@@ -8,11 +8,10 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>email</th>
+                            <th>Email</th>
                             <th>Nama</th>
-                            <th>subject</th>
-                            <th>edit</th>
-                            <th>\hapus</th>
+                            <th>Subject</th>
+                            <th colspan="2">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -38,7 +37,7 @@
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <h4 class="modal-title" id="myModalLabel33">
-                                                            contact
+                                                            Edit Contact
                                                         </h4>
                                                         <button type="button" class="close" data-bs-dismiss="modal"
                                                             aria-label="Close">
@@ -50,17 +49,17 @@
                                                         @method('PUT')
                                                         @csrf
                                                         <div class="modal-body">
-                                                            <label for="email">email: </label>
+                                                            <label for="email">Email: </label>
                                                             <div class="form-group">
                                                                 <input id="email" name="email" type="text" placeholder="email"
                                                                     class="form-control" value="{{ $item->email }}" />
                                                             </div>
-                                                            <label for="nama">nama: </label>
+                                                            <label for="nama">Nama: </label>
                                                             <div class="form-group">
                                                                 <input id="nama" name="name" type="text" placeholder="nama"
                                                                     class="form-control" value="{{ $item->name }}" />
                                                             </div>
-                                                            <label for="subject">subject: </label>
+                                                            <label for="subject">Subject: </label>
                                                             <div class="form-group">
                                                                 <input id="subject" name="subject" type="text" placeholder="subject"
                                                                     class="form-control" value="{{ $item->subject }}" />
@@ -72,11 +71,7 @@
                                                                 <i class="bx bx-x d-block d-sm-none"></i>
                                                                 <span class="d-none d-sm-block">Close</span>
                                                             </button>
-                                                            <button type="submit" class="btn btn-primary ms-1"
-                                                                data-bs-dismiss="modal">
-                                                                <i class="bx bx-check d-block d-sm-none"></i>
-                                                                <span class="d-none d-sm-block">updste</span>
-                                                            </button>
+                                                            @include('component.btn-update')
                                                         </div>
                                                     </form>
                                                 </div>

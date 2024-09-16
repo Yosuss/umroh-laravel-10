@@ -39,6 +39,7 @@ class ListPendaftarController extends Controller
             'no' => 'required|numeric',
             'date' => 'required',
             'jumlah' => 'required|numeric',
+            'paket_umroh' => 'required',
         ]);
 
         $daftar = pendaftaranModel::findOrFail($id);
@@ -48,6 +49,7 @@ class ListPendaftarController extends Controller
             $daftar->no = $request->input('no');
             $daftar->date = $request->input('date');
             $daftar->jumlah = $request->input('jumlah');
+            $daftar->paket_umroh = $request->input('paket_umroh');
 
             $daftar->save();
             return redirect()->route('list-pendaftar');

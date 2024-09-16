@@ -10,11 +10,11 @@
                             <th>No</th>
                             <th>Nama</th>
                             <th>Alamat</th>
-                            <th>No</th>
-                            <th>Data</th>
-                            <th>Jumlah</th>
-                            <th>edit</th>
-                            <th>hapus</th>
+                            <th>No Telepon</th>
+                            <th>Tanggal</th>
+                            <th>Jumlah </th>
+                            <th>Paket umroh </th>
+                            <th colspan="2">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -26,6 +26,7 @@
                                 <td>{{ $item->no }}</td>
                                 <td>{{ $item->date }}</td>
                                 <td>{{ $item->jumlah }}</td>
+                                <td>{{ $item->paket_umroh }}</td>
                                 <td>
                                     <form action="{{ route('list-pendaftar.edit', ['id' => $item->id_daftar]) }}">
                                         <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
@@ -42,7 +43,7 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h4 class="modal-title" id="myModalLabel33">
-                                                        pendaftar
+                                                        Edit Pendaftar
                                                     </h4>
                                                     <button type="button" class="close" data-bs-dismiss="modal"
                                                         aria-label="Close">
@@ -54,35 +55,57 @@
                                                     @method('PUT')
                                                     @csrf
                                                     <div class="modal-body">
-                                                        <label for="name">nama: </label>
+                                                        <label for="name">Nama: </label>
                                                         <div class="form-group">
                                                             <input id="name" name='nama' type="text"
                                                                 placeholder="name" class="form-control"
                                                                 value="{{ $item->nama }}" />
                                                         </div>
-                                                        <label for="alamat">alamat: </label>
+                                                        <label for="alamat">Alamat: </label>
                                                         <div class="form-group">
                                                             <input id="alamat" name='alamat' type="text"
                                                                 placeholder="alamat" class="form-control"
                                                                 value="{{ $item->alamat }}" />
                                                         </div>
-                                                        <label for="no">no: </label>
+                                                        <label for="no">No: </label>
                                                         <div class="form-group">
                                                             <input id="no" name='no' type="text"
                                                                 placeholder="no" class="form-control"
                                                                 value="{{ $item->no }}" />
                                                         </div>
-                                                        <label for="date">date: </label>
+                                                        <label for="date">Date: </label>
                                                         <div class="form-group">
                                                             <input id="date" name='date' type="text"
                                                                 placeholder="date" class="form-control"
                                                                 value="{{ $item->date }}" />
                                                         </div>
-                                                        <label for="jumlah">jumlah: </label>
+                                                        <label for="jumlah">Jumlah: </label>
                                                         <div class="form-group">
                                                             <input id="jumlah" name="jumlah" type="text"
                                                                 placeholder="jumlah" class="form-control"
                                                                 value="{{ $item->jumlah }}" />
+                                                        </div>
+                                                        <label for="paket_umroh">Paket Umroh: </label>
+                                                        <div class="form-group">
+                                                            <select name="paket_umroh" id="paket_umroh"
+                                                                class="text-lg rounded-lg py-2 w-full">
+                                                                <option value="">-- Pilih Paket --</option>
+                                                                <option value="paket_1"
+                                                                    @if ($item->paket_umroh == 'paket_1') {
+                                                                        {{ 'selected' }}
+                                                                    } @endif>
+                                                                    Paket 1</option>
+                                                                <option value="paket_2"
+                                                                    @if ($item->paket_umroh == 'paket_2') {
+                                                                        {{ 'selected' }}
+                                                                    } @endif>
+                                                                    Paket 2</option>
+                                                                <option value="paket_3"
+                                                                    @if ($item->paket_umroh == 'paket_3') {
+                                                                        {{ 'selected' }}
+                                                                    } @endif>
+                                                                    Paket 3</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
@@ -91,11 +114,7 @@
                                                             <i class="bx bx-x d-block d-sm-none"></i>
                                                             <span class="d-none d-sm-block">Close</span>
                                                         </button>
-                                                        <button type="submit" class="btn btn-primary ms-1"
-                                                            data-bs-dismiss="modal">
-                                                            <i class="bx bx-check d-block d-sm-none"></i>
-                                                            <span class="d-none d-sm-block">updste</span>
-                                                        </button>
+                                                        @include('component.btn-update')
                                                     </div>
                                                 </form>
                                             </div>

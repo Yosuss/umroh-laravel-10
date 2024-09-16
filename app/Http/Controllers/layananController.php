@@ -22,6 +22,7 @@ class layananController extends Controller
             'no' => 'required|numeric',
             'date' => 'required|string',
             'jumlah' => 'required|string',
+            'paket_umroh' => 'required|string',
         ]);
         $data = [
             'nama' => $request->nama,
@@ -29,6 +30,7 @@ class layananController extends Controller
             'no' => $request->no,
             'date' => $request->date,
             'jumlah' => $request->jumlah,
+            'paket_umroh' => $request->paket_umroh,
         ];
         DB::table("daftar")->insert($data);
         return redirect()->to('layanan')->with('success','Data berhasil ditambahkan');

@@ -11,8 +11,7 @@
                             <th>Nama</th>
                             <th>Deskripsi</th>
                             <th>Testimoni</th>
-                            <th>edit</th>
-                            <th>hapus</th>
+                            <th colspan="2">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -38,7 +37,7 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h4 class="modal-title" id="myModalLabel33">
-                                                        testimoni
+                                                        Edit Testimoni
                                                     </h4>
                                                     <button type="button" class="close" data-bs-dismiss="modal"
                                                         aria-label="Close">
@@ -50,19 +49,19 @@
                                                     @method('PUT')
                                                     @csrf
                                                     <div class="modal-body">
-                                                        <label for="nama">nama: </label>
+                                                        <label for="nama">Nama: </label>
                                                         <div class="form-group">
                                                             <input id="nama" name="nama" type="text"
                                                                 placeholder="nama" class="form-control"
                                                                 value="{{ $item->nama }}" />
                                                         </div>
-                                                        <label for="desk">desk: </label>
+                                                        <label for="desk">Deskripsi: </label>
                                                         <div class="form-group">
                                                             <input id="desk" name="desk" type="text"
                                                                 placeholder="desk" class="form-control"
                                                                 value="{{ $item->desk }}" />
                                                         </div>
-                                                        <label for="testimoni">testimoni: </label>
+                                                        <label for="testimoni">Testimoni: </label>
                                                         <div class="form-group">
                                                             <input id="testimoni" name="testimoni" type="text"
                                                                 placeholder="testimoni" class="form-control"
@@ -75,11 +74,7 @@
                                                             <i class="bx bx-x d-block d-sm-none"></i>
                                                             <span class="d-none d-sm-block">Close</span>
                                                         </button>
-                                                        <button type="submit" class="btn btn-primary ms-1"
-                                                            data-bs-dismiss="modal">
-                                                            <i class="bx bx-check d-block d-sm-none"></i>
-                                                            <span class="d-none d-sm-block">updste</span>
-                                                        </button>
+                                                        @include('component.btn-update')
                                                     </div>
                                                 </form>
                                             </div>
