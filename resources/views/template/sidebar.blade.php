@@ -78,11 +78,13 @@
 
             <hr>
 
-            <button class="btn btn-danger w-100">
-                <a href="{{ route('main') }}" class='text-white'>
+            <form action="{{ route('logout') }}" method="POST" class="w-100">
+                @csrf
+                <button type="submit" class="btn btn-danger w-100">
                     Sign Out
-                </a>
-            </button>
+                </button>
+            </form>
+
         </ul>
     </div>
 </div>
