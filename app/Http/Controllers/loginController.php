@@ -40,7 +40,9 @@ class loginController extends Controller
         if ($username === 'admin' && $password === '200') {
             // Jika berhasil, redirect ke /
             return redirect('/dashboard');
-        } else {
+        }else if($username === 'user' && $password === '200'){
+            return redirect('/');
+        }else {
             // return redirect('/login')->withErrors(['login' => 'Username atau password salah.']);
             return redirect('/login');
         }
