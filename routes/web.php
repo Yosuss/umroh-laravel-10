@@ -35,7 +35,6 @@ Route::prefix('/')->group(function () {
     Route::get('/',[mainController::class,'index'])->name('main');
     Route::get('/login',[loginController::class,'index']);
     Route::post('/login',[loginController::class,'login'])->name('login');
-
     Route::post('/logout',[loginController::class,'logout'])->name('logout');
 
     Route::get('/tentang-kami',[tentangKamiController::class,'tentangkami']);
